@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Photocopillage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='book.css') }}"/>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
+    {% set PAGEWIDTH = book['width'] + book['bleed'] * 2 %}
+    {% set PAGEHEIGHT = book['height'] + book['bleed'] * 2 %}
+    {% set n_chunk_start = "%03d" % ((book['chunk_part']*book['chunk_size'])+1) %}
+    {% set n_chunk_end = "%03d" % ((book['chunk_part'] * book['chunk_size']) + documents|length) %}
+    <style>
+       @page {
+         size: {{ PAGEWIDTH }}in {{ PAGEHEIGHT }}in;
+       }
+       .page{
+            width: {{ PAGEWIDTH }}in;
+            height: {{ PAGEHEIGHT }}in;
+       }
+
+        {% set intro_x = PAGEWIDTH - 0.2 %}
+        .intro{
+            left: {{ intro_x }}in;
+            width: {{ PAGEHEIGHT }}in;
+        }
+
+        img{
+            transform: scale({{ book['scale'] }});
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="progress">
+      <div></div>
+      <div>0%</div>
+      <div>... </div>
+      <div>&nbsp;</div>
+  </div>
+  </header>
+  <div class="cover">
+  </div>
+ </body>
+<div class="book">
+
+</div>
+<script src="{{ url_for('static', filename='js/book.js') }}"></script>
+<script src="{{ url_for('static', filename='js/ajax.js') }}"></script>
+</body>
+</html>

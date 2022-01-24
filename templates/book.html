@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Photocopillage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='book.css') }}"/>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
+    {% set PAGEWIDTH = book['width'] + book['bleed'] * 2 %}
+    {% set PAGEHEIGHT = book['height'] + book['bleed'] * 2 %}
+    {% set n_chunk_start = "%03d" % ((book['chunk_part']*book['chunk_size'])+1) %}
+    {% set n_chunk_end = "%03d" % ((book['chunk_part'] * book['chunk_size']) + documents|length) %}
+    <style>
+      @font-face {
+        font-family: "Archivo Arrow";
+        src: "url({{ url_for('static', filename='fonts/ArchivoNarrow-Medium.ttf') }}, format('truetype') )";
+      }
+      @font-face {
+        font-family: "Averia";
+        src: "url({{ url_for('static', filename='fonts/Averia-Regular.ttf') }}, format('truetype') )";
+      }
+      @font-face {
+        font-family: "IBM Plex";
+        src: "url({{ url_for('static', filename='fonts/IBMPlexMono-Medium.otf')}}, format('opentype') )";
+      }
+
+      @page {
+        size: {{ PAGEWIDTH }}in {{ PAGEHEIGHT }}in;
+      }
+      .page{
+        width: {{ PAGEWIDTH }}in;
+        height: {{ PAGEHEIGHT }}in;
+      }
+
+      {% set intro_x = PAGEWIDTH - 0.45 %}
+      .intro{
+        left: {{ intro_x }}in;
+        width: {{ PAGEHEIGHT }}in;
+      }
+
+      img{
+        transform: scale({{ book['scale'] }});
+      }
+    </style>
+</head>
+<body>
+<div class="page seuil">
+   <div class="intro">
+        <p>Cette collection est générée à partir de l’archive en ligne&nbsp; <em>Gallica</em></p>
+        <p>Elle agrège les documents qui comportent l’expression&nbsp; <em>photocopillage</em></p>
+        <p>Le résultat est trié par <em>date d’indexation</em> et présenté à l’échelle <em>1:1</em></p>
+        <p>Ce fragment rassemble les occurences de <em>{{ n_chunk_start }}</em> à <em>{{ n_chunk_end }}</em></p>
+    </div>
+   <ol class="biblio">
+        {% for document in documents %}
+        <li class="doc">
+            <a href="#{{ document['id'] }}">
+                <p class="id">{{ document['id'] }}</p>
+                <p class="title">{{ document['title'] }}</p>
+            </a>
+        </li>
+        {% endfor %}
+   </ol>
+</div>
+<div class="documents">
+
+{% for document in documents %}
+    {% set page=document['pages'][0] %}
+    {% if page.get("available", True) %}
+    <div id="{{ document['id'] }}" class="page page-cover">
+        {% set img_url="images/"+document['id']+".jpg" %}
+        {% set height = page['size']['height']/book['dpi'] %}
+        {% set targetX = page['match']['center'][0]/book['dpi'] %}
+        {% set  targetY = page['match']['center'][1]/book['dpi'] %}
+        {% set left = (PAGEWIDTH/2) - targetX %}
+        {% set top = (PAGEHEIGHT/2) - targetY %}
+        {% if book['noscript'] %}
+            <img src="{{ url_for('static', filename=img_url) }}" style="height:{{ height }}in; transform-origin: {{ targetX }}in {{targetY}}in; left:{{left}}in; top:{{top}}in">
+        {% else %}
+            <img class="lazy" data-src="{{ url_for('static', filename=img_url) }}" style="height:{{ height }}in; transform-origin: {{ targetX }}in {{targetY}}in; left:{{left}}in; top:{{top}}in">
+        {% endif %}
+    </div>
+    <div class="page page-logo">
+        {% set img_url="images/" + document['id'] + "-f" + page['pagination'] + ".jpg" %}
+        {% if book['noscript'] %}
+            <img src="{{ url_for('static', filename=img_url) }}" style="height:{{ height }}in; transform-origin: {{ targetX }}in {{targetY}}in; left:{{left}}in; top:{{top}}in">
+        {% else %}
+            <img class="lazy" data-src="{{ url_for('static', filename=img_url) }}" style="height:{{ height }}in; transform-origin: {{ targetX }}in {{targetY}}in; left:{{left}}in; top:{{top}}in">
+        {% endif %}
+    </div>
+    {% endif %}
+{% endfor %}
+</div>
+<script src="{{ url_for('static',filename='js/book.js') }}"></script>
+<script src="{{ url_for('static',filename='js/site.js') }}"></script>
+</body>
+</html>

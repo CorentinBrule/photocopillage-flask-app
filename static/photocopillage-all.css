@@ -1,0 +1,2542 @@
+@page {
+    size: 7.25in 10.25in;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+    }
+* {
+    margin: 0;
+    padding: 0
+    }
+.page {
+    overflow: hidden;
+    page-break-after: always;
+    position: relative;
+    width: 7.25in;
+    height: 10.25in;
+    background-color: black
+    }
+img {
+    position: absolute;
+    transform: scale(1);
+    }
+.bpt6k5712312t {
+    height: 7.08in;
+    transform-origin: 0.93125in 5.27625in;
+    left: 2.69375in;
+    top: -0.15125in
+    }
+.bpt6k5758991g {
+    height: 7.08in;
+    transform-origin: 1.0225in 5.33625in;
+    left: 2.6025in;
+    top: -0.21125in
+    }
+.bpt6k6312115m {
+    height: 9.5525in;
+    transform-origin: 3.355in 7.8825in;
+    left: 0.27in;
+    top: -2.7575in
+    }
+.bpt6k6281111b {
+    height: 9.43in;
+    transform-origin: 5.18875in 7.52375in;
+    left: -1.56375in;
+    top: -2.39875in
+    }
+.bpt6k8522683 {
+    height: 10.795in;
+    transform-origin: 7.06in 9.63375in;
+    left: -3.435in;
+    top: -4.50875in
+    }
+.bpt6k6475682k {
+    height: 9.9075in;
+    transform-origin: 1.23625in 8.13625in;
+    left: 2.38875in;
+    top: -3.01125in
+    }
+.bpt6k65353744 {
+    height: 9.735in;
+    transform-origin: 4.87125in 8.55375in;
+    left: -1.24625in;
+    top: -3.42875in
+    }
+.bpt6k48129548 {
+    height: 8.7225in;
+    transform-origin: 1.27125in 1.5875in;
+    left: 2.35375in;
+    top: 3.5375in
+    }
+.bpt6k4815323k {
+    height: 10.1in;
+    transform-origin: 1.73875in 2.1475in;
+    left: 1.88625in;
+    top: 2.9775in
+    }
+.bpt6k3321627w {
+    height: 8.5525in;
+    transform-origin: 2.57125in 5.045in;
+    left: 1.05375in;
+    top: 0.08in
+    }
+.bpt6k4814326h {
+    height: 7.4575in;
+    transform-origin: 2.33375in 4.06625in;
+    left: 1.29125in;
+    top: 1.05875in
+    }
+.bpt6k4801343t {
+    height: 9.0625in;
+    transform-origin: 1.535in 5.6475in;
+    left: 2.09in;
+    top: -0.5225in
+    }
+.bpt6k4811640w {
+    height: 7.4625in;
+    transform-origin: 0.87125in 4.12in;
+    left: 2.75375in;
+    top: 1.005in
+    }
+.bpt6k33244348 {
+    height: 8.4525in;
+    transform-origin: 2.77in 4.595in;
+    left: 0.855in;
+    top: 0.53in
+    }
+.bpt6k48100838 {
+    height: 10.0525in;
+    transform-origin: 1.735in 1.76875in;
+    left: 1.89in;
+    top: 3.35625in
+    }
+.bpt6k4813749k {
+    height: 7.47in;
+    transform-origin: 1.115in 4.285in;
+    left: 2.51in;
+    top: 0.84in
+    }
+.bpt6k4808464h {
+    height: 9.6875in;
+    transform-origin: 1.77125in 1.92625in;
+    left: 1.85375in;
+    top: 3.19875in
+    }
+.bpt6k3321710z {
+    height: 6.8125in;
+    transform-origin: 1.0075in 5.22125in;
+    left: 2.6175in;
+    top: -0.09625in
+    }
+.bpt6k48134558 {
+    height: 7.5725in;
+    transform-origin: 2.455in 4.16in;
+    left: 1.17in;
+    top: 0.965in
+    }
+.bpt6k48069421 {
+    height: 9.8275in;
+    transform-origin: 1.78875in 1.97in;
+    left: 1.83625in;
+    top: 3.155in
+    }
+.bpt6k48092948 {
+    height: 9.4375in;
+    transform-origin: 1.49in 5.9925in;
+    left: 2.135in;
+    top: -0.8675in
+    }
+.bpt6k3324492q {
+    height: 8.2625in;
+    transform-origin: 2.39125in 4.6575in;
+    left: 1.23375in;
+    top: 0.4675in
+    }
+.bpt6k4809344q {
+    height: 9.5325in;
+    transform-origin: 1.54375in 1.46875in;
+    left: 2.08125in;
+    top: 3.65625in
+    }
+.bpt6k48108794 {
+    height: 9.955in;
+    transform-origin: 1.83375in 2.0325in;
+    left: 1.79125in;
+    top: 3.0925in
+    }
+.bpt6k33229633 {
+    height: 8.8275in;
+    transform-origin: 2.71625in 4.645in;
+    left: 0.90875in;
+    top: 0.48in
+    }
+.bpt6k4804576t {
+    height: 9.9625in;
+    transform-origin: 1.645in 2.0025in;
+    left: 1.98in;
+    top: 3.1225in
+    }
+.bpt6k4806498p {
+    height: 8.6875in;
+    transform-origin: 1.31375in 1.54in;
+    left: 2.31125in;
+    top: 3.585in
+    }
+.bpt6k3322298w {
+    height: 9.6925in;
+    transform-origin: 0.88375in 6.48in;
+    left: 2.74125in;
+    top: -1.355in
+    }
+.bpt6k3320039q {
+    height: 10.5225in;
+    transform-origin: 6.72125in 9.3725in;
+    left: -3.09625in;
+    top: -4.2475in
+    }
+.bpt6k4805596w {
+    height: 8.5375in;
+    transform-origin: 1.345in 1.77in;
+    left: 2.28in;
+    top: 3.355in
+    }
+.bpt6k4810799j {
+    height: 9.9425in;
+    transform-origin: 1.57875in 1.76625in;
+    left: 2.04625in;
+    top: 3.35875in
+    }
+.bpt6k4813582h {
+    height: 7.35in;
+    transform-origin: 0.995in 4.605in;
+    left: 2.63in;
+    top: 0.52in
+    }
+.bpt6k4813975r {
+    height: 7.5225in;
+    transform-origin: 2.27125in 4.18875in;
+    left: 1.35375in;
+    top: 0.93625in
+    }
+.bpt6k4806062p {
+    height: 9.81in;
+    transform-origin: 1.71in 1.90875in;
+    left: 1.915in;
+    top: 3.21625in
+    }
+.bpt6k4805667h {
+    height: 9.8475in;
+    transform-origin: 1.9475in 7.275in;
+    left: 1.6775in;
+    top: -2.15in
+    }
+.bpt6k48047271 {
+    height: 8.7475in;
+    transform-origin: 1.375in 1.6625in;
+    left: 2.25in;
+    top: 3.4625in
+    }
+.bpt6k3331382b {
+    height: 7.0675in;
+    transform-origin: 1.0275in 5.5175in;
+    left: 2.5975in;
+    top: -0.3925in
+    }
+.bpt6k33261855 {
+    height: 9.0225in;
+    transform-origin: 2.3875in 5.5675in;
+    left: 1.2375in;
+    top: -0.4425in
+    }
+.bpt6k3331473q {
+    height: 8.5125in;
+    transform-origin: 3.07625in 3.36625in;
+    left: 0.54875in;
+    top: 1.75875in
+    }
+.bpt6k33259594 {
+    height: 8.3125in;
+    transform-origin: 2.755in 3.3275in;
+    left: 0.87in;
+    top: 1.7975in
+    }
+.bpt6k3328914g {
+    height: 9.5975in;
+    transform-origin: 2.38625in 7.5625in;
+    left: 1.23875in;
+    top: -2.4375in
+    }
+.bpt6k3331912r {
+    height: 8.5925in;
+    transform-origin: 2.835in 4.62375in;
+    left: 0.79in;
+    top: 0.50125in
+    }
+.bpt6k3323876p {
+    height: 8.4525in;
+    transform-origin: 4.4875in 5.5375in;
+    left: -0.8625in;
+    top: -0.4125in
+    }
+.bpt6k3331411m {
+    height: 8.3525in;
+    transform-origin: 2.195in 6.68875in;
+    left: 1.43in;
+    top: -1.56375in
+    }
+.bpt6k33243872 {
+    height: 8.6675in;
+    transform-origin: 3.29875in 4.6375in;
+    left: 0.32625in;
+    top: 0.4875in
+    }
+.bpt6k3326581w {
+    height: 8.6825in;
+    transform-origin: 2.78375in 4.48in;
+    left: 0.84125in;
+    top: 0.645in
+    }
+.bpt6k33293881 {
+    height: 7.3975in;
+    transform-origin: 2.35375in 4.065in;
+    left: 1.27125in;
+    top: 1.06in
+    }
+.bpt6k3329887b {
+    height: 9.5375in;
+    transform-origin: 4.5225in 8.44625in;
+    left: -0.8975in;
+    top: -3.32125in
+    }
+.bpt6k3328312k {
+    height: 8.5625in;
+    transform-origin: 1.40875in 4.6175in;
+    left: 2.21625in;
+    top: 0.5075in
+    }
+.bpt6k3328897d {
+    height: 9.5625in;
+    transform-origin: 2.33125in 7.245in;
+    left: 1.29375in;
+    top: -2.12in
+    }
+.bpt6k33259579 {
+    height: 8.3225in;
+    transform-origin: 1.22125in 5.1325in;
+    left: 2.40375in;
+    top: -0.0075in
+    }
+.bpt6k33237236 {
+    height: 8.1325in;
+    transform-origin: 1.01625in 7.04375in;
+    left: 2.60875in;
+    top: -1.91875in
+    }
+.bpt6k33295130 {
+    height: 9.5475in;
+    transform-origin: 1.465in 5.57in;
+    left: 2.16in;
+    top: -0.445in
+    }
+.bpt6k3325317q {
+    height: 8.4625in;
+    transform-origin: 4.465in 5.48375in;
+    left: -0.84in;
+    top: -0.35875in
+    }
+.bpt6k3328746r {
+    height: 9.3025in;
+    transform-origin: 1.65875in 1.91875in;
+    left: 1.96625in;
+    top: 3.20625in
+    }
+.bpt6k3327957x {
+    height: 9.5125in;
+    transform-origin: 5.37625in 8.375in;
+    left: -1.75125in;
+    top: -3.25in
+    }
+.bpt6k3332871k {
+    height: 9.4225in;
+    transform-origin: 3.09625in 5.59in;
+    left: 0.52875in;
+    top: -0.465in
+    }
+.bpt6k3327864q {
+    height: 9.5175in;
+    transform-origin: 3.0275in 5.53625in;
+    left: 0.5975in;
+    top: -0.41125in
+    }
+.bpt6k3327910h {
+    height: 9.7125in;
+    transform-origin: 2.50875in 8.04625in;
+    left: 1.11625in;
+    top: -2.92125in
+    }
+.bpt6k3329219f {
+    height: 8.7925in;
+    transform-origin: 1.08375in 5.32375in;
+    left: 2.54125in;
+    top: -0.19875in
+    }
+.bpt6k3331748p {
+    height: 8.6475in;
+    transform-origin: 2.86375in 5.11375in;
+    left: 0.76125in;
+    top: 0.01125in
+    }
+.bpt6k3329869d {
+    height: 9.8575in;
+    transform-origin: 1.6725in 5.985in;
+    left: 1.9525in;
+    top: -0.86in
+    }
+.bpt6k3326607p {
+    height: 9.5725in;
+    transform-origin: 1.2275in 6.16875in;
+    left: 2.3975in;
+    top: -1.04375in
+    }
+.bpt6k33280648 {
+    height: 8.4225in;
+    transform-origin: 2.41625in 4.55125in;
+    left: 1.20875in;
+    top: 0.57375in
+    }
+.bpt6k3325560d {
+    height: 8.4625in;
+    transform-origin: 1.3125in 5.3975in;
+    left: 2.3125in;
+    top: -0.2725in
+    }
+.bpt6k3331385k {
+    height: 7.0025in;
+    transform-origin: 1.0075in 5.3925in;
+    left: 2.6175in;
+    top: -0.2675in
+    }
+.bpt6k3325791n {
+    height: 8.4525in;
+    transform-origin: 1.11125in 7.26125in;
+    left: 2.51375in;
+    top: -2.13625in
+    }
+.bpt6k3325835c {
+    height: 6.9325in;
+    transform-origin: 1.145in 5.2775in;
+    left: 2.48in;
+    top: -0.1525in
+    }
+.bpt6k48064622 {
+    height: 8.8575in;
+    transform-origin: 2.0325in 6.95625in;
+    left: 1.5925in;
+    top: -1.83125in
+    }
+.bpt6k3325893t {
+    height: 8.345in;
+    transform-origin: 1.08125in 7.22125in;
+    left: 2.54375in;
+    top: -2.09625in
+    }
+.bpt6k48069970 {
+    height: 12.1125in;
+    transform-origin: 3.70875in 9.62in;
+    left: -0.08375in;
+    top: -4.495in
+    }
+.bpt6k48052852 {
+    height: 9.965in;
+    transform-origin: 1.71875in 2.17375in;
+    left: 1.90625in;
+    top: 2.95125in
+    }
+.bpt6k3332628w {
+    height: 9.6425in;
+    transform-origin: 0.8375in 7.1in;
+    left: 2.7875in;
+    top: -1.975in
+    }
+.bpt6k3325924x {
+    height: 8.0125in;
+    transform-origin: 2.25875in 4.93in;
+    left: 1.36625in;
+    top: 0.195in
+    }
+.bpt6k4806182s {
+    height: 10.0975in;
+    transform-origin: 2.34625in 7.06375in;
+    left: 1.27875in;
+    top: -1.93875in
+    }
+.bpt6k4804585s {
+    height: 9.7275in;
+    transform-origin: 1.64in 1.65375in;
+    left: 1.985in;
+    top: 3.47125in
+    }
+.bpt6k4813566d {
+    height: 7.4825in;
+    transform-origin: 0.8525in 4.60875in;
+    left: 2.7725in;
+    top: 0.51625in
+    }
+.bpt6k4805818q {
+    height: 8.725in;
+    transform-origin: 2.22875in 7.8225in;
+    left: 1.39625in;
+    top: -2.6975in
+    }
+.bpt6k4803531x {
+    height: 9.4625in;
+    transform-origin: 1.73625in 1.7325in;
+    left: 1.88875in;
+    top: 3.3925in
+    }
+.bpt6k4809428z {
+    height: 7.5475in;
+    transform-origin: 2.47625in 4.09in;
+    left: 1.14875in;
+    top: 1.035in
+    }
+.bpt6k3326556t {
+    height: 9.4725in;
+    transform-origin: 1.55375in 3.69625in;
+    left: 2.07125in;
+    top: 1.42875in
+    }
+.bpt6k3332116z {
+    height: 8.3425in;
+    transform-origin: 2.66in 3.71875in;
+    left: 0.965in;
+    top: 1.40625in
+    }
+.bpt6k33255820 {
+    height: 10.5925in;
+    transform-origin: 6.70125in 9.45375in;
+    left: -3.07625in;
+    top: -4.32875in
+    }
+.bpt6k33266884 {
+    height: 9.6275in;
+    transform-origin: 3.24in 4.02375in;
+    left: 0.385in;
+    top: 1.10125in
+    }
+.bpt6k48081061 {
+    height: 10.02in;
+    transform-origin: 1.98in 7.39in;
+    left: 1.645in;
+    top: -2.265in
+    }
+.bpt6k48048689 {
+    height: 8.86in;
+    transform-origin: 1.5575in 1.75375in;
+    left: 2.0675in;
+    top: 3.37125in
+    }
+.bpt6k4812976v {
+    height: 7.6175in;
+    transform-origin: 2.35875in 4.1975in;
+    left: 1.26625in;
+    top: 0.9275in
+    }
+.bpt6k3321675z {
+    height: 9.8225in;
+    transform-origin: 0.94625in 6.5725in;
+    left: 2.67875in;
+    top: -1.4475in
+    }
+.bpt6k3327027p {
+    height: 9.6575in;
+    transform-origin: 1.64875in 1.6625in;
+    left: 1.97625in;
+    top: 3.4625in
+    }
+.bpt6k4805922z {
+    height: 9.73in;
+    transform-origin: 1.81875in 2.20625in;
+    left: 1.80625in;
+    top: 2.91875in
+    }
+.bpt6k4809270v {
+    height: 7.3925in;
+    transform-origin: 0.9275in 4.4775in;
+    left: 2.6975in;
+    top: 0.6475in
+    }
+.bpt6k4805269z {
+    height: 9.735in;
+    transform-origin: 1.7625in 1.84625in;
+    left: 1.8625in;
+    top: 3.27875in
+    }
+.bpt6k4805953h {
+    height: 9.86in;
+    transform-origin: 2.42125in 7.445in;
+    left: 1.20375in;
+    top: -2.32in
+    }
+.bpt6k48057332 {
+    height: 10.0875in;
+    transform-origin: 1.65875in 1.8225in;
+    left: 1.96625in;
+    top: 3.3025in
+    }
+.bpt6k3325908t {
+    height: 8.5625in;
+    transform-origin: 1.3in 5.39in;
+    left: 2.325in;
+    top: -0.265in
+    }
+.bpt6k33259060 {
+    height: 8.5325in;
+    transform-origin: 1.4225in 4.30875in;
+    left: 2.2025in;
+    top: 0.81625in
+    }
+.bpt6k4809651w {
+    height: 10.0475in;
+    transform-origin: 1.67625in 2.04125in;
+    left: 1.94875in;
+    top: 3.08375in
+    }
+.bpt6k48049692 {
+    height: 8.78in;
+    transform-origin: 1.265in 2.00125in;
+    left: 2.36in;
+    top: 3.12375in
+    }
+.bpt6k48044522 {
+    height: 8.7in;
+    transform-origin: 1.3475in 1.9in;
+    left: 2.2775in;
+    top: 3.225in
+    }
+.bpt6k48045154 {
+    height: 9.675in;
+    transform-origin: 1.52625in 1.60125in;
+    left: 2.09875in;
+    top: 3.52375in
+    }
+.bpt6k4805360k {
+    height: 8.8175in;
+    transform-origin: 1.4825in 1.60125in;
+    left: 2.1425in;
+    top: 3.52375in
+    }
+.bpt6k4806466q {
+    height: 8.8725in;
+    transform-origin: 1.96125in 6.895in;
+    left: 1.66375in;
+    top: -1.77in
+    }
+.bpt6k48139305 {
+    height: 7.4625in;
+    transform-origin: 1.03875in 4.9675in;
+    left: 2.58625in;
+    top: 0.1575in
+    }
+.bpt6k4814845k {
+    height: 9.8125in;
+    transform-origin: 1.675in 2.04in;
+    left: 1.95in;
+    top: 3.085in
+    }
+.bpt6k4800120t {
+    height: 9.8425in;
+    transform-origin: 1.59625in 8.9in;
+    left: 2.02875in;
+    top: -3.775in
+    }
+.bpt6k4806597m {
+    height: 8.885in;
+    transform-origin: 2.11in 6.93in;
+    left: 1.515in;
+    top: -1.805in
+    }
+.bpt6k4806140f {
+    height: 10.0525in;
+    transform-origin: 2.02875in 1.425in;
+    left: 1.59625in;
+    top: 3.7in
+    }
+.bpt6k48136749 {
+    height: 7.5625in;
+    transform-origin: 2.16625in 6.8475in;
+    left: 1.45875in;
+    top: -1.7225in
+    }
+.bpt6k4805298p {
+    height: 9.705in;
+    transform-origin: 1.5575in 2.07625in;
+    left: 2.0675in;
+    top: 3.04875in
+    }
+.bpt6k33257173 {
+    height: 7.3125in;
+    transform-origin: 2.86125in 3.895in;
+    left: 0.76375in;
+    top: 1.23in
+    }
+.bpt6k4812074x {
+    height: 7.5725in;
+    transform-origin: 1.0875in 4.2725in;
+    left: 2.5375in;
+    top: 0.8525in
+    }
+.bpt6k4811759b {
+    height: 10.055in;
+    transform-origin: 1.72875in 2.1125in;
+    left: 1.89625in;
+    top: 3.0125in
+    }
+.bpt6k4807600z {
+    height: 8.6725in;
+    transform-origin: 3.76625in 7.6625in;
+    left: -0.14125in;
+    top: -2.5375in
+    }
+.bpt6k4813972h {
+    height: 9.8875in;
+    transform-origin: 1.80625in 2.06625in;
+    left: 1.81875in;
+    top: 3.05875in
+    }
+.bpt6k4809155t {
+    height: 9.95in;
+    transform-origin: 1.99875in 7.3125in;
+    left: 1.62625in;
+    top: -2.1875in
+    }
+.bpt6k4806440g {
+    height: 9.8925in;
+    transform-origin: 1.84125in 2.24125in;
+    left: 1.78375in;
+    top: 2.88375in
+    }
+.bpt6k33257106 {
+    height: 8.5575in;
+    transform-origin: 3.27375in 4.0125in;
+    left: 0.35125in;
+    top: 1.1125in
+    }
+.bpt6k3325770g {
+    height: 8.3825in;
+    transform-origin: 4.47875in 5.955in;
+    left: -0.85375in;
+    top: -0.83in
+    }
+.bpt6k3323810x {
+    height: 8.5725in;
+    transform-origin: 2.7275in 3.80625in;
+    left: 0.8975in;
+    top: 1.31875in
+    }
+.bpt6k48094108 {
+    height: 9.965in;
+    transform-origin: 1.84375in 2.03125in;
+    left: 1.78125in;
+    top: 3.09375in
+    }
+.bpt6k4813721h {
+    height: 7.505in;
+    transform-origin: 0.8875in 4.07375in;
+    left: 2.7375in;
+    top: 1.05125in
+    }
+.bpt6k3332685x {
+    height: 9.5425in;
+    transform-origin: 3.35875in 5.1225in;
+    left: 0.26625in;
+    top: 0.0025in
+    }
+.bpt6k4804435j {
+    height: 9.9325in;
+    transform-origin: 1.78125in 2.19in;
+    left: 1.84375in;
+    top: 2.935in
+    }
+.bpt6k48086965 {
+    height: 10.3125in;
+    transform-origin: 2.305in 8.0975in;
+    left: 1.32in;
+    top: -2.9725in
+    }
+.bpt6k33319187 {
+    height: 6.9725in;
+    transform-origin: 2.5825in 3.285in;
+    left: 1.0425in;
+    top: 1.84in
+    }
+.bpt6k3331714w {
+    height: 9.8525in;
+    transform-origin: 3.4475in 5.855in;
+    left: 0.1775in;
+    top: -0.73in
+    }
+.bpt6k4801795x {
+    height: 10.7925in;
+    transform-origin: 6.9875in 8.97375in;
+    left: -3.3625in;
+    top: -3.84875in
+    }
+.bpt6k4806484n {
+    height: 8.8025in;
+    transform-origin: 2.06125in 6.875in;
+    left: 1.56375in;
+    top: -1.75in
+    }
+.bpt6k3326481j {
+    height: 8.1925in;
+    transform-origin: 1.305in 1.52625in;
+    left: 2.32in;
+    top: 3.59875in
+    }
+.bpt6k48065825 {
+    height: 9.645in;
+    transform-origin: 1.75375in 1.29125in;
+    left: 1.87125in;
+    top: 3.83375in
+    }
+.bpt6k3336373x {
+    height: 9.6625in;
+    transform-origin: 3.3225in 5.035in;
+    left: 0.3025in;
+    top: 0.09in
+    }
+.bpt6k33323172 {
+    height: 6.8125in;
+    transform-origin: 2.3325in 3.18875in;
+    left: 1.2925in;
+    top: 1.93625in
+    }
+.bpt6k33324286 {
+    height: 9.5275in;
+    transform-origin: 3.18875in 5.8525in;
+    left: 0.43625in;
+    top: -0.7275in
+    }
+.bpt6k3336296k {
+    height: 9.6325in;
+    transform-origin: 3.02875in 5.3275in;
+    left: 0.59625in;
+    top: -0.2025in
+    }
+.bpt6k3336507m {
+    height: 8.4425in;
+    transform-origin: 1.3625in 4.43875in;
+    left: 2.2625in;
+    top: 0.68625in
+    }
+.bpt6k3336370p {
+    height: 9.6525in;
+    transform-origin: 3.1325in 5.0075in;
+    left: 0.4925in;
+    top: 0.1175in
+    }
+.bpt6k3336285s {
+    height: 9.665in;
+    transform-origin: 1.085in 7.93in;
+    left: 2.54in;
+    top: -2.805in
+    }
+.bpt6k33363179 {
+    height: 9.5525in;
+    transform-origin: 3.17375in 5.1in;
+    left: 0.45125in;
+    top: 0.025in
+    }
+.bpt6k3332319w {
+    height: 9.7175in;
+    transform-origin: 1.325in 5.685in;
+    left: 2.3in;
+    top: -0.56in
+    }
+.bpt6k33363609 {
+    height: 9.5725in;
+    transform-origin: 3.28875in 5.21125in;
+    left: 0.33625in;
+    top: -0.08625in
+    }
+.bpt6k33362473 {
+    height: 9.7925in;
+    transform-origin: 3.44375in 4.82875in;
+    left: 0.18125in;
+    top: 0.29625in
+    }
+.bpt6k3336310d {
+    height: 9.7875in;
+    transform-origin: 3.315in 4.605in;
+    left: 0.31in;
+    top: 0.52in
+    }
+.bpt6k3332460d {
+    height: 8.8725in;
+    transform-origin: 2.665in 7.7225in;
+    left: 0.96in;
+    top: -2.5975in
+    }
+.bpt6k3332533v {
+    height: 9.5775in;
+    transform-origin: 1.66625in 1.76875in;
+    left: 1.95875in;
+    top: 3.35625in
+    }
+.bpt6k3332157w {
+    height: 8.3325in;
+    transform-origin: 2.67in 6.66875in;
+    left: 0.955in;
+    top: -1.54375in
+    }
+.bpt6k33323639 {
+    height: 9.5525in;
+    transform-origin: 3.085in 7.84in;
+    left: 0.54in;
+    top: -2.715in
+    }
+.bpt6k3336331k {
+    height: 9.8475in;
+    transform-origin: 3.4in 4.97875in;
+    left: 0.225in;
+    top: 0.14625in
+    }
+.bpt6k3336415t {
+    height: 9.6825in;
+    transform-origin: 1.135in 7.895in;
+    left: 2.49in;
+    top: -2.77in
+    }
+.bpt6k3336275d {
+    height: 9.55in;
+    transform-origin: 3.08125in 2.935in;
+    left: 0.54375in;
+    top: 2.19in
+    }
+.bpt6k3331921q {
+    height: 8.3225in;
+    transform-origin: 2.58875in 6.90875in;
+    left: 1.03625in;
+    top: -1.78375in
+    }
+.bpt6k33365407 {
+    height: 9.4025in;
+    transform-origin: 1.90625in 6.36625in;
+    left: 1.71875in;
+    top: -1.24125in
+    }
+.bpt6k3336730j {
+    height: 9.5875in;
+    transform-origin: 1.35625in 6.7925in;
+    left: 2.26875in;
+    top: -1.6675in
+    }
+.bpt6k3333379g {
+    height: 9.4475in;
+    transform-origin: 1.95375in 6.27in;
+    left: 1.67125in;
+    top: -1.145in
+    }
+.bpt6k3333384s {
+    height: 9.3525in;
+    transform-origin: 1.92125in 6.28125in;
+    left: 1.70375in;
+    top: -1.15625in
+    }
+.bpt6k3336569q {
+    height: 7.6125in;
+    transform-origin: 1.0875in 4.93875in;
+    left: 2.5375in;
+    top: 0.18625in
+    }
+.bpt6k3336723d {
+    height: 8.8725in;
+    transform-origin: 1.68in 6.015in;
+    left: 1.945in;
+    top: -0.89in
+    }
+.bpt6k3336986m {
+    height: 8.9425in;
+    transform-origin: 1.64875in 6.12625in;
+    left: 1.97625in;
+    top: -1.00125in
+    }
+.bpt6k3334487p {
+    height: 8.7075in;
+    transform-origin: 1.04625in 6.28375in;
+    left: 2.57875in;
+    top: -1.15875in
+    }
+.bpt6k3336679f {
+    height: 7.9725in;
+    transform-origin: 1.1325in 5.26875in;
+    left: 2.4925in;
+    top: -0.14375in
+    }
+.bpt6k3336527c {
+    height: 8.8475in;
+    transform-origin: 1.4725in 6.02625in;
+    left: 2.1525in;
+    top: -0.90125in
+    }
+.bpt6k33368549 {
+    height: 8.7575in;
+    transform-origin: 1.53375in 6.11125in;
+    left: 2.09125in;
+    top: -0.98625in
+    }
+.bpt6k3336696z {
+    height: 9.3425in;
+    transform-origin: 1.91375in 6.1925in;
+    left: 1.71125in;
+    top: -1.0675in
+    }
+.bpt6k3336717p {
+    height: 8.7575in;
+    transform-origin: 1.49125in 6.01875in;
+    left: 2.13375in;
+    top: -0.89375in
+    }
+.bpt6k3336530v {
+    height: 8.8375in;
+    transform-origin: 1.48875in 6.16875in;
+    left: 2.13625in;
+    top: -1.04375in
+    }
+.bpt6k3336534h {
+    height: 9.1925in;
+    transform-origin: 1.72875in 5.415in;
+    left: 1.89625in;
+    top: -0.29in
+    }
+.bpt6k33365014 {
+    height: 7.8475in;
+    transform-origin: 1.22125in 4.79375in;
+    left: 2.40375in;
+    top: 0.33125in
+    }
+.bpt6k3338263t {
+    height: 8.0725in;
+    transform-origin: 1.1675in 5.40625in;
+    left: 2.4575in;
+    top: -0.28125in
+    }
+.bpt6k3336548j {
+    height: 8.7675in;
+    transform-origin: 1.66in 5.95625in;
+    left: 1.965in;
+    top: -0.83125in
+    }
+.bpt6k33366321 {
+    height: 8.8275in;
+    transform-origin: 1.4275in 6.20875in;
+    left: 2.1975in;
+    top: -1.08375in
+    }
+.bpt6k3336567w {
+    height: 8.8225in;
+    transform-origin: 1.4025in 6.1375in;
+    left: 2.2225in;
+    top: -1.0125in
+    }
+.bpt6k33382009 {
+    height: 7.7625in;
+    transform-origin: 1.11625in 5.0075in;
+    left: 2.50875in;
+    top: 0.1175in
+    }
+.bpt6k33357856 {
+    height: 9.6375in;
+    transform-origin: 1.335in 6.54375in;
+    left: 2.29in;
+    top: -1.41875in
+    }
+.bpt6k33359565 {
+    height: 8.9425in;
+    transform-origin: 1.17in 6.26875in;
+    left: 2.455in;
+    top: -1.14375in
+    }
+.bpt6k3334775h {
+    height: 9.4075in;
+    transform-origin: 1.67625in 6.37875in;
+    left: 1.94875in;
+    top: -1.25375in
+    }
+.bpt6k33368727 {
+    height: 8.8525in;
+    transform-origin: 1.4825in 6.24375in;
+    left: 2.1425in;
+    top: -1.11875in
+    }
+.bpt6k3336625w {
+    height: 8.7775in;
+    transform-origin: 1.43875in 6.7325in;
+    left: 2.18625in;
+    top: -1.6075in
+    }
+.bpt6k3336891k {
+    height: 9.5725in;
+    transform-origin: 1.53875in 6.58125in;
+    left: 2.08625in;
+    top: -1.45625in
+    }
+.bpt6k3336878q {
+    height: 8.6025in;
+    transform-origin: 2.9025in 3.86125in;
+    left: 0.7225in;
+    top: 1.26375in
+    }
+.bpt6k3336521w {
+    height: 7.5525in;
+    transform-origin: 1.04in 4.86375in;
+    left: 2.585in;
+    top: 0.26125in
+    }
+.bpt6k3336552f {
+    height: 9.6725in;
+    transform-origin: 1.43625in 6.83375in;
+    left: 2.18875in;
+    top: -1.70875in
+    }
+.bpt6k3336858z {
+    height: 8.7525in;
+    transform-origin: 1.54625in 6.49875in;
+    left: 2.07875in;
+    top: -1.37375in
+    }
+.bpt6k33365229 {
+    height: 7.6675in;
+    transform-origin: 1.10875in 4.995in;
+    left: 2.51625in;
+    top: 0.13in
+    }
+.bpt6k3336504c {
+    height: 7.76in;
+    transform-origin: 1.18125in 5.04625in;
+    left: 2.44375in;
+    top: 0.07875in
+    }
+.bpt6k33366714 {
+    height: 8.97in;
+    transform-origin: 1.4225in 6.24in;
+    left: 2.2025in;
+    top: -1.115in
+    }
+.bpt6k33365066 {
+    height: 8.8775in;
+    transform-origin: 1.6225in 6.17375in;
+    left: 2.0025in;
+    top: -1.04875in
+    }
+.bpt6k33331828 {
+    height: 9.4975in;
+    transform-origin: 2.015in 6.35875in;
+    left: 1.61in;
+    top: -1.23375in
+    }
+.bpt6k4806067r {
+    height: 10.08in;
+    transform-origin: 1.60625in 1.9975in;
+    left: 2.01875in;
+    top: 3.1275in
+    }
+.bpt6k3333219v {
+    height: 8.6325in;
+    transform-origin: 1.65625in 5.775in;
+    left: 1.96875in;
+    top: -0.65in
+    }
+.bpt6k4807440s {
+    height: 7.52in;
+    transform-origin: 1.01125in 5.3725in;
+    left: 2.61375in;
+    top: -0.2475in
+    }
+.bpt6k3336681h {
+    height: 8.7975in;
+    transform-origin: 1.50375in 6.10875in;
+    left: 2.12125in;
+    top: -0.98375in
+    }
+.bpt6k3336661r {
+    height: 9.2075in;
+    transform-origin: 1.77in 6.17875in;
+    left: 1.855in;
+    top: -1.05375in
+    }
+.bpt6k3336659p {
+    height: 9.1425in;
+    transform-origin: 1.78in 6.38125in;
+    left: 1.845in;
+    top: -1.25625in
+    }
+.bpt6k4814319c {
+    height: 9.7575in;
+    transform-origin: 1.75375in 1.89125in;
+    left: 1.87125in;
+    top: 3.23375in
+    }
+.bpt6k33332779 {
+    height: 8.5925in;
+    transform-origin: 1.625in 5.71125in;
+    left: 2in;
+    top: -0.58625in
+    }
+.bpt6k3336965f {
+    height: 8.9025in;
+    transform-origin: 1.8525in 5.9675in;
+    left: 1.7725in;
+    top: -0.8425in
+    }
+.bpt6k3336467j {
+    height: 8.5425in;
+    transform-origin: 1.64625in 5.74375in;
+    left: 1.97875in;
+    top: -0.61875in
+    }
+.bpt6k3334407n {
+    height: 8.6075in;
+    transform-origin: 1.17375in 5.71125in;
+    left: 2.45125in;
+    top: -0.58625in
+    }
+.bpt6k3337215f {
+    height: 9.2575in;
+    transform-origin: 1.9625in 6.23125in;
+    left: 1.6625in;
+    top: -1.10625in
+    }
+.bpt6k3336670q {
+    height: 7.5925in;
+    transform-origin: 0.98875in 4.9375in;
+    left: 2.63625in;
+    top: 0.1875in
+    }
+.bpt6k3336813c {
+    height: 9.1875in;
+    transform-origin: 1.85in 6.255in;
+    left: 1.775in;
+    top: -1.13in
+    }
+.bpt6k48082086 {
+    height: 9.9475in;
+    transform-origin: 3.395in 5.72in;
+    left: 0.23in;
+    top: -0.595in
+    }
+.bpt6k48088926 {
+    height: 9.8875in;
+    transform-origin: 3.50375in 6.5225in;
+    left: 0.12125in;
+    top: -1.3975in
+    }
+.bpt6k3336774q {
+    height: 9.6325in;
+    transform-origin: 1.705in 6.9075in;
+    left: 1.92in;
+    top: -1.7825in
+    }
+.bpt6k48057955 {
+    height: 10.0625in;
+    transform-origin: 3.3225in 5.22125in;
+    left: 0.3025in;
+    top: -0.09625in
+    }
+.bpt6k48151019 {
+    height: 9.7525in;
+    transform-origin: 3.47875in 5.445in;
+    left: 0.14625in;
+    top: -0.32in
+    }
+.bpt6k4807611r {
+    height: 9.61in;
+    transform-origin: 3.615in 3.8075in;
+    left: 0.01in;
+    top: 1.3175in
+    }
+.bpt6k48029310 {
+    height: 9.635in;
+    transform-origin: 1.77375in 2.2in;
+    left: 1.85125in;
+    top: 2.925in
+    }
+.bpt6k4814437n {
+    height: 8.77in;
+    transform-origin: 1.15875in 6.73in;
+    left: 2.46625in;
+    top: -1.605in
+    }
+.bpt6k48064659 {
+    height: 9.205in;
+    transform-origin: 3.11875in 4.615in;
+    left: 0.50625in;
+    top: 0.51in
+    }
+.bpt6k48089699 {
+    height: 7.4625in;
+    transform-origin: 0.8825in 4.2175in;
+    left: 2.7425in;
+    top: 0.9075in
+    }
+.bpt6k4806971r {
+    height: 10.405in;
+    transform-origin: 2.22in 7.2275in;
+    left: 1.405in;
+    top: -2.1025in
+    }
+.bpt6k4808097h {
+    height: 9.58in;
+    transform-origin: 3.21375in 4.2225in;
+    left: 0.41125in;
+    top: 0.9025in
+    }
+.bpt6k4812969q {
+    height: 7.97in;
+    transform-origin: 0.6475in 6.49in;
+    left: 2.9775in;
+    top: -1.365in
+    }
+.bpt6k48047523 {
+    height: 9.0925in;
+    transform-origin: 1.705in 1.325in;
+    left: 1.92in;
+    top: 3.8in
+    }
+.bpt6k48077840 {
+    height: 8.575in;
+    transform-origin: 2.76625in 4.9125in;
+    left: 0.85875in;
+    top: 0.2125in
+    }
+.bpt6k4813414b {
+    height: 8.8in;
+    transform-origin: 2.9225in 4.0175in;
+    left: 0.7025in;
+    top: 1.1075in
+    }
+.bpt6k4804514q {
+    height: 9.8775in;
+    transform-origin: 3.7725in 3.8975in;
+    left: -0.1475in;
+    top: 1.2275in
+    }
+.bpt6k4809032g {
+    height: 7.5825in;
+    transform-origin: 1.47625in 2.38875in;
+    left: 2.14875in;
+    top: 2.73625in
+    }
+.bpt6k4808538c {
+    height: 8.5975in;
+    transform-origin: 0.84375in 7.4675in;
+    left: 2.78125in;
+    top: -2.3425in
+    }
+.bpt6k48073925 {
+    height: 8.5875in;
+    transform-origin: 0.6825in 6.73125in;
+    left: 2.9425in;
+    top: -1.60625in
+    }
+.bpt6k48096225 {
+    height: 11.97in;
+    transform-origin: 1.57in 10.725in;
+    left: 2.055in;
+    top: -5.6in
+    }
+.bpt6k4804539j {
+    height: 9.765in;
+    transform-origin: 3.8625in 3.83625in;
+    left: -0.2375in;
+    top: 1.28875in
+    }
+.bpt6k4804104z {
+    height: 10.0475in;
+    transform-origin: 1.80875in 1.97125in;
+    left: 1.81625in;
+    top: 3.15375in
+    }
+.bpt6k4806159j {
+    height: 9.5975in;
+    transform-origin: 3.57875in 3.74625in;
+    left: 0.04625in;
+    top: 1.37875in
+    }
+.bpt6k48073836 {
+    height: 10.07in;
+    transform-origin: 3.23625in 5.98875in;
+    left: 0.38875in;
+    top: -0.86375in
+    }
+.bpt6k4805247c {
+    height: 9.965in;
+    transform-origin: 3.7975in 6.79375in;
+    left: -0.1725in;
+    top: -1.66875in
+    }
+.bpt6k4809127h {
+    height: 8.7525in;
+    transform-origin: 1.01625in 5.64375in;
+    left: 2.60875in;
+    top: -0.51875in
+    }
+.bpt6k4808994c {
+    height: 8.6125in;
+    transform-origin: 0.79375in 7.3025in;
+    left: 2.83125in;
+    top: -2.1775in
+    }
+.bpt6k4804415s {
+    height: 9.9575in;
+    transform-origin: 3.87in 6.25in;
+    left: -0.245in;
+    top: -1.125in
+    }
+.bpt6k4812380p {
+    height: 8.895in;
+    transform-origin: 0.87375in 7.6175in;
+    left: 2.75125in;
+    top: -2.4925in
+    }
+.bpt6k4812357f {
+    height: 9.975in;
+    transform-origin: 3.63375in 5.19in;
+    left: -0.00875in;
+    top: -0.065in
+    }
+.bpt6k33455013 {
+    height: 9.7675in;
+    transform-origin: 3.12375in 6.63375in;
+    left: 0.50125in;
+    top: -1.50875in
+    }
+.bpt6k33383316 {
+    height: 8.5125in;
+    transform-origin: 0.92625in 5.3225in;
+    left: 2.69875in;
+    top: -0.1975in
+    }
+.bpt6k3336710s {
+    height: 8.7625in;
+    transform-origin: 1.7975in 5.4475in;
+    left: 1.8275in;
+    top: -0.3225in
+    }
+.bpt6k48057562 {
+    height: 9.855in;
+    transform-origin: 1.185in 6.12125in;
+    left: 2.44in;
+    top: -0.99625in
+    }
+.bpt6k33653276 {
+    height: 7.245in;
+    transform-origin: 0.865in 5.975in;
+    left: 2.76in;
+    top: -0.85in
+    }
+.bpt6k33646253 {
+    height: 7.3425in;
+    transform-origin: 1.09in 5.44625in;
+    left: 2.535in;
+    top: -0.32125in
+    }
+.bpt6k3365056w {
+    height: 7.2275in;
+    transform-origin: 0.9475in 5.81375in;
+    left: 2.6775in;
+    top: -0.68875in
+    }
+.bpt6k3407085t {
+    height: 9.8675in;
+    transform-origin: 1.9175in 1.81875in;
+    left: 1.7075in;
+    top: 3.30625in
+    }
+.bpt6k3407050m {
+    height: 9.4675in;
+    transform-origin: 1.89125in 5.02in;
+    left: 1.73375in;
+    top: 0.105in
+    }
+.bpt6k3388769d {
+    height: 9.7925in;
+    transform-origin: 1.5875in 2.87625in;
+    left: 2.0375in;
+    top: 2.24875in
+    }
+.bpt6k3375073p {
+    height: 8.6775in;
+    transform-origin: 1.0275in 5.615in;
+    left: 2.5975in;
+    top: -0.49in
+    }
+.bpt6k3384108d {
+    height: 8.4725in;
+    transform-origin: 1.30875in 5.57375in;
+    left: 2.31625in;
+    top: -0.44875in
+    }
+.bpt6k34073386 {
+    height: 7.1525in;
+    transform-origin: 0.8625in 4.515in;
+    left: 2.7625in;
+    top: 0.61in
+    }
+.bpt6k3401839g {
+    height: 9.8125in;
+    transform-origin: 1.72125in 1.7075in;
+    left: 1.90375in;
+    top: 3.4175in
+    }
+.bpt6k34021757 {
+    height: 9.6425in;
+    transform-origin: 2.12875in 4.25in;
+    left: 1.49625in;
+    top: 0.875in
+    }
+.bpt6k3407094s {
+    height: 7.3475in;
+    transform-origin: 0.84625in 4.39625in;
+    left: 2.77875in;
+    top: 0.72875in
+    }
+.bpt6k34009954 {
+    height: 9.5525in;
+    transform-origin: 1.61375in 1.75125in;
+    left: 2.01125in;
+    top: 3.37375in
+    }
+.bpt6k3407120t {
+    height: 9.5225in;
+    transform-origin: 1.5625in 1.6825in;
+    left: 2.0625in;
+    top: 3.4425in
+    }
+.bpt6k3372276p {
+    height: 8.9175in;
+    transform-origin: 1.595in 6.1225in;
+    left: 2.03in;
+    top: -0.9975in
+    }
+.bpt6k3407108c {
+    height: 7.3625in;
+    transform-origin: 0.85375in 4.6125in;
+    left: 2.77125in;
+    top: 0.5125in
+    }
+.bpt6k3388631m {
+    height: 8.5425in;
+    transform-origin: 0.93875in 5.94625in;
+    left: 2.68625in;
+    top: -0.82125in
+    }
+.bpt6k3402006n {
+    height: 9.7625in;
+    transform-origin: 2.05375in 5.2775in;
+    left: 1.57125in;
+    top: -0.1525in
+    }
+.bpt6k3382703s {
+    height: 8.7375in;
+    transform-origin: 1.0225in 5.84875in;
+    left: 2.6025in;
+    top: -0.72375in
+    }
+.bpt6k34071128 {
+    height: 7.3525in;
+    transform-origin: 0.87125in 4.4025in;
+    left: 2.75375in;
+    top: 0.7225in
+    }
+.bpt6k3370487j {
+    height: 8.8875in;
+    transform-origin: 1.63625in 6.18375in;
+    left: 1.98875in;
+    top: -1.05875in
+    }
+.bpt6k34073794 {
+    height: 7.2525in;
+    transform-origin: 0.875in 4.19in;
+    left: 2.75in;
+    top: 0.935in
+    }
+.bpt6k48003475 {
+    height: 9.235in;
+    transform-origin: 3.405in 7.59125in;
+    left: 0.22in;
+    top: -2.46625in
+    }
+.bpt6k34073260 {
+    height: 7.4225in;
+    transform-origin: 0.98125in 4.69in;
+    left: 2.64375in;
+    top: 0.435in
+    }
+.bpt6k3407283p {
+    height: 8.3675in;
+    transform-origin: 1.215in 1.48in;
+    left: 2.41in;
+    top: 3.645in
+    }
+.bpt6k3400996j {
+    height: 9.6225in;
+    transform-origin: 1.525in 2.0225in;
+    left: 2.1in;
+    top: 3.1025in
+    }
+.bpt6k34020806 {
+    height: 7.4125in;
+    transform-origin: 0.9475in 4.69875in;
+    left: 2.6775in;
+    top: 0.42625in
+    }
+.bpt6k33704775 {
+    height: 8.0325in;
+    transform-origin: 1.26875in 5.25in;
+    left: 2.35625in;
+    top: -0.125in
+    }
+.bpt6k3370475b {
+    height: 8.0675in;
+    transform-origin: 1.33375in 5.0675in;
+    left: 2.29125in;
+    top: 0.0575in
+    }
+.bpt6k34074196 {
+    height: 8.4325in;
+    transform-origin: 1.6425in 3.81625in;
+    left: 1.9825in;
+    top: 1.30875in
+    }
+.bpt6k3405790x {
+    height: 9.0475in;
+    transform-origin: 1.50625in 5.73in;
+    left: 2.11875in;
+    top: -0.605in
+    }
+.bpt6k3406673c {
+    height: 7.3975in;
+    transform-origin: 1.02in 4.625in;
+    left: 2.605in;
+    top: 0.5in
+    }
+.bpt6k3364725f {
+    height: 8.3375in;
+    transform-origin: 1.03in 6.7125in;
+    left: 2.595in;
+    top: -1.5875in
+    }
+.bpt6k3382698x {
+    height: 9.8125in;
+    transform-origin: 2.82375in 8.6425in;
+    left: 0.80125in;
+    top: -3.5175in
+    }
+.bpt6k3381373r {
+    height: 8.6525in;
+    transform-origin: 7.66375in 6.3275in;
+    left: -4.03875in;
+    top: -1.2025in
+    }
+.bpt6k3373453p {
+    height: 8.9025in;
+    transform-origin: 1.56875in 6.36375in;
+    left: 2.05625in;
+    top: -1.23875in
+    }
+.bpt6k3383999p {
+    height: 8.8325in;
+    transform-origin: 1.3375in 5.95in;
+    left: 2.2875in;
+    top: -0.825in
+    }
+.bpt6k33674579 {
+    height: 8.0675in;
+    transform-origin: 2.59625in 3.2825in;
+    left: 1.02875in;
+    top: 1.8425in
+    }
+.bpt6k33676110 {
+    height: 12.0625in;
+    transform-origin: 4.28in 8.8175in;
+    left: -0.655in;
+    top: -3.6925in
+    }
+.bpt6k34022389 {
+    height: 9.7775in;
+    transform-origin: 1.40375in 4.845in;
+    left: 2.22125in;
+    top: 0.28in
+    }
+.bpt6k33702710 {
+    height: 9.7275in;
+    transform-origin: 2.9775in 6.71125in;
+    left: 0.6475in;
+    top: -1.58625in
+    }
+.bpt6k3399999t {
+    height: 9.7225in;
+    transform-origin: 1.63125in 2.16375in;
+    left: 1.99375in;
+    top: 2.96125in
+    }
+.bpt6k34007926 {
+    height: 9.8075in;
+    transform-origin: 1.865in 1.66125in;
+    left: 1.76in;
+    top: 3.46375in
+    }
+.bpt6k3400642z {
+    height: 8.6975in;
+    transform-origin: 1.34in 1.425in;
+    left: 2.285in;
+    top: 3.7in
+    }
+.bpt6k34001991 {
+    height: 9.5425in;
+    transform-origin: 1.79875in 2.0225in;
+    left: 1.82625in;
+    top: 3.1025in
+    }
+.bpt6k3402024k {
+    height: 9.6825in;
+    transform-origin: 2.13625in 5.2575in;
+    left: 1.48875in;
+    top: -0.1325in
+    }
+.bpt6k3400790c {
+    height: 8.67in;
+    transform-origin: 1.37375in 3.0875in;
+    left: 2.25125in;
+    top: 2.0375in
+    }
+.bpt6k34072680 {
+    height: 9.7525in;
+    transform-origin: 2.005in 1.70875in;
+    left: 1.62in;
+    top: 3.41625in
+    }
+.bpt6k3348550h {
+    height: 8.4625in;
+    transform-origin: 1.08625in 7.365in;
+    left: 2.53875in;
+    top: -2.24in
+    }
+.bpt6k3397639w {
+    height: 7.3575in;
+    transform-origin: 0.91875in 4.185in;
+    left: 2.70625in;
+    top: 0.94in
+    }
+.bpt6k3407096m {
+    height: 7.3875in;
+    transform-origin: 0.88125in 4.55125in;
+    left: 2.74375in;
+    top: 0.57375in
+    }
+.bpt6k3352872j {
+    height: 10.455in;
+    transform-origin: 6.60875in 9.5575in;
+    left: -2.98375in;
+    top: -4.4325in
+    }
+.bpt6k34019711 {
+    height: 9.8475in;
+    transform-origin: 1.3975in 6.5875in;
+    left: 2.2275in;
+    top: -1.4625in
+    }
+.bpt6k1002492d {
+    height: 9.7725in;
+    transform-origin: 3.4875in 6.33125in;
+    left: 0.1375in;
+    top: -1.20625in
+    }
+.bpt6k10025438 {
+    height: 9.7725in;
+    transform-origin: 2.07in 4.95125in;
+    left: 1.555in;
+    top: 0.17375in
+    }
+.bpt6k1002582c {
+    height: 9.7825in;
+    transform-origin: 1.63125in 1.85625in;
+    left: 1.99375in;
+    top: 3.26875in
+    }
+.bpt6k1002411z {
+    height: 9.4975in;
+    transform-origin: 3.03625in 4.46in;
+    left: 0.58875in;
+    top: 0.665in
+    }
+.bpt6k10038211 {
+    height: 9.4925in;
+    transform-origin: 1.62125in 1.64375in;
+    left: 2.00375in;
+    top: 3.48125in
+    }
+.bpt6k1002346t {
+    height: 9.7875in;
+    transform-origin: 1.63125in 2.17125in;
+    left: 1.99375in;
+    top: 2.95375in
+    }
+.bpt6k10026745 {
+    height: 9.7675in;
+    transform-origin: 3.32625in 4.815in;
+    left: 0.29875in;
+    top: 0.31in
+    }
+.bpt6k10025223 {
+    height: 9.7425in;
+    transform-origin: 2.99375in 4.69125in;
+    left: 0.63125in;
+    top: 0.43375in
+    }
+.bpt6k10024554 {
+    height: 9.7425in;
+    transform-origin: 1.59625in 1.67875in;
+    left: 2.02875in;
+    top: 3.44625in
+    }
+.bpt6k1002588v {
+    height: 9.6625in;
+    transform-origin: 3.1075in 5.5175in;
+    left: 0.5175in;
+    top: -0.3925in
+    }
+.bpt6k1002528k {
+    height: 9.6225in;
+    transform-origin: 3.22in 5.03375in;
+    left: 0.405in;
+    top: 0.09125in
+    }
+.bpt6k1002418v {
+    height: 9.7575in;
+    transform-origin: 3.17625in 6.04in;
+    left: 0.44875in;
+    top: -0.915in
+    }
+.bpt6k10025119 {
+    height: 9.8125in;
+    transform-origin: 3.16375in 5.96875in;
+    left: 0.46125in;
+    top: -0.84375in
+    }
+.bpt6k10025705 {
+    height: 8.9425in;
+    transform-origin: 2.885in 3.45125in;
+    left: 0.74in;
+    top: 1.67375in
+    }
+.bpt6k1002456j {
+    height: 9.8175in;
+    transform-origin: 3.2775in 5.3675in;
+    left: 0.3475in;
+    top: -0.2425in
+    }
+.bpt6k1002666m {
+    height: 9.715in;
+    transform-origin: 3.22125in 4.9125in;
+    left: 0.40375in;
+    top: 0.2125in
+    }
+.bpt6k10024858 {
+    height: 9.7025in;
+    transform-origin: 1.42125in 2.05875in;
+    left: 2.20375in;
+    top: 3.06625in
+    }
+.bpt6k1002671x {
+    height: 8.97in;
+    transform-origin: 3.07125in 5.395in;
+    left: 0.55375in;
+    top: -0.27in
+    }
+.bpt6k10020513 {
+    height: 9.51in;
+    transform-origin: 1.75875in 2.39125in;
+    left: 1.86625in;
+    top: 2.73375in
+    }
+.bpt6k10025290 {
+    height: 9.8175in;
+    transform-origin: 1.82875in 1.73625in;
+    left: 1.79625in;
+    top: 3.38875in
+    }
+.bpt6k10025720 {
+    height: 9.59in;
+    transform-origin: 3.47875in 5.8875in;
+    left: 0.14625in;
+    top: -0.7625in
+    }
+.bpt6k10027481 {
+    height: 9.5925in;
+    transform-origin: 1.4825in 1.8125in;
+    left: 2.1425in;
+    top: 3.3125in
+    }
+.bpt6k1002713t {
+    height: 9.7775in;
+    transform-origin: 3.33125in 6.39625in;
+    left: 0.29375in;
+    top: -1.27125in
+    }
+.bpt6k10030359 {
+    height: 9.2425in;
+    transform-origin: 1.895in 2.28625in;
+    left: 1.73in;
+    top: 2.83875in
+    }
+.bpt6k10025453 {
+    height: 9.8125in;
+    transform-origin: 1.67625in 1.9175in;
+    left: 1.94875in;
+    top: 3.2075in
+    }
+.bpt6k1002580j {
+    height: 9.5625in;
+    transform-origin: 3.41125in 6.155in;
+    left: 0.21375in;
+    top: -1.03in
+    }
+.bpt6k10024821 {
+    height: 8.4225in;
+    transform-origin: 1.25125in 1.595in;
+    left: 2.37375in;
+    top: 3.53in
+    }
+.bpt6k1002484v {
+    height: 9.7925in;
+    transform-origin: 3.30875in 5.295in;
+    left: 0.31625in;
+    top: -0.17in
+    }
+.bpt6k1002032r {
+    height: 9.6375in;
+    transform-origin: 2.99125in 4.5375in;
+    left: 0.63375in;
+    top: 0.5875in
+    }
+.bpt6k10025312 {
+    height: 9.7875in;
+    transform-origin: 3.20625in 5.53in;
+    left: 0.41875in;
+    top: -0.405in
+    }
+.bpt6k1002542v {
+    height: 9.8575in;
+    transform-origin: 3.19in 5.085in;
+    left: 0.435in;
+    top: 0.04in
+    }
+.bpt6k1002573d {
+    height: 9.7725in;
+    transform-origin: 3.29625in 5.56375in;
+    left: 0.32875in;
+    top: -0.43875in
+    }
+.bpt6k1002415m {
+    height: 8.9825in;
+    transform-origin: 2.9375in 4.6775in;
+    left: 0.6875in;
+    top: 0.4475in
+    }
+.bpt6k1002591b {
+    height: 9.6125in;
+    transform-origin: 2.0425in 4.92625in;
+    left: 1.5825in;
+    top: 0.19875in
+    }
+.bpt6k1002526r {
+    height: 9.8275in;
+    transform-origin: 3.32in 5.1775in;
+    left: 0.305in;
+    top: -0.0525in
+    }
+.bpt6k1002410j {
+    height: 9.875in;
+    transform-origin: 3.345in 5.9525in;
+    left: 0.28in;
+    top: -0.8275in
+    }
+.bpt6k1004067k {
+    height: 8.795in;
+    transform-origin: 2.63375in 4.76in;
+    left: 0.99125in;
+    top: 0.365in
+    }
+.bpt6k1002497g {
+    height: 9.8175in;
+    transform-origin: 3.165in 5.415in;
+    left: 0.46in;
+    top: -0.29in
+    }
+.bpt6k1002466x {
+    height: 9.6325in;
+    transform-origin: 1.65875in 1.57375in;
+    left: 1.96625in;
+    top: 3.55125in
+    }
+.bpt6k10024324 {
+    height: 9.5225in;
+    transform-origin: 1.7275in 1.89875in;
+    left: 1.8975in;
+    top: 3.22625in
+    }
+.bpt6k10026248 {
+    height: 9.7975in;
+    transform-origin: 1.73875in 1.91875in;
+    left: 1.88625in;
+    top: 3.20625in
+    }
+.bpt6k1002673r {
+    height: 9.8925in;
+    transform-origin: 3.22875in 5.79in;
+    left: 0.39625in;
+    top: -0.665in
+    }
+.bpt6k1002744c {
+    height: 9.6525in;
+    transform-origin: 3.375in 5.77375in;
+    left: 0.25in;
+    top: -0.64875in
+    }
+.bpt6k10025401 {
+    height: 7.2325in;
+    transform-origin: 2.35875in 4.095in;
+    left: 1.26625in;
+    top: 1.03in
+    }
+.bpt6k1002596d {
+    height: 9.7025in;
+    transform-origin: 3.24125in 3.9625in;
+    left: 0.38375in;
+    top: 1.1625in
+    }
+.bpt6k1002571k {
+    height: 9.8025in;
+    transform-origin: 3.22875in 6.5475in;
+    left: 0.39625in;
+    top: -1.4225in
+    }
+.bpt6k1002786q {
+    height: 8.9825in;
+    transform-origin: 2.95375in 4.7in;
+    left: 0.67125in;
+    top: 0.425in
+    }
+.bpt6k1003813g {
+    height: 9.7725in;
+    transform-origin: 1.73375in 1.86in;
+    left: 1.89125in;
+    top: 3.265in
+    }
+.bpt6k10020031 {
+    height: 9.5875in;
+    transform-origin: 1.65625in 3.975in;
+    left: 1.96875in;
+    top: 1.15in
+    }
+.bpt6k1002541f {
+    height: 9.7925in;
+    transform-origin: 1.59625in 2.005in;
+    left: 2.02875in;
+    top: 3.12in
+    }
+.bpt6k1002565v {
+    height: 9.6375in;
+    transform-origin: 3.19in 6.00875in;
+    left: 0.435in;
+    top: -0.88375in
+    }
+.bpt6k1002524x {
+    height: 9.8225in;
+    transform-origin: 3.2325in 5.0775in;
+    left: 0.3925in;
+    top: 0.0475in
+    }
+.bpt6k1002525b {
+    height: 9.7175in;
+    transform-origin: 3.135in 5.5025in;
+    left: 0.49in;
+    top: -0.3775in
+    }
+.bpt6k10025208 {
+    height: 9.8375in;
+    transform-origin: 1.65875in 2.155in;
+    left: 1.96625in;
+    top: 2.97in
+    }
+.bpt6k1002560s {
+    height: 9.5425in;
+    transform-origin: 3.1825in 5.4125in;
+    left: 0.4425in;
+    top: -0.2875in
+    }
+.bpt6k1002460f {
+    height: 8.8675in;
+    transform-origin: 2.97125in 4.845in;
+    left: 0.65375in;
+    top: 0.28in
+    }
+.bpt6k10026923 {
+    height: 9.5725in;
+    transform-origin: 3.31625in 5.06in;
+    left: 0.30875in;
+    top: 0.065in
+    }
+.bpt6k1002530n {
+    height: 9.6925in;
+    transform-origin: 3.4625in 6.07in;
+    left: 0.1625in;
+    top: -0.945in
+    }
+.bpt6k1002569h {
+    height: 8.3875in;
+    transform-origin: 1.28375in 1.8325in;
+    left: 2.34125in;
+    top: 3.2925in
+    }
+.bpt6k3370236j {
+    height: 8.7625in;
+    transform-origin: 2.2125in 5.5125in;
+    left: 1.4125in;
+    top: -0.3875in
+    }
+.bpt6k33683274 {
+    height: 8.3425in;
+    transform-origin: 1.33125in 4.71125in;
+    left: 2.29375in;
+    top: 0.41375in
+    }
+.bpt6k1002483f {
+    height: 9.7125in;
+    transform-origin: 3.13375in 5.99in;
+    left: 0.49125in;
+    top: -0.865in
+    }
+.bpt6k1002685z {
+    height: 9.675in;
+    transform-origin: 2.01375in 4.54in;
+    left: 1.61125in;
+    top: 0.585in
+    }
+.bpt6k1002420x {
+    height: 9.7075in;
+    transform-origin: 3.21125in 5.1175in;
+    left: 0.41375in;
+    top: 0.0075in
+    }
+.bpt6k10024628 {
+    height: 9.6725in;
+    transform-origin: 1.55in 2.245in;
+    left: 2.075in;
+    top: 2.88in
+    }
+.bpt6k1002422r {
+    height: 9.5075in;
+    transform-origin: 1.51875in 1.805in;
+    left: 2.10625in;
+    top: 3.32in
+    }
+.bpt6k3367949g {
+    height: 8.1875in;
+    transform-origin: 1.56375in 4.3225in;
+    left: 2.06125in;
+    top: 0.8025in
+    }
+.bpt6k3363544s {
+    height: 7.715in;
+    transform-origin: 0.87625in 6.21in;
+    left: 2.74875in;
+    top: -1.085in
+    }
+.bpt6k33837990 {
+    height: 8.9425in;
+    transform-origin: 1.28375in 5.29875in;
+    left: 2.34125in;
+    top: -0.17375in
+    }
+.bpt6k33636370 {
+    height: 9.7875in;
+    transform-origin: 1.65875in 1.78625in;
+    left: 1.96625in;
+    top: 3.33875in
+    }
+.bpt6k3383953p {
+    height: 8.3675in;
+    transform-origin: 1.17125in 5.2875in;
+    left: 2.45375in;
+    top: -0.1625in
+    }
+.bpt6k3377231n {
+    height: 9.7125in;
+    transform-origin: 3.14375in 5.1275in;
+    left: 0.48125in;
+    top: -0.0025in
+    }
+.bpt6k3365292f {
+    height: 9.5225in;
+    transform-origin: 2.06375in 4.8575in;
+    left: 1.56125in;
+    top: 0.2675in
+    }
+.bpt6k33592005 {
+    height: 9.6925in;
+    transform-origin: 2.1375in 4.98125in;
+    left: 1.4875in;
+    top: 0.14375in
+    }
+.bpt6k33638472 {
+    height: 9.7125in;
+    transform-origin: 1.5575in 1.595in;
+    left: 2.0675in;
+    top: 3.53in
+    }
+.bpt6k3359510k {
+    height: 9.76in;
+    transform-origin: 1.85875in 1.38875in;
+    left: 1.76625in;
+    top: 3.73625in
+    }
+.bpt6k3360695h {
+    height: 8.3825in;
+    transform-origin: 1.62125in 3.7375in;
+    left: 2.00375in;
+    top: 1.3875in
+    }
+.bpt6k3363172q {
+    height: 9.8475in;
+    transform-origin: 1.835in 1.7425in;
+    left: 1.79in;
+    top: 3.3825in
+    }
+.bpt6k33652058 {
+    height: 9.3475in;
+    transform-origin: 1.99375in 1.82125in;
+    left: 1.63125in;
+    top: 3.30375in
+    }
+.bpt6k3364603h {
+    height: 9.5925in;
+    transform-origin: 1.55in 2.075in;
+    left: 2.075in;
+    top: 3.05in
+    }
+.bpt6k33646023 {
+    height: 9.8175in;
+    transform-origin: 3.06in 6.7775in;
+    left: 0.565in;
+    top: -1.6525in
+    }
+.bpt6k3368399m {
+    height: 8.5325in;
+    transform-origin: 1.41375in 4.97375in;
+    left: 2.21125in;
+    top: 0.15125in
+    }
+.bpt6k3377425m {
+    height: 8.0425in;
+    transform-origin: 1.0425in 7.20125in;
+    left: 2.5825in;
+    top: -2.07625in
+    }
+.bpt6k3356379z {
+    height: 7.3675in;
+    transform-origin: 0.9075in 5.97875in;
+    left: 2.7175in;
+    top: -0.85375in
+    }
+.bpt6k3377421z {
+    height: 8.425in;
+    transform-origin: 2.62625in 6.94625in;
+    left: 0.99875in;
+    top: -1.82125in
+    }
+.bpt6k33639801 {
+    height: 9.6925in;
+    transform-origin: 1.65625in 1.82875in;
+    left: 1.96875in;
+    top: 3.29625in
+    }
+.bpt6k3363580n {
+    height: 9.3475in;
+    transform-origin: 1.99125in 2.04875in;
+    left: 1.63375in;
+    top: 3.07625in
+    }
+.bpt6k3385750c {
+    height: 9.7575in;
+    transform-origin: 2.725in 3.51125in;
+    left: 0.9in;
+    top: 1.61375in
+    }
+.bpt6k3363176c {
+    height: 9.6375in;
+    transform-origin: 1.96in 5.09375in;
+    left: 1.665in;
+    top: 0.03125in
+    }
+.bpt6k33638457 {
+    height: 8.5775in;
+    transform-origin: 2.29in 5.8325in;
+    left: 1.335in;
+    top: -0.7075in
+    }
+.bpt6k3378832f {
+    height: 8.3775in;
+    transform-origin: 1.80375in 4.42in;
+    left: 1.82125in;
+    top: 0.705in
+    }
+.bpt6k3356164t {
+    height: 7.2in;
+    transform-origin: 0.79125in 5.77125in;
+    left: 2.83375in;
+    top: -0.64625in
+    }
+.bpt6k3360431w {
+    height: 8.4775in;
+    transform-origin: 1.59625in 3.8275in;
+    left: 2.02875in;
+    top: 1.2975in
+    }
+.bpt6k33626049 {
+    height: 9.5525in;
+    transform-origin: 2.0425in 4.85625in;
+    left: 1.5825in;
+    top: 0.26875in
+    }
+.bpt6k33800631 {
+    height: 8.34in;
+    transform-origin: 1.64in 4.3925in;
+    left: 1.985in;
+    top: 0.7325in
+    }
+.bpt6k3364112r {
+    height: 9.7575in;
+    transform-origin: 1.725in 1.8925in;
+    left: 1.9in;
+    top: 3.2325in
+    }
+.bpt6k3361376f {
+    height: 9.8525in;
+    transform-origin: 2.11125in 4.975in;
+    left: 1.51375in;
+    top: 0.15in
+    }
+.bpt6k3363906g {
+    height: 8.5275in;
+    transform-origin: 1.39875in 1.4175in;
+    left: 2.22625in;
+    top: 3.7075in
+    }
+.bpt6k3356320b {
+    height: 7.3975in;
+    transform-origin: 0.8875in 5.95625in;
+    left: 2.7375in;
+    top: -0.83125in
+    }
+.bpt6k33566953 {
+    height: 7.3125in;
+    transform-origin: 1.03625in 4.4475in;
+    left: 2.58875in;
+    top: 0.6775in
+    }
+.bpt6k1002279v {
+    height: 8.5225in;
+    transform-origin: 1.10625in 7.3275in;
+    left: 2.51875in;
+    top: -2.2025in
+    }
+.bpt6k10023336 {
+    height: 8.295in;
+    transform-origin: 1.24875in 6.73375in;
+    left: 2.37625in;
+    top: -1.60875in
+    }
+.bpt6k10023388 {
+    height: 8.7375in;
+    transform-origin: 4.14625in 3.6525in;
+    left: -0.52125in;
+    top: 1.4725in
+    }
+.bpt6k1002544p {
+    height: 9.0575in;
+    transform-origin: 2.9075in 7.39875in;
+    left: 0.7175in;
+    top: -2.27375in
+    }
+.bpt6k3355730s {
+    height: 8.2475in;
+    transform-origin: 0.86in 4.71875in;
+    left: 2.765in;
+    top: 0.40625in
+    }
+.bpt6k3360811h {
+    height: 10.6475in;
+    transform-origin: 0.925in 9.65625in;
+    left: 2.7in;
+    top: -4.53125in
+    }
+.bpt6k10038975 {
+    height: 8.4925in;
+    transform-origin: 1.125in 7.07in;
+    left: 2.5in;
+    top: -1.945in
+    }
+.bpt6k33620366 {
+    height: 10.6675in;
+    transform-origin: 1.09125in 8.91875in;
+    left: 2.53375in;
+    top: -3.79375in
+    }
+.bpt6k1004256g {
+    height: 10.5625in;
+    transform-origin: 0.87in 9.43125in;
+    left: 2.755in;
+    top: -4.30625in
+    }
+.bpt6k33607649 {
+    height: 10.6375in;
+    transform-origin: 0.82625in 9.8125in;
+    left: 2.79875in;
+    top: -4.6875in
+    }
+.bpt6k1003831d {
+    height: 8.5625in;
+    transform-origin: 1.18125in 7.1575in;
+    left: 2.44375in;
+    top: -2.0325in
+    }
+.bpt6k33594604 {
+    height: 8.5525in;
+    transform-origin: 0.8825in 7.50125in;
+    left: 2.7425in;
+    top: -2.37625in
+    }
+.bpt6k10035818 {
+    height: 8.6125in;
+    transform-origin: 1.15625in 7.54875in;
+    left: 2.46875in;
+    top: -2.42375in
+    }
+.bpt6k10034897 {
+    height: 9.0125in;
+    transform-origin: 1.3825in 6.4225in;
+    left: 2.2425in;
+    top: -1.2975in
+    }
+.bpt6k3365268s {
+    height: 7.225in;
+    transform-origin: 0.985in 5.375in;
+    left: 2.64in;
+    top: -0.25in
+    }
+.bpt6k1003552j {
+    height: 9.765in;
+    transform-origin: 1.39625in 8.07in;
+    left: 2.22875in;
+    top: -2.945in
+    }
+.bpt6k33605421 {
+    height: 7.3475in;
+    transform-origin: 1.07875in 5.34625in;
+    left: 2.54625in;
+    top: -0.22125in
+    }
+.bpt6k10042196 {
+    height: 7.1325in;
+    transform-origin: 0.89125in 5.21in;
+    left: 2.73375in;
+    top: -0.085in
+    }
+.bpt6k3399837c {
+    height: 8.5325in;
+    transform-origin: 1.0825in 7.63875in;
+    left: 2.5425in;
+    top: -2.51375in
+    }
+.bpt6k3400184k {
+    height: 7.7625in;
+    transform-origin: 1.055in 6.7075in;
+    left: 2.57in;
+    top: -1.5825in
+    }
+.bpt6k34072969 {
+    height: 8.7325in;
+    transform-origin: 0.95in 6.87625in;
+    left: 2.675in;
+    top: -1.75125in
+    }
+.bpt6k3362542n {
+    height: 9.6125in;
+    transform-origin: 1.8175in 2.05125in;
+    left: 1.8075in;
+    top: 3.07375in
+    }
+.bpt6k3378483c {
+    height: 9.6975in;
+    transform-origin: 1.77375in 1.88375in;
+    left: 1.85125in;
+    top: 3.24125in
+    }
+.bpt6k10035440 {
+    height: 8.4725in;
+    transform-origin: 1.01625in 6.86875in;
+    left: 2.60875in;
+    top: -1.74375in
+    }
+.bpt6k3378448x {
+    height: 8.5475in;
+    transform-origin: 1.3875in 2.14375in;
+    left: 2.2375in;
+    top: 2.98125in
+    }
+.bpt6k3378350n {
+    height: 8.5275in;
+    transform-origin: 1.44in 1.6875in;
+    left: 2.185in;
+    top: 3.4375in
+    }
+.bpt6k1002672b {
+    height: 9.8775in;
+    transform-origin: 1.66in 8.04875in;
+    left: 1.965in;
+    top: -2.92375in
+    }
+.bpt6k3376178d {
+    height: 9.6525in;
+    transform-origin: 1.73625in 1.855in;
+    left: 1.88875in;
+    top: 3.27in
+    }
+.bpt6k33679734 {
+    height: 8.9675in;
+    transform-origin: 1.17625in 5.1475in;
+    left: 2.44875in;
+    top: -0.0225in
+    }
+.bpt6k3362360w {
+    height: 8.9525in;
+    transform-origin: 1.0125in 6.855in;
+    left: 2.6125in;
+    top: -1.73in
+    }
+.bpt6k3373455h {
+    height: 8.7875in;
+    transform-origin: 1.46375in 1.77625in;
+    left: 2.16125in;
+    top: 3.34875in
+    }
+.bpt6k33730769 {
+    height: 8.6475in;
+    transform-origin: 3.16in 2.4in;
+    left: 0.465in;
+    top: 2.725in
+    }

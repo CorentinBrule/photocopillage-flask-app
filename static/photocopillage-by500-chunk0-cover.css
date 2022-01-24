@@ -1,0 +1,52 @@
+@page {
+    size: 16.204144in 10.25in;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black
+    }
+* {
+    margin: 0;
+    padding: 0
+    }
+.cover {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    width: 16.204144in;
+    height: 10.25in;
+    position: absolute
+    }
+.cover1 img, .cover4 img {
+    width: 7.25in;
+    height: 10.25in
+    }
+.cover1, .cover4 {
+    width: 7.25in;
+    height: 10.25in;
+    overflow: hidden;
+    position: absolute
+    }
+.cover1 {
+    right: 0
+    }
+.spine {
+    width: 1.954144in;
+    height: 10.25in;
+    position: absolute;
+    left: 7.125in;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%)
+    }
+.information {
+    font-size: 10pt;
+    color: white;
+    line-height: 1.954144in;
+    height: 1.954144in;
+    width: 10.25in;
+    transform-origin: 0.977072in 0.977072in;
+    transform: rotate(90deg);
+    display: flex
+    }
+.information span {
+    margin: auto
+    }

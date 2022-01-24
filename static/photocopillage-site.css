@@ -1,0 +1,282 @@
+@font-face {
+ font-family: "Averia";
+ src: url("fonts/Averia-Regular.ttf") format("truetype");
+}
+@font-face {
+ font-family: "Averia";
+ font-style: italic;
+ src: url("fonts/Averia-Italic.ttf") format("truetype");
+}
+@font-face {
+ font-family: "Brill";
+ src: url("fonts/Averia-Roman.ttf") format("truetype");
+}
+@font-face {
+ font-family: "Brill";
+ font-style: italic;
+ src: url("fonts/Brill-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Brill";
+  font-weight: bold;
+  src: url("fonts/Brill-Bold.ttf") format("truetype");
+}
+@font-face {
+ font-family: "Brill";
+ font-style: italic;
+ font-weight: bold;
+ src: url("fonts/Brill-BoldItalic.ttf") format("truetype");
+}
+
+@media screen {
+  html {
+    background-color: black;
+    overflow-x: hidden;
+  }
+
+  .seuil {
+    width: 100% !important;
+    height: auto !important;
+    background-color: black !important;
+    color: white;
+    overflow: hidden;
+  }
+
+  .apropos {
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    width: 100%;
+    font-size: 17pt;
+    line-height: 15pt;
+    margin-top: 50vh;
+    /*max-width: 40em;*/
+    left: 0;
+    color: black;
+    font-family: "Brill";
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .apropos div {
+    background: white;
+    padding: 2em;
+    position: relative;
+    margin: auto;
+    width: 26em;
+    max-width: 100vw;
+    box-shadow: grey 6pt 6pt 12pt;
+  }
+
+  sup {
+    line-height: 0;
+  }
+
+  .apropos p, .apropos li {
+    margin-bottom: 13pt;
+  }
+
+  .apropos li {
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 50%;
+  }
+
+  .apropos ul {
+    display: flex;
+  }
+
+  .biblio {
+    column-fill: unset !important;
+    column-count: unset !important;
+    column-width: 10rem;
+    font-size: 8pt;
+    line-height: 8pt;
+  }
+
+  .cover {
+    position: relative;
+    height: 100vh;
+    display: flex;
+  }
+
+  .cover4, .cover1 {
+    height: 100vh;
+    width: unset;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: auto;
+    max-width: 48%;
+  }
+
+  .cover1 img, .cover4 img {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .spine {
+    position: relative;
+    margin: auto !important;
+    height: 100vh;
+    width: auto;
+    left: unset;
+  }
+
+  .information {
+    line-height: normal;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    writing-mode: tb-rl;
+    transform: unset;
+    width: auto;
+  }
+
+  .intro {
+    position: sticky;
+    top: 0;
+    transform: unset;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    font-size: 15pt;
+    line-height: 13pt;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: black;
+  }
+
+  .not-editing #menu-form {
+    display: none;
+  }
+
+  .not-editing #last-element-viewed::after {
+    content: "v";
+    display: block;
+    line-height: 1rem;
+  }
+
+  #last-element-hidden {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .page {
+    height: 100vh;
+    width: 70vh;
+    overflow: visible;
+    background-color: unset;
+    border: solid grey 1px;
+    transition: background .5s;
+    background: rgba(0, 0, 0, 1);
+    z-index: 10;
+  }
+
+  .page:nth-child(odd) {
+    float: left;
+  }
+
+  .page:nth-child(even) {
+    float: right;
+  }
+
+  .cover {
+    width: 100%;
+  }
+
+  select, input {
+    color: white;
+    background: black;
+    font-family: "Averia";
+    font-style: italic;
+    font-size: 12pt;
+    line-height: 13pt;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  input[type="number"]{
+    width: 4rem;
+  }
+
+  select, input[type="number"]{
+    text-align: center;
+    margin: 0;
+    outline: none;
+    border:none;
+    text-decoration: underline;
+    height: 13pt;
+  }
+
+  input[type="submit"]{
+    margin: 1pt;
+    padding: 1pt;
+  }
+
+  #input-width, #input-height {
+    width: 3em;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+  }
+  #input-width::-webkit-outer-spin-button,
+  #input-width::-webkit-inner-spin-button,
+  #input-height::-webkit-outer-spin-button,
+  #input-height::-webkit-inner-spin-button
+ {
+    display: none;
+}
+  .above-page {
+    z-index: 9;
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 480px){
+  .cover{
+    flex-direction: column-reverse !important;
+    height: 100%;
+  }
+  .cover4, .cover1{
+    width: 100%;
+    max-width: 100%;
+  }
+  .spine{
+    height: auto;
+    margin: 0;
+    width: 100%;
+  }
+  .information{
+    writing-mode: unset;
+    width: 100%;
+  }
+
+  .seuil{
+    margin: 0;
+    padding: 0;
+  }
+  .apropos{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    font-style: 18pt;
+    line-height: 16pt;
+
+  }
+  .apropos > div{
+    padding: 1em;
+  }
+  .apropos ul{
+    flex-direction: column;
+  }
+  .apropos li{
+    width: auto;
+  }
+  .biblio{
+    display: none;
+  }
+}

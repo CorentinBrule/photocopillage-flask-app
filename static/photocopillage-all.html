@@ -1,0 +1,5993 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+   <link href="/static/photocopillage-by500-chunk0-cover.css" rel="stylesheet"/>
+  <link href="/static/photocopillage-all.css" rel="stylesheet"/>
+  <link href="/static/book.css" rel="stylesheet"/>
+  <link href="/static/photocopillage-site.css" rel="stylesheet"/>
+  <script src="/static/js/lib/lazyload.min.js"></script>
+ </head>
+ <body>
+
+  <div class="cover">
+   <div class="cover4">
+    <img src="/static/covers/photocopillage-all-15inch-cover1.png"/>
+   </div>
+   <div class="spine">
+    <div class="information">
+     <span class="archive">
+      Gallica
+     </span>
+     |
+     <span class="mot">
+      photocopillage
+     </span>
+     |
+     <span class="tri">
+      date d’indexation
+     </span>
+     |
+     <span class="echelle">
+      1:1
+     </span>
+     |
+     <span class="interval">
+      001–420
+     </span>
+    </div>
+   </div>
+   <div class="cover1">
+    <img src="/static/covers/photocopillage-all-15inch-cover4.png"/>
+   </div>
+  </div>
+  <div class="page seuil">
+   <div class="apropos">
+    <div>
+      <p>Ce livre est une manière d’explorer le corpus de l’archive en ligne <em>Gallica</em>, au travers des enjeux de la reproduction technique, de la formalisation de ces enjeux ansi que leur l’inscription dans la matérialité des livres.</p>
+     <p>Cette exploration ironique met en parallèle deux « controverses » nées de l’évolution des techniques de reproduction puis de la numérisation et de la diffusion des contenus protégés par le droit d’auteur sur Internet :</p>
+     <ul>
+       <li>1980 : la lutte des éditeurs contre la photocopie de leurs ouvrages en dehors des exceptions du droit d’auteur (copie privé) ni redevance compensatoire. Majoritairement ciblé sur les manuels scolaires, techniques et scientifiques, chaque duplication est considéré comme un manque à gagné et tuerai virtuellement un livre.</li>
+       <li>2012 : la loi d’exploitation numérique des livres indisponibles du XX<sup>e</sup> siècle et la création du dispositif ReLIRE : un registre d’<em>oeuvres</em> qui ne sont plus exploitées et qui seront numérisées et recommercialisées, passant alors en gestion collective de leur droits si aucun refus n’est formulé par les auteurs ou ayants-droit.</li>
+      </ul>
+     <p>
+      La majorité des livres contenant la mention « le photocopillage tue le livre » font parti du dispositif ReLIRE et sont donc accessibles sur Gallica justement parcequ’ils ne sont plus édité. Le logo semble donc avoir été prémonitoire, voire performatif. Mais la plupart de ces livres sont des manuels ou des ouvrages sur des sujets spécifiques, c’est-à-dire les textes les plus suceptibles de subir les effets du temps, de ne plus être d’actualité ou d’être remplacé par un autre livre, plus récent ou plus complet. Le logo contre le photocopillage, numérisé et diffusé publiquement sur internet semble donc maintenant anachronique.
+      </p>
+     <p>Ce projet est la première itération d’un processus d’édition à partir d’archives en ligne mettant en avant l’automatisation de l’extraction des données jusqu’à l’impression d’un livre et l’explicitation des choix formels et éditoriaux.
+      Cette page est donc un livre, qui peut être fragmenté et réorganisé pour être imprimé ou commandé en impression à la demande.
+     </p>
+    </div>
+   </div>
+   <div class="intro">
+    <p>
+     Cette collection est générée à partir de l’archive en ligne
+     <em>Gallica</em>
+    </p>
+    <p>
+     Elle agrège les documents qui comportent l’expression
+     <em>photocopillage</em>
+    </p>
+    <form id="form-book">
+     <p id="last-element-viewed"><span>Le résultat est trié par</span>
+     <em>
+      <select name="sort">
+       <option value="byIndexationDate">date d’indexation</option>
+       <option value="byPublicationDate">date de publication</option>
+       <option value="byAlphabeticalTitle">titre des livres</option>
+      </select>
+     </em>
+     <div id="menu-form">
+       <p class=""> et présenté à l’échelle <select name="scale" id="select-scale">
+        <option value="1">1:1</option>
+        <option value="0.8">4:5</option>
+        <option value="0.75">3:4</option>
+        <option value="0.666">2:3</option>
+        <option value="0.5">1:2</option>
+       </select></p>
+       <p>Ce fragment rassemble <input id="input-chunk-size" type="number" value="420" min="1" max="420" name="chunk-size"> documents</p>
+       <p>et en est le n<sup>o</sup> <input id="input-chunk-part" type="number" value="1" min="1" max="1" name="chunk-part"> (<span id="pages-result">840</span> pages)</p>
+     <p>le format du livre est <input id="input-width" type="number" step="0.01" type="number" value="177.8" min="0" name="width">×<input id="input-height" value="254" name="height" min="0" type="number" step="0.01"> millimètres
+      (<select id="select-format">
+        <option value="A5">A5</option>
+        <option value="roman">roman</option>
+       <option value="executive" selected="selected">executive</option>
+       <option value="A4">A4</option>
+       <option value="letter">letter US</option>
+       <option value="custom">custom</option>
+      </select>)
+     </p>
+    <input type="submit" value="Web2print" formaction="/chunk" formmethod="GET">
+    <input type="submit" value="Couverture" formaction="/cover-client" formmethod="GET">
+    <!-- <input type="submit" value="Commander chez lulu.com" formaction="/buy" formmethod="GET"> -->
+    <input type="submit" value="Commander chez lulu.com" formaction="/response" formmethod="GET">
+    <p id="last-element-hidden"><span>^</span><span>^</span></p>
+    </div>
+
+    </form>
+    </div>
+   <div class="biblio">
+    <div class="doc">
+     <p class="id">
+      bpt6k5712312t
+     </p>
+     <p class="title">
+      Industrialisation et sociétés d'Europe occidentale, 1880-1970 / sous la dir. de Patrick Fridenson
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k5758991g
+     </p>
+     <p class="title">
+      Chevilles ouvrières / Michel Verret
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k6312115m
+     </p>
+     <p class="title">
+      La Revue française de service social
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k6281111b
+     </p>
+     <p class="title">
+      Vie sociale : cahiers du CEDIAS
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k8522683
+     </p>
+     <p class="title">
+      Prévenir conflits et violence / Marie Joseph Chalvin,... ; ill. de Marc Chalvin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k6475682k
+     </p>
+     <p class="title">
+      Annuaire statistique : résultats .... / Institut national de la statistique et des études économiques, Direction régionale de Marseille ; Chambre régionale de commerce et d'industrie de Provence-Alpes-Côte d'Azur ; Mission régionale de Provence-Alpes-Côte d'Azur
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k65353744
+     </p>
+     <p class="title">
+      Revue de Comminges
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48129548
+     </p>
+     <p class="title">
+      Choix de textes post-freudiens / [sous la dir. de] Michel Sanchez-Cardenas
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4815323k
+     </p>
+     <p class="title">
+      Les grands problèmes internationaux / Emile-Robert Perrin,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3321627w
+     </p>
+     <p class="title">
+      La pratique des élections locales : supplément à jour au 15 novembre 1994 / André Chaminade,... Gérard-Henri Mathieu,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4814326h
+     </p>
+     <p class="title">
+      Introduction à la versification / Brigitte Buffard-Moret
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4801343t
+     </p>
+     <p class="title">
+      Discours encore et toujours républicains : de l'exception française / Philippe Séguin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4811640w
+     </p>
+     <p class="title">
+      L'explication de textes à l'oral / Sylvie Rozé
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33244348
+     </p>
+     <p class="title">
+      Economie de l'Union européenne : analyse d'un processus d'intégration / Jacques Nême,... Colette Nême,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48100838
+     </p>
+     <p class="title">
+      Réussir sa vie aujourd'hui : dynamique, outils et stratégies / Guy Missoum
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4813749k
+     </p>
+     <p class="title">
+      Les sciences cognitives en éducation / René La Borderie,... Nicolas Sembel,... Jacques Paty,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4808464h
+     </p>
+     <p class="title">
+      Europe, concurrence et service public / CEEP ; [sous la direction de Yannick Moreau,...] ; [rédigé par David Azema,... Jacques Fournier,... Patrick Frydman,...]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3321710z
+     </p>
+     <p class="title">
+      L'outplacement : comment retrouver un emploi plus facilement et plus rapidement / Bernard de La Hosseraye ; préf. de Concetta Lanciaux
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48134558
+     </p>
+     <p class="title">
+      Mutations économiques et sociales en France depuis 1973 / Chantal Euzéby
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48069421
+     </p>
+     <p class="title">
+      Chronopsychologie et rythmes scolaires (4e éd. compl.) / François Testu,... ; préf. du Pr. Paul Fraisse
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48092948
+     </p>
+     <p class="title">
+      Adresse au futur chef de l'État : pour un nouveau septennat / Henri, prince de France
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3324492q
+     </p>
+     <p class="title">
+      Le monde et les hommes : les grandes évolutions démographiques / Gérard-François Dumont
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4809344q
+     </p>
+     <p class="title">
+      Révolution-Empire : 1789-1815 (3e édition) / par Lucien Genet
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48108794
+     </p>
+     <p class="title">
+      Le cycle Kondratieff : théories et controverses / Eric Bosserelle,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33229633
+     </p>
+     <p class="title">
+      Introduction à la vie littéraire du XVIe siècle (3e éd. rev. et augm.) / Daniel Ménager
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4804576t
+     </p>
+     <p class="title">
+      Le complexe de Babel : crise ou maîtrise de l'information ? / Jean Voge,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4806498p
+     </p>
+     <p class="title">
+      Psychiatrie et handicap : aspects médico-légaux et administratifs / par Thierry Albernhe ; avec la collab. de K. Albernhe, D. Bourgeois, R. Delaître... [et al.] ; préf. du Pr. R. Pouget
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3322298w
+     </p>
+     <p class="title">
+      Passez avec succès l'an 2000 et l'euro : conseils pratiques aux PME-PMI / Marie-Christine de La Gorce
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3320039q
+     </p>
+     <p class="title">
+      Ordinateur et pédagogie différenciée / Anny Versini, Jean-Marc Versini ; ouvrage dir. par Claude Hameau
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4805596w
+     </p>
+     <p class="title">
+      Réussir le changement de l'hôpital / Georges Arbuz, Denis Debrosse ; [préface de Bernard Honoré]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4810799j
+     </p>
+     <p class="title">
+      Topoi et gestion des connaissances / Michael Elhadad, Danièle Dubois, Philippe Resche-Rigon... [et al.] ; dirigé par Pierre-Yves Raccah ; préface de Oswald Ducrot
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4813582h
+     </p>
+     <p class="title">
+      Introduction à l'histoire de l'Afrique contemporaine / Anne Hugon
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4813975r
+     </p>
+     <p class="title">
+      Éduquer l'intelligence / Jean-Claude Coulet
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4806062p
+     </p>
+     <p class="title">
+      Les grands mammifères plio-pleistocènes d'Europe / sous la direction de Claude Guérin,... et Marylène Patou-Mathis,... ; préface de Yves Coppens
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4805667h
+     </p>
+     <p class="title">
+      La commune et l'action sociale : dans quels domaines agir ? avec quels interlocuteurs ? Et quels moyens ? / Jean-Philippe Arrouet, Dominique Ceccaldi, Rina Dupriet
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48047271
+     </p>
+     <p class="title">
+      Jeu, fantasmes et réalités : le psychodrame psychanalytique à l'adolescence / par François Ladame et Maja Perret-Catipovic
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3331382b
+     </p>
+     <p class="title">
+      L'essentiel du droit pénal des affaires / Évelyne Monteiro,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33261855
+     </p>
+     <p class="title">
+      Sciences humaines appliquées au sport : 40 thèmes / Raymond Thomas
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3331473q
+     </p>
+     <p class="title">
+      La protection juridique de l'hôpital / X. Lesegretain, S. Chassany
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33259594
+     </p>
+     <p class="title">
+      Euro, mode d'emploi / Thierry Warin,... ; préface de Christine Ockrent
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3328914g
+     </p>
+     <p class="title">
+      Géopolitique de l'Océan indien / Hélène Mazeran
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3331912r
+     </p>
+     <p class="title">
+      Les marchés de capitaux français / Dominique Poincelot,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3323876p
+     </p>
+     <p class="title">
+      Les monarchies espagnole et française du milieu du XVIe siècle à 1714 : territoires extra-européens exclus / Christian Hermann,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3331411m
+     </p>
+     <p class="title">
+      L'OMC et les pays en développement / Bérangère Taxil ; avant-propos de Brigitte Stern et Geneviève Burdeau ; préface de John H. Jackson
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33243872
+     </p>
+     <p class="title">
+      Criminologie de l'acte : étude sur les tueurs en série / Lygia Négrier-Dormont,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3326581w
+     </p>
+     <p class="title">
+      Lire le Moyen âge / Michel Stanesco
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33293881
+     </p>
+     <p class="title">
+      La littérature française du XVIIe siècle / Dominique Bertrand
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3329887b
+     </p>
+     <p class="title">
+      Budget des services communaux d'incendie : guide pratique / François Chabanon,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3328312k
+     </p>
+     <p class="title">
+      Formation médicale continue, mode d'emploi : guide pratique à l'usage des professions de santé : comment concevoir, organiser, animer et évaluer une réunion de formation / Dr Marie-France Le Goaziou, Dr Jean-Luc Mas, Dr Pascal Penetrat... [et al.]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3328897d
+     </p>
+     <p class="title">
+      La convention de Lomé : principaux objectifs et exemples d'action, 1975-1995 : 20e anniversaire de la coopération Union européenne-États ACP / Raymond-Marin Lemesle ; préf. de Claude Cheysson,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33259579
+     </p>
+     <p class="title">
+      La mise en scène de la vie professionnelle : rumeurs, rumeurs / Philippe Deval
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33237236
+     </p>
+     <p class="title">
+      Les médias et l'humanitaire / Rony Brauman, René Backmann
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33295130
+     </p>
+     <p class="title">
+      Nouveaux aspects des échanges internationaux : globalisation et régionalisation / [4e Journée lyonnaise annuelle François Perroux, décembre 1993] ; présentation, Raymond Barre,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3325317q
+     </p>
+     <p class="title">
+      Guerres et sociétés dans les mondes grecs : 490-322 av. J.-C. / Daphné Gondicas,... Jeannine Boëldieu-Trevet,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3328746r
+     </p>
+     <p class="title">
+      L'économie française (13e éd... ref.) / par Marcel Baleste,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3327957x
+     </p>
+     <p class="title">
+      Eau &amp; assainissement : mode d'emploi / Marie-Thérèse Bidard, Jean-Christophe Moraud, Joël Tozzi ; préf. de Jean-Louis Bianco
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3332871k
+     </p>
+     <p class="title">
+      Histoire des institutions, Ier-XVe siècle / Jacques Bouineau,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3327864q
+     </p>
+     <p class="title">
+      De la citoyenneté : colloque des 3, 4 et 5 novembre 1993, Faculté de droit et des sciences politiques de Nantes... / sous la dir. de Geneviève Koubi,... ; préf. de Jacques Robert,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3327910h
+     </p>
+     <p class="title">
+      L'économie du Viêt-Nam, 1955-1995 : bilan et prospective / Marie-Sybille de Vienne
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3329219f
+     </p>
+     <p class="title">
+      Les réseaux de la société de l'information / Commissariat général du plan ; rapport du Groupe présidé par Thierry Miléo ; rapporteurs, Gilles Crespin, Arnauld Schaefer, Jean-Noël Tronc
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3331748p
+     </p>
+     <p class="title">
+      Le vade-mecum du DRH / Luc Boyer, Noël Équilbey
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3329869d
+     </p>
+     <p class="title">
+      La région motrice dans l'économie du XXe siècle / [3es Journées lyonnaises François Perroux, décembre 1992] ; présentation, Raymond Barre
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3326607p
+     </p>
+     <p class="title">
+      L'apprentissage implicite : une approche cognitive, neuropsychologique et développementale / par Thierry Meulemans
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33280648
+     </p>
+     <p class="title">
+      Economie internationale : fondements et politiques (2e éd.) / Colette Nême,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3325560d
+     </p>
+     <p class="title">
+      L'Allemagne aujourd'hui / Jacques-Pierre Gougeon
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3331385k
+     </p>
+     <p class="title">
+      Les produits dérivés / Pierre Chabardès, François Delclaux ; préface de Jean-Paul Betbéze
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3325791n
+     </p>
+     <p class="title">
+      Les médias et la justice / Henri Leclerc, Jean-Marc Théolleyre
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3325835c
+     </p>
+     <p class="title">
+      L'entretien d'appréciation individuel : un instrument de management des cadres et collaborateurs de l'entreprise / Armel Marin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48064622
+     </p>
+     <p class="title">
+      Être présent sur Internet : mettez Internet au service de votre entreprise / Fabien Lair
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3325893t
+     </p>
+     <p class="title">
+      Les médias et l'entreprise / Philippe Kessler, Jacques Paitra, Yan de Kerorguen
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48069970
+     </p>
+     <p class="title">
+      Ecriture abrégée : adaptation à l'anglais... / Valérie Lombard
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48052852
+     </p>
+     <p class="title">
+      Vers une informatique cognitive dans les organisations : le rôle central du langage / Violaine Prince,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3332628w
+     </p>
+     <p class="title">
+      Le financement des systèmes de retraite spéciaux : une approche internationale / Stéphane Hamayon et Michel Rouquès
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3325924x
+     </p>
+     <p class="title">
+      L'expert et l'avocat dans l'expertise judiciaire en matière civile : guide des bons usages / Denys Duprey,... Robert Gandur,... ; préf. de Pierre Drai,... ; avant-propos, Jean-René Farthouat,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4806182s
+     </p>
+     <p class="title">
+      Les institutions sanitaires et sociales (12e édition, prenant en compte les réformes de 1996) / Dominique Ceccaldi,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4804585s
+     </p>
+     <p class="title">
+      Le contrôle de gestion de l'hôpital : principes clés et outils nouveaux / Yvon Merlière et René Kieffer ; préface de A. Cordier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4813566d
+     </p>
+     <p class="title">
+      Les marchés émergents / Jean-François Dufour
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4805818q
+     </p>
+     <p class="title">
+      Les outils de la communication écrite d'entreprise : courriers, messages internes : BTS assistant de gestion de PME PMI, IUT GACO... / O. Girault,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4803531x
+     </p>
+     <p class="title">
+      Histoire des relations franco-allemandes de 1789 à nos jours / par Jacques Binoche,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4809428z
+     </p>
+     <p class="title">
+      La poésie française depuis Baudelaire / Béatrice Marchal-Vincent
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3326556t
+     </p>
+     <p class="title">
+      Les infections nosocomiales en pédiatrie / Séminaires Robert Debré, Réanimation, urgences pédiatriques ; sous la dir. de F. Beaufils, Y. Aujard, E. Bingen
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3332116z
+     </p>
+     <p class="title">
+      Initiation à l'Internet juridique (2e éd.) / Frédéric-Jérôme Pansier,... Emmanuel Jez,... ; préface, Danièle Bourcier,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33255820
+     </p>
+     <p class="title">
+      La gestion mentale : un autre regard, une autre écoute en pédagogie / Chantal Évano ; ill. de Marc Chalvin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33266884
+     </p>
+     <p class="title">
+      Droit budgétaire : budget de l'État, budgets locaux, budget de la sécurité sociale, budget européen (3ème éd. entièrement refondue) / Jean-Claude Martinez,... Pierre Di Malta,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48081061
+     </p>
+     <p class="title">
+      La commune et l'insécurité : comment agir ? avec quels partenaires ? avec quels moyens ? / Jean-Charles Froment, Christine Nemarq, Francis Zamponi
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48048689
+     </p>
+     <p class="title">
+      Urgences en médecine du travail (2e édition) / Jean-Charles Hachet ; préfaces par M. Cara et D. Jannière
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4812976v
+     </p>
+     <p class="title">
+      Les nouvelles approches de la croissance et du cycle / Éric Bosserelle
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3321675z
+     </p>
+     <p class="title">
+      Demandez plus à vos banquiers : conseils pratiques aux PME-PMI / Jean Robert Cohen ; [ill., Nicolas Julo]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3327027p
+     </p>
+     <p class="title">
+      Paléoécologie : paysages et environnements disparus (2e éd.) / Jean-Claude Gall,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4805922z
+     </p>
+     <p class="title">
+      Évaluation de la décision médicale : introduction à l'analyse médico-économique (3e édition révisée) / Bernard Grenier ; préfaces de M. Legrain et de R. Salamon
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4809270v
+     </p>
+     <p class="title">
+      Le modèle américain / Justin Vaïsse
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4805269z
+     </p>
+     <p class="title">
+      Les activités industrielles en France / par Jean-Paul Charrié,... ; cartographie réalisée par Jean Menault
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4805953h
+     </p>
+     <p class="title">
+      La commune et l'eau potable : du captage à l'usager, comment améliorer la gestion du service / François Cabal, Stéphane Duroy, Antoine Grand d'Esnon... [et al.]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48057332
+     </p>
+     <p class="title">
+      Maintenance basée sur la fiabilité : un outil pour la certification / Daniel Richet,... Marc Gabriel,... Denis Malon,... Gaëtan Blaison,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3325908t
+     </p>
+     <p class="title">
+      Le mirage Internet : enjeux économiques et sociaux / Guy Lacroix
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33259060
+     </p>
+     <p class="title">
+      Le système de santé français peut-il encore être sauvé ? / Étienne Amic, Damien Caby, David-Olivier Tarac
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4809651w
+     </p>
+     <p class="title">
+      Organisations économiques internationales (2e édition) / par Jacques Fontanel
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48049692
+     </p>
+     <p class="title">
+      L'assurance qualité, clé de l'accréditation en santé / Michel-Henri Walter ; avec la collab. de Michel Horn
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48044522
+     </p>
+     <p class="title">
+      L'accréditation, boîte à outils du cadre infirmier / Hervé Brizon
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48045154
+     </p>
+     <p class="title">
+      Dynamiques cognitives et stratégies d'utilisateurs / Béatrice Osmont ; préface de Blanche-Noëlle Grunig
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4805360k
+     </p>
+     <p class="title">
+      Maltraitance à enfants (2e édition) / D. Gosset,... V. Hédouin,... E. Revuelta,... [et al.] ; préface de C. Codaccioni
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4806466q
+     </p>
+     <p class="title">
+      Conquérir de nouveaux clients : augmentez à coup sûr votre clientèle / Michel Machault
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48139305
+     </p>
+     <p class="title">
+      Modèles et méthodes en pédagogie (2e éd. actualisée) / Franc Morandi,... ; sous la dir. de René La Borderie
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4814845k
+     </p>
+     <p class="title">
+      Les organismes HLM : statut, réglementation, activités (2e éd.) / Jean-Louis Keck,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4800120t
+     </p>
+     <p class="title">
+      Le nouvel état du monde : les 80 idées-forces pour entrer dans le 21e siècle / sous la direction de Serge Cordellier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4806597m
+     </p>
+     <p class="title">
+      Les équilibres financiers : n'assassinez pas votre entreprise par méconnaissance des règles de base / Gilles Guyonnet
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4806140f
+     </p>
+     <p class="title">
+      Coopération hospitalière : l'épreuve de vérité / Gilles Calmes, Jean-Paul Segade, Laura Lefranc ; préface de Gérard Vincent,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48136749
+     </p>
+     <p class="title">
+      L'Europe sociale / Daniel Lenoir
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4805298p
+     </p>
+     <p class="title">
+      La gestion médicalisée des établissements de santé : le PMSI et l'information médicale / Jean-François Noury ; avec la collab. de D. Blum, D. Debrosse, G. Dumont... [et al.] ; préf. de Olivier Joyeux et Pierre Lambert
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33257173
+     </p>
+     <p class="title">
+      Précis de mise en page (4e éd. actualisée et augm.) / Louis Guéry
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4812074x
+     </p>
+     <p class="title">
+      Philosophie de l'éducation / Franc Morandi,... ; ouvrage publ. sous la dir. de René La Borderie
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4811759b
+     </p>
+     <p class="title">
+      La maison des origines : essai de critique anthropologique / Lucien Lepoittevin,... ; préf. d'André Dunin et Yves Bottineau-Fuchs
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4807600z
+     </p>
+     <p class="title">
+      La sécurité sociale en France : carrières sociales et médico-sociales / D. Ceccaldi,... D. Moulinot,... D. Rogeaux,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4813972h
+     </p>
+     <p class="title">
+      Information et décision stratégique : accordons les instruments / Simona Lardera,... Bernard Quinio,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4809155t
+     </p>
+     <p class="title">
+      La commune et les juges : quel juge saisir ? comment se défendre ? selon quelles procédures ? / Florence Alibert, Lorène Delepau, Yvon Goutal... [et al.]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4806440g
+     </p>
+     <p class="title">
+      Huit notions-clés de la littérature et de la civilisation allemandes / Claude Longre, Hildegard Aleff d'Ornano
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33257106
+     </p>
+     <p class="title">
+      Le travail à temps partiel / Françoise Favennec-Hery,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3325770g
+     </p>
+     <p class="title">
+      Droit civil. Tome 1, Introduction générale, personnes, famille / Jean-François Dhénin,... Stéphane Lamadon,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3323810x
+     </p>
+     <p class="title">
+      Économie politique. 1, Les grandes doctrines, analyse micro-économique / Alain Redslob,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48094108
+     </p>
+     <p class="title">
+      Le roman britannique du XXe siècle : modernistes et postmodernes / François Gallix,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4813721h
+     </p>
+     <p class="title">
+      L'industrie dans le monde / Michel Goussot
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3332685x
+     </p>
+     <p class="title">
+      Droit de la Bourse / Hubert de Vauplane,... Jean-Pierre Bornet,... ; préface de Michel Germain,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4804435j
+     </p>
+     <p class="title">
+      La contractualisation à l'hôpital / Jean-Paul Ségade ; préf. de Jacques Barrot
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48086965
+     </p>
+     <p class="title">
+      Introduction aux théories des organisations / Carole Bournonville,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33319187
+     </p>
+     <p class="title">
+      L'Asie émergente après la crise : les Dragons, les tigres et la Chine / Jean-François Dufour
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3331714w
+     </p>
+     <p class="title">
+      La pratique de l'application des peines / François Staechele,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4801795x
+     </p>
+     <p class="title">
+      Faire vivre une BCD / Françoise et Daniel Bensimhon ; ouvrage dir. par Claude Hameau
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4806484n
+     </p>
+     <p class="title">
+      Mes relations avec les banques et les banquiers : mode d'emploi / Jean-Paul Tréton
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3326481j
+     </p>
+     <p class="title">
+      Dictionnaire commenté d'économie de la santé / J.-P. Auray, A. Béresniak, J.-P. Claveranne, G. Duru ; [avec la collab. de] B. Fantino, M. Lamure ; préf. du Pr. Ph. Douste Blazy
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48065825
+     </p>
+     <p class="title">
+      Le budget de l'hôpital / Pascal Forcioli ; préface de Édouard Couty,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336373x
+     </p>
+     <p class="title">
+      Délégations de service public : notion, passation, exécution, contentieux administratifs, contentieux pénal, contrôle chambres régionales des comptes / Mireille Berbari,... Serge Briand,... Jean-Éric Callon,... [et al.]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33323172
+     </p>
+     <p class="title">
+      Les privatisations à l'Est / Daniel Labaronne,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33324286
+     </p>
+     <p class="title">
+      Les garanties à première demande : essai sur l'autonomie / André Prum,... ; préface de Bernard Teyssié,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336296k
+     </p>
+     <p class="title">
+      Histoire des institutions, 1750-1914 : droit et société en France de la fin de l'Ancien Régime à la Première guerre mondiale (4e éd.) / Romuald Szramkiewicz,... Jacques Bouineau,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336507m
+     </p>
+     <p class="title">
+      Comment aider les alcooliques et ceux qui les entourent / Paul Kiritzé-Topor
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336370p
+     </p>
+     <p class="title">
+      Responsabilité pénale des communes : délits non intentionnels, équipements recevant du public, activités sportives, culturelles et ludiques, cantines scolaires, pollution de l'eau, marchés et délégations... / Dominique Thavez-Pipard,... ; préf., Pierre-Yves Collombat
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336285s
+     </p>
+     <p class="title">
+      Guide des assurances de l'entreprise : assurance des dommages aux biens, assurance perte d'exploitation, assurance de responsabilité civile, assurance de protection juridique / André Planès
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33363179
+     </p>
+     <p class="title">
+      Hommage à Romuald Szramkiewicz / Jacques Lafon, Jean-Louis Harouel, Marie-Bernadette Bruguière, Jacques Bouineau
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3332319w
+     </p>
+     <p class="title">
+      L'histoire des caisses d'épargne européennes. tome 3, Conjoncture et crises, 1850-1914 / IVe Colloque européen d'histoire des caisses d'épargne, 17 et 18 octobre 1994, Strasbourg ; [organisé par la] Caisse d'épargne d'Alsace [et l'] Université des sciences humaines de Strasbourg ; préf. d'Antoine Moster,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33363609
+     </p>
+     <p class="title">
+      La pratique de l'expertise judiciaire / Gilles Bourgeois,... Pierre Julien,... Michel Zavaro,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33362473
+     </p>
+     <p class="title">
+      La pratique des procédures rapides : référés, ordonnances sur requête, procédures d'injonction, procédures à jour fixe et abrégées (2e éd.) / Pierre Estoup,... ; avec le concours de Gérard Martin,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336310d
+     </p>
+     <p class="title">
+      Communes et assainissement autonome : rôles et responsabilités : réglementation, compétences, police communale... / Alexandre Ekam,... ; préf., Jean-François Auby
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3332460d
+     </p>
+     <p class="title">
+      Droit pénal général / par Géraldine Danjaume,... et Franck Arpin-Gonnet,... ; sous la direction de Claude Garcin,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3332533v
+     </p>
+     <p class="title">
+      Contrats civils, contrats commerciaux / par Jean-Jacques Barbieri,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3332157w
+     </p>
+     <p class="title">
+      La Caraïbe face au défi de la mondialisation : marchés et nations dans l'aire Caraïbe-Amérique : actes du colloque de Schoelcher, Martinique des 3 et 4 avril 1997 / [organisé par le] CRPLC-UPRES-A CNRS 8053, Centre de recherche sur les pouvoirs locaux dans la Caraïbe de l'Université des Antilles-Guyane [et le] CEDIN-Paris I ; sous la dir. d'Emmanuel Jos et Danielle Perrot
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33323639
+     </p>
+     <p class="title">
+      Actualité de Max Weber pour la sociologie du droit / sous la dir. de Pierre Lascoumes
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336331k
+     </p>
+     <p class="title">
+      L'eau, usages et gestion : politique de l'eau, régime juridique, SDAGE et SAGE, police de l'eau, eau potable et assainissement, irrigation, énergie hydrolique, inondations, pollutions / Jean-Louis Gazzaniga,... Jean-Paul Ourliac,... Xavier Larrouy-Castera,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336415t
+     </p>
+     <p class="title">
+      Médias, hors médias : le choix d'une stratégie globale de communication pour l'entreprise / Xavier Dordor
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336275d
+     </p>
+     <p class="title">
+      Mélanges Christian Mouly
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3331921q
+     </p>
+     <p class="title">
+      Rwanda, 1993-1997 : MINUAR I, Opération Turquoise, MINUAR II / Renaud Houzel
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33365407
+     </p>
+     <p class="title">
+      La nation, l'Europe, le monde / Aline Archimbaud, Félix Damette, Michel Rocard
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336730j
+     </p>
+     <p class="title">
+      Mémoires d'un fils de paysans tourangeaux entré en communisme : l'enfance dure longtemps / Gérard Belloin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3333379g
+     </p>
+     <p class="title">
+      Oser des projets / Christian Alexandre
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3333384s
+     </p>
+     <p class="title">
+      Renouer avec la terre / Jean Casanave
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336569q
+     </p>
+     <p class="title">
+      Savoir piloter le budget communal / François Huyghe
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336723d
+     </p>
+     <p class="title">
+      Suffit-il de scolariser ? / Françoise Ropé et Guy Brucy
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336986m
+     </p>
+     <p class="title">
+      Le tabou de la gestion : la culture syndicale entre contestation et proposition / Jean Lojkine ; avec la collab. de Roland Delacroix, Olivier Dembinski, Eliane Le Dantec... [et al.]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3334487p
+     </p>
+     <p class="title">
+      Les télécoms en questions : privatisation ou service public ? / A. Leray
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336679f
+     </p>
+     <p class="title">
+      Saint-Pétersbourg, espoir pour les drogués / Nicolas Jallot
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336527c
+     </p>
+     <p class="title">
+      Syndicalisme, quel second siècle ? / sous la coordination de Jean-Claude Boual
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33368549
+     </p>
+     <p class="title">
+      Voyage au pays de l'arbitraire : la justice au travail / Yonnel Liégeois
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336696z
+     </p>
+     <p class="title">
+      Habiter le cybermonde / Philippe Monot, Michel Simon
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336717p
+     </p>
+     <p class="title">
+      L'économie en 200 schémas / Jean-Marie Albertini
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336530v
+     </p>
+     <p class="title">
+      Routiers, les raisons de la colère / sous la dir. de Claude Debons et Joël Le Coq
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336534h
+     </p>
+     <p class="title">
+      Histoire du personnel des prisons françaises : du XVIIIe siècle à nos jours / Christian Carlier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33365014
+     </p>
+     <p class="title">
+      Gérer les relations commune-école / Jean Roucou
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3338263t
+     </p>
+     <p class="title">
+      Les caméras des favelas / Pascal Percq
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336548j
+     </p>
+     <p class="title">
+      Pour en finir avec la fin du travail / Anne-Marie Grozelier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33366321
+     </p>
+     <p class="title">
+      L'avenir des retraites / Jean-Christophe Le Duigou, Jean-Marie Toulisse ; avec la collab. de Michel Gairaud
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336567w
+     </p>
+     <p class="title">
+      Les conflits yougoslaves de A à Z / Jean-Arnault Dérens, Catherine Samary
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33382009
+     </p>
+     <p class="title">
+      Organiser fêtes et spectacles dans sa commune / Jean-Claude Barens
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33357856
+     </p>
+     <p class="title">
+      La France ouvrière : histoire de la classe ouvrière et du mouvement ouvrier français.  Tome 3, De 1968 à nos jours / sous la dir. de Claude Willard
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33359565
+     </p>
+     <p class="title">
+      Guide 1995 : l'actualité de l'année 1994 en France et dans le monde / [coordination, Claude Charbonneaux] ; introd., Jean-Marie Albertini
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3334775h
+     </p>
+     <p class="title">
+      Haïti, les chaînes d'Aristide / Christian Rudel
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33368727
+     </p>
+     <p class="title">
+      Un pacte social pour l'Europe / sous la dir. de Pierre Héritier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336625w
+     </p>
+     <p class="title">
+      Hommes - femmes, l'introuvable égalité : école, travail, couple, espace public / Alain Bihr et Roland Pfefferkorn
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336891k
+     </p>
+     <p class="title">
+      Naissances de l'école du peuple : 1815-1870... / François Jacquet-Francillon
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336878q
+     </p>
+     <p class="title">
+      Marketing contre pauvreté / Quentin Wodon
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336521w
+     </p>
+     <p class="title">
+      Élaborer sa politique avec les sportifs / Christian Duteil
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336552f
+     </p>
+     <p class="title">
+      Mutualistes et médecins : conflits et convergences, XIXe-XXe siècles / Pierre Guillaume
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336858z
+     </p>
+     <p class="title">
+      Dictionnaire des questions internationales / sous la dir. de Bernard Frédérick
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33365229
+     </p>
+     <p class="title">
+      Connaître les pouvoirs de police du maire / Francis Pian
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336504c
+     </p>
+     <p class="title">
+      Maîtriser l'urbanisme.. 1, La loi et le sol / Isabelle Ferré-Lemaire
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33366714
+     </p>
+     <p class="title">
+      Les 100 portes du Maghreb : l'Algérie, le Maroc, la Tunisie, trois voies singulières pour allier islam et modernité / Akram Ellyas, Benjamin Stora
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33365066
+     </p>
+     <p class="title">
+      Libérer les droits de l'homme / Pierre Bercis
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33331828
+     </p>
+     <p class="title">
+      Mourir vivant / Christian Biot, Françoise Guinand et Françoise Hortala
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4806067r
+     </p>
+     <p class="title">
+      La Russie et le monde au XXe siècle / par Jean-Louis Van Regemorter,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3333219v
+     </p>
+     <p class="title">
+      Contes et récits pour la Toussaint : recueil de textes non bibliques pour réfléchir, méditer, célébrer / présenté par Bernard Châtaignier ; avec le concours du comité de rédaction de "Vivre, croire, célébrer"
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4807440s
+     </p>
+     <p class="title">
+      Usages et usagers de l'information / Yves F. Le Coadic,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336681h
+     </p>
+     <p class="title">
+      La Commune de Paris aujourd'hui / sous la coordination de Jacques Zwirn ; [publ. par l'] Association des Amis de la Commune de Paris, 1871
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336661r
+     </p>
+     <p class="title">
+      Quelle transformation de la société ? / Jean-Christophe Cambadélis, Yves Cochet et Gilbert Wasserman
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336659p
+     </p>
+     <p class="title">
+      Quelle économie pour l'emploi ? / Lydia Brovelli, Alain Lipietz, Pierre Moscovici... [et al.]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4814319c
+     </p>
+     <p class="title">
+      Droit pénal économique / par Jean-François Renucci,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33332779
+     </p>
+     <p class="title">
+      Contes et récits pour Pâques : recueil de textes non bibliques pour réfléchir, méditer, célébrer / présenté par Bernard Châtaigner ; avec le concours du comité de rédaction de "Vivre, croire, célébrer"
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336965f
+     </p>
+     <p class="title">
+      La fin des militants ? / Jacques Ion
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336467j
+     </p>
+     <p class="title">
+      Contes et récits pour Noël : recueil de textes non bibliques pour réfléchir, méditer, célébrer / présenté par Bernard Châtaignier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3334407n
+     </p>
+     <p class="title">
+      Bernard Thareau : militant paysan / Bernard Bretonnière, François Colson, Jean-Claude Lebossé ; préf. de Jacques Delors
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3337215f
+     </p>
+     <p class="title">
+      Quelle démocratie, quelle citoyenneté ? / Philippe Herzog, Blandine Kriegel, Joël Roman... [et al.]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336670q
+     </p>
+     <p class="title">
+      Expliquer le prix de l'eau / Séverine Sollier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336813c
+     </p>
+     <p class="title">
+      Quatre ministres et puis s'en vont / Philippe Lefait
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48082086
+     </p>
+     <p class="title">
+      Les handicapés au travail : analyse sociologique d'un dispositif d'insertion professionnelle (2e édition) / Alain Blanc ; préf. de Henri-Jacques Stiker
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48088926
+     </p>
+     <p class="title">
+      Services publics : faire ou déléguer ? / François Troger,... ; [préfacé par Jean-Paul Delevoye]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336774q
+     </p>
+     <p class="title">
+      La Résistance, une histoire sociale / sous la dir. de Antoine Prost
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48057955
+     </p>
+     <p class="title">
+      H de DRH / Cyrille Boureau,... Audrey Metra,... Jean-Marie Peretti,... ; sous la direction de Jean-Pierre Helfer et Jacques Orsoni
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48151019
+     </p>
+     <p class="title">
+      Dictionnaire thématique de sciences économiques et sociales : principes et théories.  2, Croissance et déséquilibres / Jean-Claude Géhanne
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4807611r
+     </p>
+     <p class="title">
+      Économie générale / Yves Perraudeau,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48029310
+     </p>
+     <p class="title">
+      Initiation à la civilisation britannique (3e éd.) / Dounia Barnett,... Luce Bonnerot,... Monique Prunet,... Michèle Théry,... ; coordination, Michèle Théry
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4814437n
+     </p>
+     <p class="title">
+      L'économie du travail : des théories aux politiques / Michel Stambouli
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48064659
+     </p>
+     <p class="title">
+      Savoir communiquer à l'ère des nouveaux médias (2e édition) / Jean-Michel Lefèvre
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48089699
+     </p>
+     <p class="title">
+      La littérature anglaise au XXe siècle. Tome 2, Le théâtre et la poésie / Daniel Charbonnier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4806971r
+     </p>
+     <p class="title">
+      L'éducation à la citoyenneté : les actes de Rencontre Éducation en Seine-Saint-Denis : colloque départemental du 25 au 30 mars 1996 / [organisé par l'] Inspection académique de Seine-Saint-Denis, IA 93
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4808097h
+     </p>
+     <p class="title">
+      L'enfant et le couple en crise : du conflit psychologique au contentieux juridique / Jean-Luc Viaux
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4812969q
+     </p>
+     <p class="title">
+      Schumpeter et l'évolution économique : circuit, entrepreneur, capitalisme / Jean-José Quiles
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48047523
+     </p>
+     <p class="title">
+      Expansion occidentale et dépendance mondiale : fin du XVIIIe siècle-1914 / Yvan G. Paillard
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48077840
+     </p>
+     <p class="title">
+      Lire Keynes et le comprendre : introduction à l'œuvre de Keynes, guide de lecture et d'interprétation / Bruno Ventelou
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4813414b
+     </p>
+     <p class="title">
+      L'économie de la Birmanie : une dépendance à la drogue / Alain S. de Sacy,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4804514q
+     </p>
+     <p class="title">
+      Les pratiques de la vente / Yves Négro,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4809032g
+     </p>
+     <p class="title">
+      Négociation et référencement dans la grande distribution / Christian Lhermie,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4808538c
+     </p>
+     <p class="title">
+      Les relations des pays de l'islam avec le monde latin : du milieu du Xe siècle au milieu du XIIIe siècle / articles réunis par Françoise Micheau
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48073925
+     </p>
+     <p class="title">
+      Histoire des grandes idéologies : les courants idéologiques de 1789 à nos jours / Florence Braunstein, Jean-François Pépin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48096225
+     </p>
+     <p class="title">
+      "Le pigeon", Patrick Süskind : étude d'une oeuvre complète / Hélène Godinet,... ; coordination, Marielle Rispail,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4804539j
+     </p>
+     <p class="title">
+      Les bases de la fiscalité / Philippe Colin,... Gilles Gervaise,... Martine Rossetti,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4804104z
+     </p>
+     <p class="title">
+      Culture générale (5e édition) / Odon Vallet,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4806159j
+     </p>
+     <p class="title">
+      La région dans l'espace européen / Charles Rieupeyrous,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48073836
+     </p>
+     <p class="title">
+      Commerce-industrie : le nouveau partenariat / Michel Vandaele,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4805247c
+     </p>
+     <p class="title">
+      Promotion des ventes et action commerciale / Philippe Ingold,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4809127h
+     </p>
+     <p class="title">
+      Les marchés des changes : opérations et couvertures / Josette Peyrard,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4808994c
+     </p>
+     <p class="title">
+      Guerres et sociétés dans les mondes grecs : de 490 à 322 av. J.-C. / Claude Mossé
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4804415s
+     </p>
+     <p class="title">
+      Traitement de l'information : statistiques et probabilités / Denis Bouget,... Alain Viénot,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4812380p
+     </p>
+     <p class="title">
+      La démocratie aux États-Unis et en Europe occidentale de 1918 à 1989 / Serge Berstein
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k4812357f
+     </p>
+     <p class="title">
+      Fiscalité pratique / Philippe Colin,... Gilles Gervaise,... Martine Rossetti,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33455013
+     </p>
+     <p class="title">
+      De Nantes à la Louisiane... : l'histoire de l'Acadie, l'odyssée d'un peuple exilé / Gérard-Marc Braud
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33383316
+     </p>
+     <p class="title">
+      Cendrine / Yvette Cormerais
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3336710s
+     </p>
+     <p class="title">
+      Vers l'État charitable ? / Pierre Roger
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48057562
+     </p>
+     <p class="title">
+      Citroën : essai sur 80 ans d'antistratégie / Joël Broustail,... [et] Rodolphe Greggio,... ; [sous la dir. de l'Institut Vital-Roux, Jean Pierre Helfer et Félix Torrès] ; [préf. de Patrick Fridenson]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33653276
+     </p>
+     <p class="title">
+      El, Luis Buñuel : étude critique / de Charles Tesson
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33646253
+     </p>
+     <p class="title">
+      Le théâtre grec / Corinne Coulet,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3365056w
+     </p>
+     <p class="title">
+      "L'homme qui tua Liberty Valance", John Ford / étude critique de Jean-Louis Leutrat
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3407085t
+     </p>
+     <p class="title">
+      Religion et société en France aux XIXe et XXe siècles : sensibilités cultuelles et culturelles / Françoise Marcard
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3407050m
+     </p>
+     <p class="title">
+      Jouissance du sacré : religion et postmodernité / Denis Jeffrey
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3388769d
+     </p>
+     <p class="title">
+      Le pommier et l'olivier : Charles Nicolle, une biographie, 1866-1936 / par Maurice Huet
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3375073p
+     </p>
+     <p class="title">
+      Éloge du temps ordinaire / Jeannine Marroncle
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3384108d
+     </p>
+     <p class="title">
+      Comprendre les cultures des jeunes : du rap au journal intime / par Hubert Herbreteau,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34073386
+     </p>
+     <p class="title">
+      L'Allemagne dans les relations internationales de 1890 à nos jours / Jacques-Pierre Gougeon
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3401839g
+     </p>
+     <p class="title">
+      La Chine (2e éd. mise à jour) / Jean-Pierre Larivière, Pierre Sigwalt ; cartomatique, A. Guégan-Roué et I. Ganzetti,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34021757
+     </p>
+     <p class="title">
+      William Christie et les théâtres des Arts florissants, 1979-1999 / Christophe Deshoulières
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3407094s
+     </p>
+     <p class="title">
+      Psychologie des interactions sociocognitives / Christine Sorsana
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34009954
+     </p>
+     <p class="title">
+      La société internationale après la guerre froide / Daniel Colard
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3407120t
+     </p>
+     <p class="title">
+      Le tragique créateur : qui a peur du nihilisme ? / Jacqueline Russ
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3372276p
+     </p>
+     <p class="title">
+      Le semeur de silence / Jean Marchand ; [préf. par René Voillaume]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3407108c
+     </p>
+     <p class="title">
+      Lexique de géographie humaine / Christian Pradeau
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3388631m
+     </p>
+     <p class="title">
+      Daniel Angleraud : la passion rebelle / [écrits rassemblés par] Félix Lacambre
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3402006n
+     </p>
+     <p class="title">
+      L'héroïsme : "Iliade" d'Homère, "Henri IV" de Shakespeare, "La chartreuse de Parme" de Stendhal / Gisèle Souchon, Raymond Gardette, Michel Woronoff
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3382703s
+     </p>
+     <p class="title">
+      Écrits spirituels / Alfred Ancel ; présentés par Yves Musset,... ; préf. de Pierre Berthelon,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34071128
+     </p>
+     <p class="title">
+      Les grands courants de l'empirisme / Jean-Gérard Rossi
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3370487j
+     </p>
+     <p class="title">
+      Se libérer dans le monde qui passe : le réel, l'imaginaire et le sens / Jean Moussé
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34073794
+     </p>
+     <p class="title">
+      Le financement du développement / Michel Drouin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k48003475
+     </p>
+     <p class="title">
+      La formation au coeur de l'entreprise : un investissement durable : concevoir la formation, la planifier, la mettre en oeuvre... / Jean-François Guillot, Gérard Rouquié ; avant-propos de Lucien Clerc
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34073260
+     </p>
+     <p class="title">
+      Les transports dans le monde / Michel Goussot
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3407283p
+     </p>
+     <p class="title">
+      Histoire économique et financière de la France d'Ancien régime / Yves Leclercq
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3400996j
+     </p>
+     <p class="title">
+      Les grandes métropoles du monde et leur crise / Raymond Guglielmo
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34020806
+     </p>
+     <p class="title">
+      La linguistique littéraire / Françoise Argod-Dutard
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33704775
+     </p>
+     <p class="title">
+      Petites invitations à vivre intensément : un whist spirituel / Alain Patin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3370475b
+     </p>
+     <p class="title">
+      Moi et elle : moi et la maladie, moi et la vie / Baad Ford Carson Ceus
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34074196
+     </p>
+     <p class="title">
+      La crise de 1929 / Gérard-Marie Henry
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3405790x
+     </p>
+     <p class="title">
+      Pinay l'indépendant / Jean-Antoine Giansily
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3406673c
+     </p>
+     <p class="title">
+      Les villes dans le monde (2e éd. mise à jour) / Pierre Bloc-Duraffour
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3364725f
+     </p>
+     <p class="title">
+      Manuel de linguistique descriptive : le point de vue fonctionnaliste / Jean-Michel Builles,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3382698x
+     </p>
+     <p class="title">
+      Et si on parlait d'EPS ? / par René Fourdan,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3381373r
+     </p>
+     <p class="title">
+      L'EPS à l'école maternelle / Gilbert Joie
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3373453p
+     </p>
+     <p class="title">
+      La retraite du clergé : quelle protection sociale pour les prêtres, religieux et religieuses ? / Jacques Bassot
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3383999p
+     </p>
+     <p class="title">
+      Pour une liturgie créative / Louis-Michel Renier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33674579
+     </p>
+     <p class="title">
+      Une ferveur brûlée : anthologie / Jean Malrieu ; textes réunis sous la dir. du Passe-Mots
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33676110
+     </p>
+     <p class="title">
+      Construire la remédiation au collège / Pierre Rivano
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34022389
+     </p>
+     <p class="title">
+      La sensibilité / Jean-Cassien Billier, Emmanuel Caquet ; sous la dir. de Jacqueline Russ
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33702710
+     </p>
+     <p class="title">
+      Les jeux de balle et ballon picards : ballon au poing, balle à la main, balle au tamis, longue paume / Marcel Lazure
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3399999t
+     </p>
+     <p class="title">
+      A toi de mater / par Patrick Gonneau
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34007926
+     </p>
+     <p class="title">
+      Macroéconomie élémentaire / Michel Zerbato
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3400642z
+     </p>
+     <p class="title">
+      Activité de soutien personnalisé / Eveline Simons
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34001991
+     </p>
+     <p class="title">
+      Glossaire de géomorphologie : base de données sémiologiques pour la cartographie / Fernand Joly
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3402024k
+     </p>
+     <p class="title">
+      Genres et catégories du roman britannique contemporain / François Gallix
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3400790c
+     </p>
+     <p class="title">
+      Le commerce international (4e éd. mise à jour) / René Sandretto
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34072680
+     </p>
+     <p class="title">
+      Migrants internationaux et diasporas / Sylvie Chédemail
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3348550h
+     </p>
+     <p class="title">
+      Français, 1res ES-S : la comédie au XVIIIe siècle, maîtres et valets, le roman naturaliste / Patricia Carles,... Béatrice Desgranges,... Henri Mitterand,... [et al.]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3397639w
+     </p>
+     <p class="title">
+      Les grands courants de l'individualisme / Gisèle Souchon
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3407096m
+     </p>
+     <p class="title">
+      L'exception allemande : XIXe-XXe siècle / Florence Gauzy
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3352872j
+     </p>
+     <p class="title">
+      Classes transplantées : un pari gagné / Jean Rioult, Yannick Tenne
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34019711
+     </p>
+     <p class="title">
+      Expériences du présent / Jean-Cassien Billier, Gisèle Souchon ; sous la dir. de Jacqueline Russ
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002492d
+     </p>
+     <p class="title">
+      Exercices corrigés : méthode d'enquête en psychosociologie / Hélène Chauchat
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10025438
+     </p>
+     <p class="title">
+      L'économie de l'Espagne (3e éd. mise à jour) / Alain Huetz de Lemps
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002582c
+     </p>
+     <p class="title">
+      Industrialisation et sociétés en Europe occidentale, 1880-1970 / Éric Bussière, Pascal Griset, Christophe Bouneau, Jean-Pierre Williot
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002411z
+     </p>
+     <p class="title">
+      Face au secret de ses origines : le droit d'accès au dossier des enfants abandonnés / Pierre Verdier, Martine Duboc
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10038211
+     </p>
+     <p class="title">
+      Qu'est-ce que la philosophie ? / Jean-Pierre Faye
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002346t
+     </p>
+     <p class="title">
+      Nouvelles méthodes d'étude des communications / Alex Mucchielli, Jeannine Guivarch
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10026745
+     </p>
+     <p class="title">
+      Les panels : de la guerre des panels à la révolution du scanning / Dominique Blanchard, Daniel Lesceux
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10025223
+     </p>
+     <p class="title">
+      Colonisations et décolonisations françaises depuis 1850 / Bernard Phan
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10024554
+     </p>
+     <p class="title">
+      Finance et placements / Frédéric Herbin, Catherine Bailleul, Octave Jokung... [et al.]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002588v
+     </p>
+     <p class="title">
+      Des restructurations et des hommes : accompagnement sociale et gestion du changement / Philippe Comoy, Florence Cordier, Jacques Freyssinet... [et al.] ; sous la dir. de Thierry Lemasle, Pierre-Éric Tixier ; préf. de Karl Juhani Lonnroth
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002528k
+     </p>
+     <p class="title">
+      De la défaite du travail à la conquête du choix / B. Jarrosson, M. Zarka
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002418v
+     </p>
+     <p class="title">
+      Déontologie de la relation à l'usager : dans les services et établissements sociaux / Yves Le Duc
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10025119
+     </p>
+     <p class="title">
+      Les nouveaux acteurs du social : enquête INTERCO CFDT auprès des salariés de l'action sociale des départements / préf. de Nicole Notat ; postf. de Jacques Ion
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10025705
+     </p>
+     <p class="title">
+      La télévente : vendre par téléphone, mettre en place une force de vente spécifique / Erick Bacrie ; préf. de Michel Boutinard Rouelle
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002456j
+     </p>
+     <p class="title">
+      La pensée économique de Walras / Antoine Rebeyrol
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002666m
+     </p>
+     <p class="title">
+      Notre écran quotidien : une radiographie du télévisuel / Guy Lochard et Henri Boyer
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10024858
+     </p>
+     <p class="title">
+      L'industrie de l'environnement en France : dynamique et enjeux d'un nouveau secteur d'activités / Dominique Drouet
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002671x
+     </p>
+     <p class="title">
+      Apprenez à mieux vous connaître : PNL et ennéagramme / Pierre Longin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10020513
+     </p>
+     <p class="title">
+      Décision statistique et économétrie : éléments de cours et exercices corrigés / Pierre-Henry Wilthien
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10025290
+     </p>
+     <p class="title">
+      La victoire des dragons : l'Asie va-t-elle dominer l'Europe ? / Odon Vallet
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10025720
+     </p>
+     <p class="title">
+      L'économie : comprendre l'avenir / Lionel Stoléru,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10027481
+     </p>
+     <p class="title">
+      Le paléolithique inférieur et moyen en Europe / Marcel Otte
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002713t
+     </p>
+     <p class="title">
+      Le guide du mécénat-solidarité : servir l'intérêt général et améliorer les performances de l'entreprise / Catherine Colombat ; préf. de Claude Bébéar ; [éd. par Vocations d'entreprise]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10030359
+     </p>
+     <p class="title">
+      Blaise Cendrars et la guerre : [actes du colloque international, Péronne (Somme), 11-13 octobre 1991] / [organisé par le Centre de recherches interdisciplinaires sur les textes modernes, Paris X-Nanterre et le Centre de recherche de l'Historial de la Grande guerre, Péronne] ; sous la dir. de Claude Leroy
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10025453
+     </p>
+     <p class="title">
+      La décentralisation et les institutions administratives (02, 2e éd. ref.) / Annie Gruber
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002580j
+     </p>
+     <p class="title">
+      Économie internationale : la place des banques / Philippe d'Arvisenet, Jean-Pierre Petit
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10024821
+     </p>
+     <p class="title">
+      Introduction à la sociologie politique / Philippe Guillot
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002484v
+     </p>
+     <p class="title">
+      Les 500 mots-clés de la vente / René Moulinier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002032r
+     </p>
+     <p class="title">
+      Radio &amp; télévision (Éd. remise à jour) / Eugène Aisberg
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10025312
+     </p>
+     <p class="title">
+      Résoudre les conflits dans les établissements sanitaires et sociaux : théories, cas, réponses / Jean-René Loubat
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002542v
+     </p>
+     <p class="title">
+      Prendre en charge les personnes âgées dépendantes / Michel Personne
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002573d
+     </p>
+     <p class="title">
+      La méthode UVA : du contrôle de gestion à la maîtrise du profit : une approche nouvelle en gestion / Jean Fievez, Jean-Paul Kieffer, Robert Zaya ; préf. de Henri Bouquin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002415m
+     </p>
+     <p class="title">
+      Vendeurs : tirez parti de vos échecs / Guy Wallaert
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002591b
+     </p>
+     <p class="title">
+      Les forces politiques en Allemagne, XIXe-XXe siècle / Alfred Wahl
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002526r
+     </p>
+     <p class="title">
+      Économétrie des variables qualitatives / Alban Thomas
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002410j
+     </p>
+     <p class="title">
+      Valeur ajoutée : construire et développer les compétences de l'entreprise / Pierre Coureil...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1004067k
+     </p>
+     <p class="title">
+      Poésie espagnole moderne et contemporaine / par Marie-Claire Zimmermann
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002497g
+     </p>
+     <p class="title">
+      Développer les marchés industriels / Paul Millier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002466x
+     </p>
+     <p class="title">
+      Keynes / Gérard Marie Henry
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10024324
+     </p>
+     <p class="title">
+      Le régime juridique communautaire des services de télécommunications / Annie Blandin-Obernesser,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10026248
+     </p>
+     <p class="title">
+      L'économie et la société françaises au second XXe siècle. Tome 2, Les mutations sectorielles / Maurice Parodi ; [avec la collab. de] Jacques Aberlen, Bernard Guilhon, Philippe Langevin... [et al.]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002673r
+     </p>
+     <p class="title">
+      Négocier : les clés pour réussir / Jean-François Maubert
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002744c
+     </p>
+     <p class="title">
+      Le corps du malade âgé : pathologies de la vieillesse et relation de soins / Michel Personne
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10025401
+     </p>
+     <p class="title">
+      Les modèles appliqués de la macroéconomie / Anne Epaulard
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002596d
+     </p>
+     <p class="title">
+      Le grand combat : conquérir la préférence des clients / Yves H. Philoleau, Denise Barboteu-Hayotte
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002571k
+     </p>
+     <p class="title">
+      La stratégie de relation client : un support dynamique de management de la relation client : le modèle customer connections / Pierre Alard, Damien Dirringer
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002786q
+     </p>
+     <p class="title">
+      La rencontre avec le malade / Marie-Claire Célérier, Catherine Oresve, Florence Janiaud-Gouitaa
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1003813g
+     </p>
+     <p class="title">
+      Qu'est-ce que l'éthique ? : l'éthique et le bonheur / Robert Misrahi
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10020031
+     </p>
+     <p class="title">
+      Aux armes, citoyens! : conscription et armée de métier des Grecs à nos jours / par Marc Belissa, Philippe Boulanger, Jean Chagniot... [et al.] ; [publ. par le] Centre d'études d'histoire de la défense ; sous la dir. de Maurice Vaïsse...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002541f
+     </p>
+     <p class="title">
+      Histoire comparée des États communistes de 1945 à nos jours / Jean-François Soulet
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002565v
+     </p>
+     <p class="title">
+      Genèses de l'insertion : l'action publique indéfinie / Chantal Guérin-Plantin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002524x
+     </p>
+     <p class="title">
+      Les interventions auprès des parents : innovations en protection de l'enfance et en éducation spécialisée (2e éd.) / Gérald Boutin, Paul Durning
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002525b
+     </p>
+     <p class="title">
+      Accompagner la personne en difficulté : politiques sociales et stratégies de direction / sous la dir. de Jean-Jacques Schaller
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10025208
+     </p>
+     <p class="title">
+      Approche systémique et communicationnelle des organisations / Alex Mucchielli
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002560s
+     </p>
+     <p class="title">
+      La parole des vieux : enjeux, analyse, pratiques / Dominique Argoud, Bernadette Puijalon ; préf. de Francis Charhon
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002460f
+     </p>
+     <p class="title">
+      Ces enfants dont personne ne veut : adopter un enfant inadoptable / Pierre verdier, Marieke Aucante ; avec la participation de Martine Duboc
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10026923
+     </p>
+     <p class="title">
+      L'intelligence des autres : rétablir l'homme au centre de la communication des entreprises / Pierre Labasse ; préf. d'Antoine Riboud
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002530n
+     </p>
+     <p class="title">
+      Les éducateurs aujourd'hui ([Nouv. éd.]) / sous la dir. de Jean-Luc Martinet
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002569h
+     </p>
+     <p class="title">
+      Les politiques sociales en France au XXe siècle / Jacques Bichot
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3370236j
+     </p>
+     <p class="title">
+      Histoire culturelle des activités physiques, XIXe et XXe siècles / Bertrand During
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33683274
+     </p>
+     <p class="title">
+      Carnets de guerre d'un "poilu" savoyard : mémoires et souvenirs de Fernand Lugand / présentés par Xavier Charvet ; préface du professeur Jean-Jacques Becker
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002483f
+     </p>
+     <p class="title">
+      Les implicites de la politique familiale : approches historiques, juridiques et politiques : [colloque, Paris, 8-9 avril 1999] / [organisé par l'UNAF et le CEDIAS] ; [éd.] sous la dir. de M. Chauvière, M. Sassier, B. Bouquet... [et al.]
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002685z
+     </p>
+     <p class="title">
+      De Gaulle et le rassemblement du peuple français, 1947-1955 : [actes du colloque, Bordeaux, 12-14 novembre 1997] / [organisé par la] Fondation Charles de Gaulle ; le Centre aquitain de recherches en histoire contemporaine
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002420x
+     </p>
+     <p class="title">
+      Le syndrome de Chronos : du mal travailler au mal vivre / D. Ettighoffer, G. Blanc
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10024628
+     </p>
+     <p class="title">
+      Nations et nationalismes en Europe, 1848-1914 / [textes réunis et présentés par] Pierre Saly, Alice Gérard, Céline Gervais, Marie-Pierre Rey
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002422r
+     </p>
+     <p class="title">
+      Institutions et politiques commerciales internationales : du GATT à l'OMC / Dominique Pantz
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3367949g
+     </p>
+     <p class="title">
+      Explications littéraires. 1, Mme de La Fayette, Chateaubriand, Mallarmé, Giraudoux / René Pommier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3363544s
+     </p>
+     <p class="title">
+      Économie et société françaises depuis 1973 / Éric Tournier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33837990
+     </p>
+     <p class="title">
+      Apolline ou Les valses du destin / Colette Gérôme
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33636370
+     </p>
+     <p class="title">
+      Le commentaire de document figuré en histoire médiévale / Christiane Raynaud
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3383953p
+     </p>
+     <p class="title">
+      Dix leçons sur l'histoire du XXe siècle / Marc Ferro
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3377231n
+     </p>
+     <p class="title">
+      Introduction à la sociologie et à la philosophie du droit : la bio-logique du droit (2e éd., rev. et augm.) / Denis Touret,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3365292f
+     </p>
+     <p class="title">
+      Histoire des stylistiques / Étienne Karabétian
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33592005
+     </p>
+     <p class="title">
+      La géographie appliquée : du géographe universitaire au géographe professionnel / Michel Phlipponneau
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33638472
+     </p>
+     <p class="title">
+      L'esprit des Lumières et leur destin / Jean Lefranc
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3359510k
+     </p>
+     <p class="title">
+      Climatologie / Pierre Estienne, Alain Godard
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3360695h
+     </p>
+     <p class="title">
+      Information, sensation et perception ([Nouv. éd.]) / Jean-Didier Bagot
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3363172q
+     </p>
+     <p class="title">
+      L'État, le droit et la société modernes / François Vallançon
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33652058
+     </p>
+     <p class="title">
+      La physique en Sup &amp; en Spé : problèmes commentés : classes prépas / Alain Maruani
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3364603h
+     </p>
+     <p class="title">
+      Le métalangage : étude linguistique du discours sur le langage / par Josette Rey-Debove
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33646023
+     </p>
+     <p class="title">
+      Anglais, seconde et terminale professionnelle des BEP tertiaires et industriels : corrigé / A. Blaize,... A. Tambour,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3368399m
+     </p>
+     <p class="title">
+      Histoire passionnante de la vie d'un petit ramoneur savoyard : écrite par lui-même / Joseph-Laurent Fénix
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3377425m
+     </p>
+     <p class="title">
+      La démocratie représentative (4e éd.) / Daniel Gaxie,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3356379z
+     </p>
+     <p class="title">
+      "Le plaisir", Max Ophuls / étude critique de Jean-Pierre Berthomé
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3377421z
+     </p>
+     <p class="title">
+      Éléments de comptabilité publique (5e éd.) / Jacques Magnet,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33639801
+     </p>
+     <p class="title">
+      Géographie de l'Orient arabe / Brigitte Dumortier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3363580n
+     </p>
+     <p class="title">
+      Écrire des textes au collège : aide aux élèves en difficulté... / Marlise Weiss,... Antoine Cintas,... Jean-Marie Gillig,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3385750c
+     </p>
+     <p class="title">
+      Histoire du XXe siècle : recherche des essentiels : compléments pédagogiques (2e éd., revue, corr. et augm.) / Pierre Heintz,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3363176c
+     </p>
+     <p class="title">
+      Sociologie militaire : armée, guerre et paix / Théodore Caplow, Pascal Vennesson
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33638457
+     </p>
+     <p class="title">
+      Devenir professeur d'économie et gestion, d'informatique et gestion : PLP2, CAPET, agrégation / Josette Favier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3378832f
+     </p>
+     <p class="title">
+      "Le misanthrope" : de son interprétation et de la prétendue pluralité du sens / René Pommier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3356164t
+     </p>
+     <p class="title">
+      "Manhattan", Woody Allen / étude critique de Anne Gillain
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3360431w
+     </p>
+     <p class="title">
+      Culture et comportement (2e éd.) / Geneviève Vinsonneau
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33626049
+     </p>
+     <p class="title">
+      Le Moyen-Orient arabe : le milieu et l'homme / Paul Sanlaville
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33800631
+     </p>
+     <p class="title">
+      Assez décodé !... (Nouvelle éd. revue et corrigée) / René Pommier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3364112r
+     </p>
+     <p class="title">
+      Les figures du moi et la question du sujet depuis la Renaissance / Robert Misrahi
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3361376f
+     </p>
+     <p class="title">
+      Qu'est-ce que la liberté ? / Robert Misrahi
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3363906g
+     </p>
+     <p class="title">
+      Les motivations et les valeurs en psycho-sociologie / Hélène Feertchak
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3356320b
+     </p>
+     <p class="title">
+      "Land and freedom", Ken Loach / étude critique de Philippe Pilard
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33566953
+     </p>
+     <p class="title">
+      Littérature et idées politiques au XIXe siècle : 1800-1870 / Paule Petitier,... ; ouvrage publié sous la direction de Claude Thomasset
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002279v
+     </p>
+     <p class="title">
+      Savoirs et savoir-faire / les Entretiens Nathan, [Paris, 19-20 novembre 1994] ; [publ.] sous la dir. d'Alain Bentolila
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10023336
+     </p>
+     <p class="title">
+      L'école contre l'exclusion / les Entretiens Nathan, [Paris, La Sorbonne, 15 et 16 novembre 1997] ; sous la dir. d'Alain Bentolila
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10023388
+     </p>
+     <p class="title">
+      École et modernités / les Entretiens Nathan, [Paris, 14 et 15 novembre 1998] ; sous la dir. d'Alain Bentolila
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002544p
+     </p>
+     <p class="title">
+      Savoir gérer des activités multiples : diversifier ses occupations, constituer ses réseaux, se faire rémunérer au bon niveau, connaître la réglemenation... / Christian Robin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3355730s
+     </p>
+     <p class="title">
+      Devenir attentif : 30 séances de relaxation et de yoga / Henriette Philizot,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3360811h
+     </p>
+     <p class="title">
+      Des réalisations manuelles avec les 2-3 ans / Anne-Marie Moulat,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10038975
+     </p>
+     <p class="title">
+      L'école et ses maîtres / les Entretiens Nathan, [Paris, La Sorbonne, 30 novembre et 1er décembre 1996] ; [publ.] sous la dir. d'Alain Bentolila
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33620366
+     </p>
+     <p class="title">
+      Jeux d'expression et de communication / Anny Baudis,... Yvette Jenger-Dufayet,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1004256g
+     </p>
+     <p class="title">
+      Portrait-photo avec les 4-5 ans / Christian Baraja, Isabelle Bellicha
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33607649
+     </p>
+     <p class="title">
+      Activités autour du bleu avec les 5-6 ans / Aline Rutily
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1003831d
+     </p>
+     <p class="title">
+      L'école, diversités et cohérence / les Entretiens Nathan, [Paris, La Sorbonne, les 25 et 26 novembre 1995] ; sous la direction d'Alain Bentolila
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33594604
+     </p>
+     <p class="title">
+      Pour la littérature : de l'extrait à l'oeuvre / Mireille Naturel,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10035818
+     </p>
+     <p class="title">
+      Comprendre l'éducation : introduction à la philosophie de l'éducation / Hubert Hannoun,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10034897
+     </p>
+     <p class="title">
+      De Gaulle et l'éducation : une rencontre manquée / Jacques Narbonne
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3365268s
+     </p>
+     <p class="title">
+      Le personnage de roman : genèse, continuité, rupture / Jean-Philippe Miraux,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1003552j
+     </p>
+     <p class="title">
+      Les solidarités entre générations : vieillesse, familles, État... / sous la dir. de Claudine Attias-Donfut ; avec la collab. de Alain Rozenkier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33605421
+     </p>
+     <p class="title">
+      Chronologie thématique de la Grande-Bretagne (, 2e éd. actualisée) / Annie Lhérété,... Jean-François Lhérété,... ; publ. sous la dir. de Jean-Michel Ploton
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10042196
+     </p>
+     <p class="title">
+      Crises et dictatures dans l'Europe de l'entre-deux-guerres : 1919-1939 / Ralph Schor,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3399837c
+     </p>
+     <p class="title">
+      Scolarisation précoce : un enjeu / Suzelle Leclercq
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3400184k
+     </p>
+     <p class="title">
+      Le Mexique / Jérôme Monnet,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k34072969
+     </p>
+     <p class="title">
+      De quoi sommes-nous responsables ? / huitème Forum "Le Monde", Le Mans, 25-27 sept. 1996 ; textes réunis et présentés par Thomas Ferenczi
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3362542n
+     </p>
+     <p class="title">
+      Le risque médicamenteux nosocomial : circuit hospitalier du médicamant et qualité des soins / Étienne Schmitt
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3378483c
+     </p>
+     <p class="title">
+      Le corps blessé : automutilation, psychiatrie et psychanalyse / Claire Morelle
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k10035440
+     </p>
+     <p class="title">
+      Jouer le jeu : pour une nouvelle dimension éducative et sociale / Jean-Jacques Bernhard ; préf. de Philippe Séguin
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3378448x
+     </p>
+     <p class="title">
+      Le bilan Marthe Vyl : un examen en psychomotricité / Marie-Thérèse Fauvel ; préf. de R. de Villard
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3378350n
+     </p>
+     <p class="title">
+      Psychomotricité, relaxation et surdité / Marie-Hélène Herzog
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k1002672b
+     </p>
+     <p class="title">
+      Éléments de théorie financière / Pascale Viala,... Éric Briys,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3376178d
+     </p>
+     <p class="title">
+      Le soleil en face : le soleil et les relations soleil-terre / Pierre Lantos,...
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33679734
+     </p>
+     <p class="title">
+      Saint-Boniface et ses juifs : un été 42 en Ardèche : roman / Nathalie et Ladislas Gara ; présentation, Georges-Emmanuel Clancier
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3362360w
+     </p>
+     <p class="title">
+      Psycho : les soignants face à la psychologie des maladies (3e éd.) / Laurent Chneiweiss ; avec la collab. de Jérôme Dischamp
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k3373455h
+     </p>
+     <p class="title">
+      La sélection par les tests / Bernard Gangloff
+     </p>
+    </div>
+    <div class="doc">
+     <p class="id">
+      bpt6k33730769
+     </p>
+     <p class="title">
+      Responsabilité du banquier : entreprises en difficulté, crédit fautif, médiation du crédit, expertise (3e éd.) / André Buthurieux,... ; préface de Blanche Sousi
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k5712312t" data-src="/static/images/bpt6k5712312t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k5712312t" data-src="/static/images/bpt6k5712312t-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k5758991g" data-src="/static/images/bpt6k5758991g.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k5758991g" data-src="/static/images/bpt6k5758991g-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k6312115m" data-src="/static/images/bpt6k6312115m.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k6312115m" data-src="/static/images/bpt6k6312115m-f2.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k6281111b" data-src="/static/images/bpt6k6281111b.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k6281111b" data-src="/static/images/bpt6k6281111b-f16.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k8522683" data-src="/static/images/bpt6k8522683.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k8522683" data-src="/static/images/bpt6k8522683-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k6475682k" data-src="/static/images/bpt6k6475682k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k6475682k" data-src="/static/images/bpt6k6475682k-f2.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k65353744" data-src="/static/images/bpt6k65353744.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k65353744" data-src="/static/images/bpt6k65353744-f164.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48129548" data-src="/static/images/bpt6k48129548.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48129548" data-src="/static/images/bpt6k48129548-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4815323k" data-src="/static/images/bpt6k4815323k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4815323k" data-src="/static/images/bpt6k4815323k-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3321627w" data-src="/static/images/bpt6k3321627w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3321627w" data-src="/static/images/bpt6k3321627w-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4814326h" data-src="/static/images/bpt6k4814326h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4814326h" data-src="/static/images/bpt6k4814326h-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4801343t" data-src="/static/images/bpt6k4801343t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4801343t" data-src="/static/images/bpt6k4801343t-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4811640w" data-src="/static/images/bpt6k4811640w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4811640w" data-src="/static/images/bpt6k4811640w-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33244348" data-src="/static/images/bpt6k33244348.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33244348" data-src="/static/images/bpt6k33244348-f16.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48100838" data-src="/static/images/bpt6k48100838.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48100838" data-src="/static/images/bpt6k48100838-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813749k" data-src="/static/images/bpt6k4813749k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813749k" data-src="/static/images/bpt6k4813749k-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4808464h" data-src="/static/images/bpt6k4808464h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4808464h" data-src="/static/images/bpt6k4808464h-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3321710z" data-src="/static/images/bpt6k3321710z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3321710z" data-src="/static/images/bpt6k3321710z-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48134558" data-src="/static/images/bpt6k48134558.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48134558" data-src="/static/images/bpt6k48134558-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48069421" data-src="/static/images/bpt6k48069421.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48069421" data-src="/static/images/bpt6k48069421-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48092948" data-src="/static/images/bpt6k48092948.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48092948" data-src="/static/images/bpt6k48092948-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3324492q" data-src="/static/images/bpt6k3324492q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3324492q" data-src="/static/images/bpt6k3324492q-f16.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809344q" data-src="/static/images/bpt6k4809344q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809344q" data-src="/static/images/bpt6k4809344q-f16.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48108794" data-src="/static/images/bpt6k48108794.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48108794" data-src="/static/images/bpt6k48108794-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33229633" data-src="/static/images/bpt6k33229633.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33229633" data-src="/static/images/bpt6k33229633-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804576t" data-src="/static/images/bpt6k4804576t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804576t" data-src="/static/images/bpt6k4804576t-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806498p" data-src="/static/images/bpt6k4806498p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806498p" data-src="/static/images/bpt6k4806498p-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3322298w" data-src="/static/images/bpt6k3322298w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3322298w" data-src="/static/images/bpt6k3322298w-f5.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3320039q" data-src="/static/images/bpt6k3320039q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3320039q" data-src="/static/images/bpt6k3320039q-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805596w" data-src="/static/images/bpt6k4805596w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805596w" data-src="/static/images/bpt6k4805596w-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4810799j" data-src="/static/images/bpt6k4810799j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4810799j" data-src="/static/images/bpt6k4810799j-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813582h" data-src="/static/images/bpt6k4813582h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813582h" data-src="/static/images/bpt6k4813582h-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813975r" data-src="/static/images/bpt6k4813975r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813975r" data-src="/static/images/bpt6k4813975r-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806062p" data-src="/static/images/bpt6k4806062p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806062p" data-src="/static/images/bpt6k4806062p-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805667h" data-src="/static/images/bpt6k4805667h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805667h" data-src="/static/images/bpt6k4805667h-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48047271" data-src="/static/images/bpt6k48047271.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48047271" data-src="/static/images/bpt6k48047271-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331382b" data-src="/static/images/bpt6k3331382b.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331382b" data-src="/static/images/bpt6k3331382b-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33261855" data-src="/static/images/bpt6k33261855.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33261855" data-src="/static/images/bpt6k33261855-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331473q" data-src="/static/images/bpt6k3331473q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331473q" data-src="/static/images/bpt6k3331473q-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33259594" data-src="/static/images/bpt6k33259594.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33259594" data-src="/static/images/bpt6k33259594-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3328914g" data-src="/static/images/bpt6k3328914g.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3328914g" data-src="/static/images/bpt6k3328914g-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331912r" data-src="/static/images/bpt6k3331912r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331912r" data-src="/static/images/bpt6k3331912r-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3323876p" data-src="/static/images/bpt6k3323876p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3323876p" data-src="/static/images/bpt6k3323876p-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331411m" data-src="/static/images/bpt6k3331411m.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331411m" data-src="/static/images/bpt6k3331411m-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33243872" data-src="/static/images/bpt6k33243872.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33243872" data-src="/static/images/bpt6k33243872-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3326581w" data-src="/static/images/bpt6k3326581w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3326581w" data-src="/static/images/bpt6k3326581w-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33293881" data-src="/static/images/bpt6k33293881.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33293881" data-src="/static/images/bpt6k33293881-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3329887b" data-src="/static/images/bpt6k3329887b.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3329887b" data-src="/static/images/bpt6k3329887b-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3328312k" data-src="/static/images/bpt6k3328312k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3328312k" data-src="/static/images/bpt6k3328312k-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3328897d" data-src="/static/images/bpt6k3328897d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3328897d" data-src="/static/images/bpt6k3328897d-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33259579" data-src="/static/images/bpt6k33259579.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33259579" data-src="/static/images/bpt6k33259579-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33237236" data-src="/static/images/bpt6k33237236.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33237236" data-src="/static/images/bpt6k33237236-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33295130" data-src="/static/images/bpt6k33295130.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33295130" data-src="/static/images/bpt6k33295130-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325317q" data-src="/static/images/bpt6k3325317q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325317q" data-src="/static/images/bpt6k3325317q-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3328746r" data-src="/static/images/bpt6k3328746r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3328746r" data-src="/static/images/bpt6k3328746r-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3327957x" data-src="/static/images/bpt6k3327957x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3327957x" data-src="/static/images/bpt6k3327957x-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332871k" data-src="/static/images/bpt6k3332871k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332871k" data-src="/static/images/bpt6k3332871k-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3327864q" data-src="/static/images/bpt6k3327864q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3327864q" data-src="/static/images/bpt6k3327864q-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3327910h" data-src="/static/images/bpt6k3327910h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3327910h" data-src="/static/images/bpt6k3327910h-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3329219f" data-src="/static/images/bpt6k3329219f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3329219f" data-src="/static/images/bpt6k3329219f-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331748p" data-src="/static/images/bpt6k3331748p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331748p" data-src="/static/images/bpt6k3331748p-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3329869d" data-src="/static/images/bpt6k3329869d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3329869d" data-src="/static/images/bpt6k3329869d-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3326607p" data-src="/static/images/bpt6k3326607p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3326607p" data-src="/static/images/bpt6k3326607p-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33280648" data-src="/static/images/bpt6k33280648.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33280648" data-src="/static/images/bpt6k33280648-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325560d" data-src="/static/images/bpt6k3325560d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325560d" data-src="/static/images/bpt6k3325560d-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331385k" data-src="/static/images/bpt6k3331385k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331385k" data-src="/static/images/bpt6k3331385k-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325791n" data-src="/static/images/bpt6k3325791n.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325791n" data-src="/static/images/bpt6k3325791n-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325835c" data-src="/static/images/bpt6k3325835c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325835c" data-src="/static/images/bpt6k3325835c-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48064622" data-src="/static/images/bpt6k48064622.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48064622" data-src="/static/images/bpt6k48064622-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325893t" data-src="/static/images/bpt6k3325893t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325893t" data-src="/static/images/bpt6k3325893t-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48069970" data-src="/static/images/bpt6k48069970.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48069970" data-src="/static/images/bpt6k48069970-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48052852" data-src="/static/images/bpt6k48052852.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48052852" data-src="/static/images/bpt6k48052852-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332628w" data-src="/static/images/bpt6k3332628w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332628w" data-src="/static/images/bpt6k3332628w-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325924x" data-src="/static/images/bpt6k3325924x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325924x" data-src="/static/images/bpt6k3325924x-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806182s" data-src="/static/images/bpt6k4806182s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806182s" data-src="/static/images/bpt6k4806182s-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804585s" data-src="/static/images/bpt6k4804585s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804585s" data-src="/static/images/bpt6k4804585s-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813566d" data-src="/static/images/bpt6k4813566d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813566d" data-src="/static/images/bpt6k4813566d-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805818q" data-src="/static/images/bpt6k4805818q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805818q" data-src="/static/images/bpt6k4805818q-f5.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4803531x" data-src="/static/images/bpt6k4803531x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4803531x" data-src="/static/images/bpt6k4803531x-f16.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809428z" data-src="/static/images/bpt6k4809428z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809428z" data-src="/static/images/bpt6k4809428z-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3326556t" data-src="/static/images/bpt6k3326556t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3326556t" data-src="/static/images/bpt6k3326556t-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332116z" data-src="/static/images/bpt6k3332116z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332116z" data-src="/static/images/bpt6k3332116z-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33255820" data-src="/static/images/bpt6k33255820.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33255820" data-src="/static/images/bpt6k33255820-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33266884" data-src="/static/images/bpt6k33266884.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33266884" data-src="/static/images/bpt6k33266884-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48081061" data-src="/static/images/bpt6k48081061.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48081061" data-src="/static/images/bpt6k48081061-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48048689" data-src="/static/images/bpt6k48048689.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48048689" data-src="/static/images/bpt6k48048689-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4812976v" data-src="/static/images/bpt6k4812976v.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4812976v" data-src="/static/images/bpt6k4812976v-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3321675z" data-src="/static/images/bpt6k3321675z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3321675z" data-src="/static/images/bpt6k3321675z-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3327027p" data-src="/static/images/bpt6k3327027p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3327027p" data-src="/static/images/bpt6k3327027p-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805922z" data-src="/static/images/bpt6k4805922z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805922z" data-src="/static/images/bpt6k4805922z-f16.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809270v" data-src="/static/images/bpt6k4809270v.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809270v" data-src="/static/images/bpt6k4809270v-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805269z" data-src="/static/images/bpt6k4805269z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805269z" data-src="/static/images/bpt6k4805269z-f18.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805953h" data-src="/static/images/bpt6k4805953h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805953h" data-src="/static/images/bpt6k4805953h-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48057332" data-src="/static/images/bpt6k48057332.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48057332" data-src="/static/images/bpt6k48057332-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325908t" data-src="/static/images/bpt6k3325908t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325908t" data-src="/static/images/bpt6k3325908t-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33259060" data-src="/static/images/bpt6k33259060.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33259060" data-src="/static/images/bpt6k33259060-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809651w" data-src="/static/images/bpt6k4809651w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809651w" data-src="/static/images/bpt6k4809651w-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48049692" data-src="/static/images/bpt6k48049692.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48049692" data-src="/static/images/bpt6k48049692-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48044522" data-src="/static/images/bpt6k48044522.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48044522" data-src="/static/images/bpt6k48044522-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48045154" data-src="/static/images/bpt6k48045154.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48045154" data-src="/static/images/bpt6k48045154-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805360k" data-src="/static/images/bpt6k4805360k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805360k" data-src="/static/images/bpt6k4805360k-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806466q" data-src="/static/images/bpt6k4806466q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806466q" data-src="/static/images/bpt6k4806466q-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48139305" data-src="/static/images/bpt6k48139305.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48139305" data-src="/static/images/bpt6k48139305-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4814845k" data-src="/static/images/bpt6k4814845k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4814845k" data-src="/static/images/bpt6k4814845k-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4800120t" data-src="/static/images/bpt6k4800120t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4800120t" data-src="/static/images/bpt6k4800120t-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806597m" data-src="/static/images/bpt6k4806597m.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806597m" data-src="/static/images/bpt6k4806597m-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806140f" data-src="/static/images/bpt6k4806140f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806140f" data-src="/static/images/bpt6k4806140f-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48136749" data-src="/static/images/bpt6k48136749.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48136749" data-src="/static/images/bpt6k48136749-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805298p" data-src="/static/images/bpt6k4805298p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805298p" data-src="/static/images/bpt6k4805298p-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33257173" data-src="/static/images/bpt6k33257173.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33257173" data-src="/static/images/bpt6k33257173-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4812074x" data-src="/static/images/bpt6k4812074x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4812074x" data-src="/static/images/bpt6k4812074x-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4811759b" data-src="/static/images/bpt6k4811759b.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4811759b" data-src="/static/images/bpt6k4811759b-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4807600z" data-src="/static/images/bpt6k4807600z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4807600z" data-src="/static/images/bpt6k4807600z-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813972h" data-src="/static/images/bpt6k4813972h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813972h" data-src="/static/images/bpt6k4813972h-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809155t" data-src="/static/images/bpt6k4809155t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809155t" data-src="/static/images/bpt6k4809155t-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806440g" data-src="/static/images/bpt6k4806440g.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806440g" data-src="/static/images/bpt6k4806440g-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33257106" data-src="/static/images/bpt6k33257106.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33257106" data-src="/static/images/bpt6k33257106-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325770g" data-src="/static/images/bpt6k3325770g.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3325770g" data-src="/static/images/bpt6k3325770g-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3323810x" data-src="/static/images/bpt6k3323810x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3323810x" data-src="/static/images/bpt6k3323810x-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48094108" data-src="/static/images/bpt6k48094108.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48094108" data-src="/static/images/bpt6k48094108-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813721h" data-src="/static/images/bpt6k4813721h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813721h" data-src="/static/images/bpt6k4813721h-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332685x" data-src="/static/images/bpt6k3332685x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332685x" data-src="/static/images/bpt6k3332685x-f16.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804435j" data-src="/static/images/bpt6k4804435j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804435j" data-src="/static/images/bpt6k4804435j-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48086965" data-src="/static/images/bpt6k48086965.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48086965" data-src="/static/images/bpt6k48086965-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33319187" data-src="/static/images/bpt6k33319187.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33319187" data-src="/static/images/bpt6k33319187-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331714w" data-src="/static/images/bpt6k3331714w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331714w" data-src="/static/images/bpt6k3331714w-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4801795x" data-src="/static/images/bpt6k4801795x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4801795x" data-src="/static/images/bpt6k4801795x-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806484n" data-src="/static/images/bpt6k4806484n.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806484n" data-src="/static/images/bpt6k4806484n-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3326481j" data-src="/static/images/bpt6k3326481j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3326481j" data-src="/static/images/bpt6k3326481j-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48065825" data-src="/static/images/bpt6k48065825.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48065825" data-src="/static/images/bpt6k48065825-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336373x" data-src="/static/images/bpt6k3336373x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336373x" data-src="/static/images/bpt6k3336373x-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33323172" data-src="/static/images/bpt6k33323172.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33323172" data-src="/static/images/bpt6k33323172-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33324286" data-src="/static/images/bpt6k33324286.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33324286" data-src="/static/images/bpt6k33324286-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336296k" data-src="/static/images/bpt6k3336296k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336296k" data-src="/static/images/bpt6k3336296k-f16.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336507m" data-src="/static/images/bpt6k3336507m.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336507m" data-src="/static/images/bpt6k3336507m-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336370p" data-src="/static/images/bpt6k3336370p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336370p" data-src="/static/images/bpt6k3336370p-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336285s" data-src="/static/images/bpt6k3336285s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336285s" data-src="/static/images/bpt6k3336285s-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33363179" data-src="/static/images/bpt6k33363179.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33363179" data-src="/static/images/bpt6k33363179-f16.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332319w" data-src="/static/images/bpt6k3332319w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332319w" data-src="/static/images/bpt6k3332319w-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33363609" data-src="/static/images/bpt6k33363609.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33363609" data-src="/static/images/bpt6k33363609-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33362473" data-src="/static/images/bpt6k33362473.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33362473" data-src="/static/images/bpt6k33362473-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336310d" data-src="/static/images/bpt6k3336310d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336310d" data-src="/static/images/bpt6k3336310d-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332460d" data-src="/static/images/bpt6k3332460d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332460d" data-src="/static/images/bpt6k3332460d-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332533v" data-src="/static/images/bpt6k3332533v.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332533v" data-src="/static/images/bpt6k3332533v-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332157w" data-src="/static/images/bpt6k3332157w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3332157w" data-src="/static/images/bpt6k3332157w-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33323639" data-src="/static/images/bpt6k33323639.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33323639" data-src="/static/images/bpt6k33323639-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336331k" data-src="/static/images/bpt6k3336331k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336331k" data-src="/static/images/bpt6k3336331k-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336415t" data-src="/static/images/bpt6k3336415t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336415t" data-src="/static/images/bpt6k3336415t-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336275d" data-src="/static/images/bpt6k3336275d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336275d" data-src="/static/images/bpt6k3336275d-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331921q" data-src="/static/images/bpt6k3331921q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3331921q" data-src="/static/images/bpt6k3331921q-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33365407" data-src="/static/images/bpt6k33365407.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33365407" data-src="/static/images/bpt6k33365407-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336730j" data-src="/static/images/bpt6k3336730j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336730j" data-src="/static/images/bpt6k3336730j-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3333379g" data-src="/static/images/bpt6k3333379g.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3333379g" data-src="/static/images/bpt6k3333379g-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3333384s" data-src="/static/images/bpt6k3333384s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3333384s" data-src="/static/images/bpt6k3333384s-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336569q" data-src="/static/images/bpt6k3336569q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336569q" data-src="/static/images/bpt6k3336569q-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336723d" data-src="/static/images/bpt6k3336723d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336723d" data-src="/static/images/bpt6k3336723d-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336986m" data-src="/static/images/bpt6k3336986m.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336986m" data-src="/static/images/bpt6k3336986m-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3334487p" data-src="/static/images/bpt6k3334487p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3334487p" data-src="/static/images/bpt6k3334487p-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336679f" data-src="/static/images/bpt6k3336679f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336679f" data-src="/static/images/bpt6k3336679f-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336527c" data-src="/static/images/bpt6k3336527c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336527c" data-src="/static/images/bpt6k3336527c-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33368549" data-src="/static/images/bpt6k33368549.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33368549" data-src="/static/images/bpt6k33368549-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336696z" data-src="/static/images/bpt6k3336696z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336696z" data-src="/static/images/bpt6k3336696z-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336717p" data-src="/static/images/bpt6k3336717p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336717p" data-src="/static/images/bpt6k3336717p-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336530v" data-src="/static/images/bpt6k3336530v.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336530v" data-src="/static/images/bpt6k3336530v-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336534h" data-src="/static/images/bpt6k3336534h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336534h" data-src="/static/images/bpt6k3336534h-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33365014" data-src="/static/images/bpt6k33365014.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33365014" data-src="/static/images/bpt6k33365014-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3338263t" data-src="/static/images/bpt6k3338263t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3338263t" data-src="/static/images/bpt6k3338263t-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336548j" data-src="/static/images/bpt6k3336548j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336548j" data-src="/static/images/bpt6k3336548j-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33366321" data-src="/static/images/bpt6k33366321.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33366321" data-src="/static/images/bpt6k33366321-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336567w" data-src="/static/images/bpt6k3336567w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336567w" data-src="/static/images/bpt6k3336567w-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33382009" data-src="/static/images/bpt6k33382009.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33382009" data-src="/static/images/bpt6k33382009-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33357856" data-src="/static/images/bpt6k33357856.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33357856" data-src="/static/images/bpt6k33357856-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33359565" data-src="/static/images/bpt6k33359565.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33359565" data-src="/static/images/bpt6k33359565-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3334775h" data-src="/static/images/bpt6k3334775h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3334775h" data-src="/static/images/bpt6k3334775h-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33368727" data-src="/static/images/bpt6k33368727.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33368727" data-src="/static/images/bpt6k33368727-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336625w" data-src="/static/images/bpt6k3336625w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336625w" data-src="/static/images/bpt6k3336625w-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336891k" data-src="/static/images/bpt6k3336891k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336891k" data-src="/static/images/bpt6k3336891k-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336878q" data-src="/static/images/bpt6k3336878q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336878q" data-src="/static/images/bpt6k3336878q-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336521w" data-src="/static/images/bpt6k3336521w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336521w" data-src="/static/images/bpt6k3336521w-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336552f" data-src="/static/images/bpt6k3336552f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336552f" data-src="/static/images/bpt6k3336552f-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336858z" data-src="/static/images/bpt6k3336858z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336858z" data-src="/static/images/bpt6k3336858z-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33365229" data-src="/static/images/bpt6k33365229.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33365229" data-src="/static/images/bpt6k33365229-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336504c" data-src="/static/images/bpt6k3336504c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336504c" data-src="/static/images/bpt6k3336504c-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33366714" data-src="/static/images/bpt6k33366714.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33366714" data-src="/static/images/bpt6k33366714-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33365066" data-src="/static/images/bpt6k33365066.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33365066" data-src="/static/images/bpt6k33365066-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33331828" data-src="/static/images/bpt6k33331828.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33331828" data-src="/static/images/bpt6k33331828-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806067r" data-src="/static/images/bpt6k4806067r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806067r" data-src="/static/images/bpt6k4806067r-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3333219v" data-src="/static/images/bpt6k3333219v.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3333219v" data-src="/static/images/bpt6k3333219v-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4807440s" data-src="/static/images/bpt6k4807440s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4807440s" data-src="/static/images/bpt6k4807440s-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336681h" data-src="/static/images/bpt6k3336681h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336681h" data-src="/static/images/bpt6k3336681h-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336661r" data-src="/static/images/bpt6k3336661r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336661r" data-src="/static/images/bpt6k3336661r-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336659p" data-src="/static/images/bpt6k3336659p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336659p" data-src="/static/images/bpt6k3336659p-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4814319c" data-src="/static/images/bpt6k4814319c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4814319c" data-src="/static/images/bpt6k4814319c-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33332779" data-src="/static/images/bpt6k33332779.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33332779" data-src="/static/images/bpt6k33332779-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336965f" data-src="/static/images/bpt6k3336965f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336965f" data-src="/static/images/bpt6k3336965f-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336467j" data-src="/static/images/bpt6k3336467j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336467j" data-src="/static/images/bpt6k3336467j-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3334407n" data-src="/static/images/bpt6k3334407n.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3334407n" data-src="/static/images/bpt6k3334407n-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3337215f" data-src="/static/images/bpt6k3337215f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3337215f" data-src="/static/images/bpt6k3337215f-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336670q" data-src="/static/images/bpt6k3336670q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336670q" data-src="/static/images/bpt6k3336670q-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336813c" data-src="/static/images/bpt6k3336813c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336813c" data-src="/static/images/bpt6k3336813c-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48082086" data-src="/static/images/bpt6k48082086.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48082086" data-src="/static/images/bpt6k48082086-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48088926" data-src="/static/images/bpt6k48088926.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48088926" data-src="/static/images/bpt6k48088926-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336774q" data-src="/static/images/bpt6k3336774q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336774q" data-src="/static/images/bpt6k3336774q-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48057955" data-src="/static/images/bpt6k48057955.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48057955" data-src="/static/images/bpt6k48057955-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48151019" data-src="/static/images/bpt6k48151019.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48151019" data-src="/static/images/bpt6k48151019-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4807611r" data-src="/static/images/bpt6k4807611r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4807611r" data-src="/static/images/bpt6k4807611r-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48029310" data-src="/static/images/bpt6k48029310.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48029310" data-src="/static/images/bpt6k48029310-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4814437n" data-src="/static/images/bpt6k4814437n.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4814437n" data-src="/static/images/bpt6k4814437n-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48064659" data-src="/static/images/bpt6k48064659.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48064659" data-src="/static/images/bpt6k48064659-f7.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48089699" data-src="/static/images/bpt6k48089699.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48089699" data-src="/static/images/bpt6k48089699-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806971r" data-src="/static/images/bpt6k4806971r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806971r" data-src="/static/images/bpt6k4806971r-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4808097h" data-src="/static/images/bpt6k4808097h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4808097h" data-src="/static/images/bpt6k4808097h-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4812969q" data-src="/static/images/bpt6k4812969q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4812969q" data-src="/static/images/bpt6k4812969q-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48047523" data-src="/static/images/bpt6k48047523.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48047523" data-src="/static/images/bpt6k48047523-f18.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48077840" data-src="/static/images/bpt6k48077840.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48077840" data-src="/static/images/bpt6k48077840-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813414b" data-src="/static/images/bpt6k4813414b.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4813414b" data-src="/static/images/bpt6k4813414b-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804514q" data-src="/static/images/bpt6k4804514q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804514q" data-src="/static/images/bpt6k4804514q-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809032g" data-src="/static/images/bpt6k4809032g.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809032g" data-src="/static/images/bpt6k4809032g-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4808538c" data-src="/static/images/bpt6k4808538c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4808538c" data-src="/static/images/bpt6k4808538c-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48073925" data-src="/static/images/bpt6k48073925.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48073925" data-src="/static/images/bpt6k48073925-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48096225" data-src="/static/images/bpt6k48096225.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48096225" data-src="/static/images/bpt6k48096225-f3.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804539j" data-src="/static/images/bpt6k4804539j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804539j" data-src="/static/images/bpt6k4804539j-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804104z" data-src="/static/images/bpt6k4804104z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804104z" data-src="/static/images/bpt6k4804104z-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806159j" data-src="/static/images/bpt6k4806159j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4806159j" data-src="/static/images/bpt6k4806159j-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48073836" data-src="/static/images/bpt6k48073836.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48073836" data-src="/static/images/bpt6k48073836-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805247c" data-src="/static/images/bpt6k4805247c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4805247c" data-src="/static/images/bpt6k4805247c-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809127h" data-src="/static/images/bpt6k4809127h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4809127h" data-src="/static/images/bpt6k4809127h-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4808994c" data-src="/static/images/bpt6k4808994c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4808994c" data-src="/static/images/bpt6k4808994c-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804415s" data-src="/static/images/bpt6k4804415s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4804415s" data-src="/static/images/bpt6k4804415s-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4812380p" data-src="/static/images/bpt6k4812380p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4812380p" data-src="/static/images/bpt6k4812380p-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4812357f" data-src="/static/images/bpt6k4812357f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k4812357f" data-src="/static/images/bpt6k4812357f-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33455013" data-src="/static/images/bpt6k33455013.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33455013" data-src="/static/images/bpt6k33455013-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33383316" data-src="/static/images/bpt6k33383316.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33383316" data-src="/static/images/bpt6k33383316-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336710s" data-src="/static/images/bpt6k3336710s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3336710s" data-src="/static/images/bpt6k3336710s-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48057562" data-src="/static/images/bpt6k48057562.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48057562" data-src="/static/images/bpt6k48057562-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33653276" data-src="/static/images/bpt6k33653276.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33653276" data-src="/static/images/bpt6k33653276-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33646253" data-src="/static/images/bpt6k33646253.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33646253" data-src="/static/images/bpt6k33646253-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3365056w" data-src="/static/images/bpt6k3365056w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3365056w" data-src="/static/images/bpt6k3365056w-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407085t" data-src="/static/images/bpt6k3407085t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407085t" data-src="/static/images/bpt6k3407085t-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407050m" data-src="/static/images/bpt6k3407050m.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407050m" data-src="/static/images/bpt6k3407050m-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3388769d" data-src="/static/images/bpt6k3388769d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3388769d" data-src="/static/images/bpt6k3388769d-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3375073p" data-src="/static/images/bpt6k3375073p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3375073p" data-src="/static/images/bpt6k3375073p-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3384108d" data-src="/static/images/bpt6k3384108d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3384108d" data-src="/static/images/bpt6k3384108d-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34073386" data-src="/static/images/bpt6k34073386.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34073386" data-src="/static/images/bpt6k34073386-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3401839g" data-src="/static/images/bpt6k3401839g.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3401839g" data-src="/static/images/bpt6k3401839g-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34021757" data-src="/static/images/bpt6k34021757.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34021757" data-src="/static/images/bpt6k34021757-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407094s" data-src="/static/images/bpt6k3407094s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407094s" data-src="/static/images/bpt6k3407094s-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34009954" data-src="/static/images/bpt6k34009954.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34009954" data-src="/static/images/bpt6k34009954-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407120t" data-src="/static/images/bpt6k3407120t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407120t" data-src="/static/images/bpt6k3407120t-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3372276p" data-src="/static/images/bpt6k3372276p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3372276p" data-src="/static/images/bpt6k3372276p-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407108c" data-src="/static/images/bpt6k3407108c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407108c" data-src="/static/images/bpt6k3407108c-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3388631m" data-src="/static/images/bpt6k3388631m.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3388631m" data-src="/static/images/bpt6k3388631m-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3402006n" data-src="/static/images/bpt6k3402006n.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3402006n" data-src="/static/images/bpt6k3402006n-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3382703s" data-src="/static/images/bpt6k3382703s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3382703s" data-src="/static/images/bpt6k3382703s-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34071128" data-src="/static/images/bpt6k34071128.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34071128" data-src="/static/images/bpt6k34071128-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3370487j" data-src="/static/images/bpt6k3370487j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3370487j" data-src="/static/images/bpt6k3370487j-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34073794" data-src="/static/images/bpt6k34073794.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34073794" data-src="/static/images/bpt6k34073794-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48003475" data-src="/static/images/bpt6k48003475.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k48003475" data-src="/static/images/bpt6k48003475-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34073260" data-src="/static/images/bpt6k34073260.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34073260" data-src="/static/images/bpt6k34073260-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407283p" data-src="/static/images/bpt6k3407283p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407283p" data-src="/static/images/bpt6k3407283p-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3400996j" data-src="/static/images/bpt6k3400996j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3400996j" data-src="/static/images/bpt6k3400996j-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34020806" data-src="/static/images/bpt6k34020806.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34020806" data-src="/static/images/bpt6k34020806-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33704775" data-src="/static/images/bpt6k33704775.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33704775" data-src="/static/images/bpt6k33704775-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3370475b" data-src="/static/images/bpt6k3370475b.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3370475b" data-src="/static/images/bpt6k3370475b-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34074196" data-src="/static/images/bpt6k34074196.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34074196" data-src="/static/images/bpt6k34074196-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3405790x" data-src="/static/images/bpt6k3405790x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3405790x" data-src="/static/images/bpt6k3405790x-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3406673c" data-src="/static/images/bpt6k3406673c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3406673c" data-src="/static/images/bpt6k3406673c-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3364725f" data-src="/static/images/bpt6k3364725f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3364725f" data-src="/static/images/bpt6k3364725f-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3382698x" data-src="/static/images/bpt6k3382698x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3382698x" data-src="/static/images/bpt6k3382698x-f3.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3381373r" data-src="/static/images/bpt6k3381373r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3381373r" data-src="/static/images/bpt6k3381373r-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3373453p" data-src="/static/images/bpt6k3373453p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3373453p" data-src="/static/images/bpt6k3373453p-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3383999p" data-src="/static/images/bpt6k3383999p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3383999p" data-src="/static/images/bpt6k3383999p-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33674579" data-src="/static/images/bpt6k33674579.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33674579" data-src="/static/images/bpt6k33674579-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33676110" data-src="/static/images/bpt6k33676110.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33676110" data-src="/static/images/bpt6k33676110-f5.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34022389" data-src="/static/images/bpt6k34022389.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34022389" data-src="/static/images/bpt6k34022389-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33702710" data-src="/static/images/bpt6k33702710.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33702710" data-src="/static/images/bpt6k33702710-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3399999t" data-src="/static/images/bpt6k3399999t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3399999t" data-src="/static/images/bpt6k3399999t-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34007926" data-src="/static/images/bpt6k34007926.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34007926" data-src="/static/images/bpt6k34007926-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3400642z" data-src="/static/images/bpt6k3400642z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3400642z" data-src="/static/images/bpt6k3400642z-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34001991" data-src="/static/images/bpt6k34001991.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34001991" data-src="/static/images/bpt6k34001991-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3402024k" data-src="/static/images/bpt6k3402024k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3402024k" data-src="/static/images/bpt6k3402024k-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3400790c" data-src="/static/images/bpt6k3400790c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3400790c" data-src="/static/images/bpt6k3400790c-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34072680" data-src="/static/images/bpt6k34072680.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34072680" data-src="/static/images/bpt6k34072680-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3348550h" data-src="/static/images/bpt6k3348550h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3348550h" data-src="/static/images/bpt6k3348550h-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3397639w" data-src="/static/images/bpt6k3397639w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3397639w" data-src="/static/images/bpt6k3397639w-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407096m" data-src="/static/images/bpt6k3407096m.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3407096m" data-src="/static/images/bpt6k3407096m-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3352872j" data-src="/static/images/bpt6k3352872j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3352872j" data-src="/static/images/bpt6k3352872j-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34019711" data-src="/static/images/bpt6k34019711.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34019711" data-src="/static/images/bpt6k34019711-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002492d" data-src="/static/images/bpt6k1002492d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002492d" data-src="/static/images/bpt6k1002492d-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025438" data-src="/static/images/bpt6k10025438.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025438" data-src="/static/images/bpt6k10025438-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002582c" data-src="/static/images/bpt6k1002582c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002582c" data-src="/static/images/bpt6k1002582c-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002411z" data-src="/static/images/bpt6k1002411z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002411z" data-src="/static/images/bpt6k1002411z-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10038211" data-src="/static/images/bpt6k10038211.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10038211" data-src="/static/images/bpt6k10038211-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002346t" data-src="/static/images/bpt6k1002346t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002346t" data-src="/static/images/bpt6k1002346t-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10026745" data-src="/static/images/bpt6k10026745.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10026745" data-src="/static/images/bpt6k10026745-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025223" data-src="/static/images/bpt6k10025223.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025223" data-src="/static/images/bpt6k10025223-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10024554" data-src="/static/images/bpt6k10024554.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10024554" data-src="/static/images/bpt6k10024554-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002588v" data-src="/static/images/bpt6k1002588v.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002588v" data-src="/static/images/bpt6k1002588v-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002528k" data-src="/static/images/bpt6k1002528k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002528k" data-src="/static/images/bpt6k1002528k-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002418v" data-src="/static/images/bpt6k1002418v.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002418v" data-src="/static/images/bpt6k1002418v-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025119" data-src="/static/images/bpt6k10025119.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025119" data-src="/static/images/bpt6k10025119-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025705" data-src="/static/images/bpt6k10025705.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025705" data-src="/static/images/bpt6k10025705-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002456j" data-src="/static/images/bpt6k1002456j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002456j" data-src="/static/images/bpt6k1002456j-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002666m" data-src="/static/images/bpt6k1002666m.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002666m" data-src="/static/images/bpt6k1002666m-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10024858" data-src="/static/images/bpt6k10024858.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10024858" data-src="/static/images/bpt6k10024858-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002671x" data-src="/static/images/bpt6k1002671x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002671x" data-src="/static/images/bpt6k1002671x-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10020513" data-src="/static/images/bpt6k10020513.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10020513" data-src="/static/images/bpt6k10020513-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025290" data-src="/static/images/bpt6k10025290.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025290" data-src="/static/images/bpt6k10025290-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025720" data-src="/static/images/bpt6k10025720.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025720" data-src="/static/images/bpt6k10025720-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10027481" data-src="/static/images/bpt6k10027481.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10027481" data-src="/static/images/bpt6k10027481-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002713t" data-src="/static/images/bpt6k1002713t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002713t" data-src="/static/images/bpt6k1002713t-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10030359" data-src="/static/images/bpt6k10030359.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10030359" data-src="/static/images/bpt6k10030359-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025453" data-src="/static/images/bpt6k10025453.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025453" data-src="/static/images/bpt6k10025453-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002580j" data-src="/static/images/bpt6k1002580j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002580j" data-src="/static/images/bpt6k1002580j-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10024821" data-src="/static/images/bpt6k10024821.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10024821" data-src="/static/images/bpt6k10024821-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002484v" data-src="/static/images/bpt6k1002484v.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002484v" data-src="/static/images/bpt6k1002484v-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002032r" data-src="/static/images/bpt6k1002032r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002032r" data-src="/static/images/bpt6k1002032r-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025312" data-src="/static/images/bpt6k10025312.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025312" data-src="/static/images/bpt6k10025312-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002542v" data-src="/static/images/bpt6k1002542v.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002542v" data-src="/static/images/bpt6k1002542v-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002573d" data-src="/static/images/bpt6k1002573d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002573d" data-src="/static/images/bpt6k1002573d-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002415m" data-src="/static/images/bpt6k1002415m.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002415m" data-src="/static/images/bpt6k1002415m-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002591b" data-src="/static/images/bpt6k1002591b.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002591b" data-src="/static/images/bpt6k1002591b-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002526r" data-src="/static/images/bpt6k1002526r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002526r" data-src="/static/images/bpt6k1002526r-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002410j" data-src="/static/images/bpt6k1002410j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002410j" data-src="/static/images/bpt6k1002410j-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1004067k" data-src="/static/images/bpt6k1004067k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1004067k" data-src="/static/images/bpt6k1004067k-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002497g" data-src="/static/images/bpt6k1002497g.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002497g" data-src="/static/images/bpt6k1002497g-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002466x" data-src="/static/images/bpt6k1002466x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002466x" data-src="/static/images/bpt6k1002466x-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10024324" data-src="/static/images/bpt6k10024324.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10024324" data-src="/static/images/bpt6k10024324-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10026248" data-src="/static/images/bpt6k10026248.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10026248" data-src="/static/images/bpt6k10026248-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002673r" data-src="/static/images/bpt6k1002673r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002673r" data-src="/static/images/bpt6k1002673r-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002744c" data-src="/static/images/bpt6k1002744c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002744c" data-src="/static/images/bpt6k1002744c-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025401" data-src="/static/images/bpt6k10025401.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025401" data-src="/static/images/bpt6k10025401-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002596d" data-src="/static/images/bpt6k1002596d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002596d" data-src="/static/images/bpt6k1002596d-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002571k" data-src="/static/images/bpt6k1002571k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002571k" data-src="/static/images/bpt6k1002571k-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002786q" data-src="/static/images/bpt6k1002786q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002786q" data-src="/static/images/bpt6k1002786q-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1003813g" data-src="/static/images/bpt6k1003813g.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1003813g" data-src="/static/images/bpt6k1003813g-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10020031" data-src="/static/images/bpt6k10020031.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10020031" data-src="/static/images/bpt6k10020031-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002541f" data-src="/static/images/bpt6k1002541f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002541f" data-src="/static/images/bpt6k1002541f-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002565v" data-src="/static/images/bpt6k1002565v.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002565v" data-src="/static/images/bpt6k1002565v-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002524x" data-src="/static/images/bpt6k1002524x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002524x" data-src="/static/images/bpt6k1002524x-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002525b" data-src="/static/images/bpt6k1002525b.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002525b" data-src="/static/images/bpt6k1002525b-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025208" data-src="/static/images/bpt6k10025208.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10025208" data-src="/static/images/bpt6k10025208-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002560s" data-src="/static/images/bpt6k1002560s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002560s" data-src="/static/images/bpt6k1002560s-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002460f" data-src="/static/images/bpt6k1002460f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002460f" data-src="/static/images/bpt6k1002460f-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10026923" data-src="/static/images/bpt6k10026923.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10026923" data-src="/static/images/bpt6k10026923-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002530n" data-src="/static/images/bpt6k1002530n.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002530n" data-src="/static/images/bpt6k1002530n-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002569h" data-src="/static/images/bpt6k1002569h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002569h" data-src="/static/images/bpt6k1002569h-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3370236j" data-src="/static/images/bpt6k3370236j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3370236j" data-src="/static/images/bpt6k3370236j-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33683274" data-src="/static/images/bpt6k33683274.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33683274" data-src="/static/images/bpt6k33683274-f16.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002483f" data-src="/static/images/bpt6k1002483f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002483f" data-src="/static/images/bpt6k1002483f-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002685z" data-src="/static/images/bpt6k1002685z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002685z" data-src="/static/images/bpt6k1002685z-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002420x" data-src="/static/images/bpt6k1002420x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002420x" data-src="/static/images/bpt6k1002420x-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10024628" data-src="/static/images/bpt6k10024628.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10024628" data-src="/static/images/bpt6k10024628-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002422r" data-src="/static/images/bpt6k1002422r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002422r" data-src="/static/images/bpt6k1002422r-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3367949g" data-src="/static/images/bpt6k3367949g.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3367949g" data-src="/static/images/bpt6k3367949g-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3363544s" data-src="/static/images/bpt6k3363544s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3363544s" data-src="/static/images/bpt6k3363544s-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33837990" data-src="/static/images/bpt6k33837990.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33837990" data-src="/static/images/bpt6k33837990-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33636370" data-src="/static/images/bpt6k33636370.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33636370" data-src="/static/images/bpt6k33636370-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3383953p" data-src="/static/images/bpt6k3383953p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3383953p" data-src="/static/images/bpt6k3383953p-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3377231n" data-src="/static/images/bpt6k3377231n.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3377231n" data-src="/static/images/bpt6k3377231n-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3365292f" data-src="/static/images/bpt6k3365292f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3365292f" data-src="/static/images/bpt6k3365292f-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33592005" data-src="/static/images/bpt6k33592005.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33592005" data-src="/static/images/bpt6k33592005-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33638472" data-src="/static/images/bpt6k33638472.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33638472" data-src="/static/images/bpt6k33638472-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3359510k" data-src="/static/images/bpt6k3359510k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3359510k" data-src="/static/images/bpt6k3359510k-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3360695h" data-src="/static/images/bpt6k3360695h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3360695h" data-src="/static/images/bpt6k3360695h-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3363172q" data-src="/static/images/bpt6k3363172q.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3363172q" data-src="/static/images/bpt6k3363172q-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33652058" data-src="/static/images/bpt6k33652058.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33652058" data-src="/static/images/bpt6k33652058-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3364603h" data-src="/static/images/bpt6k3364603h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3364603h" data-src="/static/images/bpt6k3364603h-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33646023" data-src="/static/images/bpt6k33646023.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33646023" data-src="/static/images/bpt6k33646023-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3368399m" data-src="/static/images/bpt6k3368399m.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3368399m" data-src="/static/images/bpt6k3368399m-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3377425m" data-src="/static/images/bpt6k3377425m.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3377425m" data-src="/static/images/bpt6k3377425m-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3356379z" data-src="/static/images/bpt6k3356379z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3356379z" data-src="/static/images/bpt6k3356379z-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3377421z" data-src="/static/images/bpt6k3377421z.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3377421z" data-src="/static/images/bpt6k3377421z-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33639801" data-src="/static/images/bpt6k33639801.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33639801" data-src="/static/images/bpt6k33639801-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3363580n" data-src="/static/images/bpt6k3363580n.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3363580n" data-src="/static/images/bpt6k3363580n-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3385750c" data-src="/static/images/bpt6k3385750c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3385750c" data-src="/static/images/bpt6k3385750c-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3363176c" data-src="/static/images/bpt6k3363176c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3363176c" data-src="/static/images/bpt6k3363176c-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33638457" data-src="/static/images/bpt6k33638457.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33638457" data-src="/static/images/bpt6k33638457-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3378832f" data-src="/static/images/bpt6k3378832f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3378832f" data-src="/static/images/bpt6k3378832f-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3356164t" data-src="/static/images/bpt6k3356164t.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3356164t" data-src="/static/images/bpt6k3356164t-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3360431w" data-src="/static/images/bpt6k3360431w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3360431w" data-src="/static/images/bpt6k3360431w-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33626049" data-src="/static/images/bpt6k33626049.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33626049" data-src="/static/images/bpt6k33626049-f14.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33800631" data-src="/static/images/bpt6k33800631.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33800631" data-src="/static/images/bpt6k33800631-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3364112r" data-src="/static/images/bpt6k3364112r.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3364112r" data-src="/static/images/bpt6k3364112r-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3361376f" data-src="/static/images/bpt6k3361376f.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3361376f" data-src="/static/images/bpt6k3361376f-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3363906g" data-src="/static/images/bpt6k3363906g.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3363906g" data-src="/static/images/bpt6k3363906g-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3356320b" data-src="/static/images/bpt6k3356320b.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3356320b" data-src="/static/images/bpt6k3356320b-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33566953" data-src="/static/images/bpt6k33566953.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33566953" data-src="/static/images/bpt6k33566953-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002279v" data-src="/static/images/bpt6k1002279v.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002279v" data-src="/static/images/bpt6k1002279v-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10023336" data-src="/static/images/bpt6k10023336.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10023336" data-src="/static/images/bpt6k10023336-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10023388" data-src="/static/images/bpt6k10023388.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10023388" data-src="/static/images/bpt6k10023388-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002544p" data-src="/static/images/bpt6k1002544p.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002544p" data-src="/static/images/bpt6k1002544p-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3355730s" data-src="/static/images/bpt6k3355730s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3355730s" data-src="/static/images/bpt6k3355730s-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3360811h" data-src="/static/images/bpt6k3360811h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3360811h" data-src="/static/images/bpt6k3360811h-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10038975" data-src="/static/images/bpt6k10038975.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10038975" data-src="/static/images/bpt6k10038975-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33620366" data-src="/static/images/bpt6k33620366.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33620366" data-src="/static/images/bpt6k33620366-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1004256g" data-src="/static/images/bpt6k1004256g.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1004256g" data-src="/static/images/bpt6k1004256g-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33607649" data-src="/static/images/bpt6k33607649.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33607649" data-src="/static/images/bpt6k33607649-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1003831d" data-src="/static/images/bpt6k1003831d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1003831d" data-src="/static/images/bpt6k1003831d-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33594604" data-src="/static/images/bpt6k33594604.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33594604" data-src="/static/images/bpt6k33594604-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10035818" data-src="/static/images/bpt6k10035818.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10035818" data-src="/static/images/bpt6k10035818-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10034897" data-src="/static/images/bpt6k10034897.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10034897" data-src="/static/images/bpt6k10034897-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3365268s" data-src="/static/images/bpt6k3365268s.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3365268s" data-src="/static/images/bpt6k3365268s-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1003552j" data-src="/static/images/bpt6k1003552j.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1003552j" data-src="/static/images/bpt6k1003552j-f12.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33605421" data-src="/static/images/bpt6k33605421.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33605421" data-src="/static/images/bpt6k33605421-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10042196" data-src="/static/images/bpt6k10042196.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10042196" data-src="/static/images/bpt6k10042196-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3399837c" data-src="/static/images/bpt6k3399837c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3399837c" data-src="/static/images/bpt6k3399837c-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3400184k" data-src="/static/images/bpt6k3400184k.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3400184k" data-src="/static/images/bpt6k3400184k-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34072969" data-src="/static/images/bpt6k34072969.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k34072969" data-src="/static/images/bpt6k34072969-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3362542n" data-src="/static/images/bpt6k3362542n.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3362542n" data-src="/static/images/bpt6k3362542n-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3378483c" data-src="/static/images/bpt6k3378483c.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3378483c" data-src="/static/images/bpt6k3378483c-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10035440" data-src="/static/images/bpt6k10035440.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k10035440" data-src="/static/images/bpt6k10035440-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3378448x" data-src="/static/images/bpt6k3378448x.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3378448x" data-src="/static/images/bpt6k3378448x-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3378350n" data-src="/static/images/bpt6k3378350n.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3378350n" data-src="/static/images/bpt6k3378350n-f8.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002672b" data-src="/static/images/bpt6k1002672b.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k1002672b" data-src="/static/images/bpt6k1002672b-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3376178d" data-src="/static/images/bpt6k3376178d.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3376178d" data-src="/static/images/bpt6k3376178d-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33679734" data-src="/static/images/bpt6k33679734.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33679734" data-src="/static/images/bpt6k33679734-f6.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3362360w" data-src="/static/images/bpt6k3362360w.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3362360w" data-src="/static/images/bpt6k3362360w-f4.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3373455h" data-src="/static/images/bpt6k3373455h.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k3373455h" data-src="/static/images/bpt6k3373455h-f10.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33730769" data-src="/static/images/bpt6k33730769.jpg"/>
+  </div>
+  <div class="page">
+   <img class="lazy bpt6k33730769" data-src="/static/images/bpt6k33730769-f8.jpg"/>
+  </div>
+ </body>
+  <script src="/static/js/site.js"></script>
+</html>

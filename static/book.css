@@ -1,0 +1,99 @@
+/*
+@page {
+    size: 7.25in 10.25in;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+    }
+    */
+* {
+    margin: 0;
+    padding: 0
+    }
+
+body{
+    /*margin:calc(5mm + 0.125in);
+    margin-top:calc(5mm + 0.125in);
+    margin-bottom:calc(5mm + 0.125in);
+    margin-left:calc(5mm + 0.25in);*/
+    /*margin: 0.315in;
+    margin-left:0.45in;
+    margin-right:0.45in;*/
+    font-size:5.5pt;
+    line-height:5.5pt;
+    font-family:"Archivo Narrow";
+    /*height:95%;*/
+}
+
+.page {
+    overflow: hidden;
+    page-break-after: always;
+    position: relative;
+    /*width: 7.25in;
+    height: 10.25in;*/
+}
+
+img {
+    position: absolute;
+    /*transform: scale(1);*/
+}
+
+.seuil{
+    /*background-color: white!important;*/
+    background-color: white;
+    padding: 0.19in;
+    padding-left: 0.65in;
+    padding-right: 0.65in;
+    box-sizing: border-box;
+}
+
+.biblio a{
+    text-decoration:none;
+    color:black;
+}
+
+.intro p{
+  margin:0;
+}
+.intro{
+  position:absolute;
+  transform-origin:left;
+  transform:rotate(90deg);
+  /*left:6.8in;
+  width:10.25in;*/
+  /*height:100%;*/
+  text-align:center;
+  font-family:"Averia";
+  z-index:10;
+  font-size:8pt;
+  line-height:8pt;
+}
+.biblio{
+    column-count:5;
+    column-fill:auto;
+    height:100%;
+     list-style:none;
+}
+
+.biblio .doc{
+   break-inside: avoid;
+  margin-bottom: 4pt;
+}
+
+.id{
+    margin:0;
+    font-family:"IBM Plex Mono";
+}
+.title{
+    margin-top : 0;
+}
+#outro{
+  text-align:right;
+}
+
+.cover{
+}
+
+.documents .page{
+    background-color:black;
+}

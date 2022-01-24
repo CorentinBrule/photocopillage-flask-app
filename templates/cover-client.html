@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <link href="{{ url_for('static', filename='book.css') }}" rel="stylesheet"/>
+  <link href="{{ url_for('static', filename='cover.css') }}" rel="stylesheet"/>
+  {% set n_chunk_start = "%03d" % ((book['chunk_part']*book['chunk_size'])+1) %}
+  {% set n_chunk_end = "%03d" % ((book['chunk_part'] * book['chunk_size']) + documents|length) %}
+  {% set bleed = book['bleed'] %}
+  {% set page_height = book['height'] + bleed*2 %}
+  {% set spine = ((documents|length * 2 + 1) / book['pages_per_inch']) + 0.06  %}
+  {% set cover_width = (book['width']*2 + bleed*2 + spine) %}
+  {% set page_width = book['width'] + bleed*2 %}
+  {% set page_width_img = book['width'] + bleed %}
+  {% set half_spine = spine/2 %}
+  <style>
+  @font-face {
+    font-family: "Archivo Arrow";
+    src: "url({{ url_for('static', filename='fonts/ArchivoNarrow-Medium.ttf') }}, format('truetype'))";
+  }
+  @font-face {
+    font-family: "Averia";
+    src: "url({{ url_for('static', filename='fonts/Averia-Regular.ttf') }}, format('truetype'))";
+  }
+  @font-face {
+    font-family: "IBM Plex";
+    src: "url({{ url_for('static', filename='fonts/IBMPlexMono-Medium.otf') }}, format('opentype'))";
+  }
+
+  @page{
+     size: {{ cover_width }}in {{ cover_height }}in;
+  }
+ .cover{
+     width: {{ cover_width }}in;
+     height: {{ page_height }}in;
+ }
+
+ .cover1, .cover4, .cover1 img, .cover4 img {
+    width: {{ page_width }}in;
+    height: {{ page_height }}in
+ }
+
+ {% if spine > 0.25 %}
+   .spine{
+      width: {{ spine }}in;
+      height: {{ page_height }}in;
+      left: {{ page_width_img }}in;
+   }
+
+   .information{
+      line-height: {{ spine }}in;
+      height: {{ spine }}in;
+      width: {{ page_height }}in;
+      transform-origin: {{ half_spine }}in {{ half_spine }}in;
+   }
+
+ {% else %}
+
+ .spine{
+    width: 0.25in;
+    height: {{ page_height }}in;
+    left: {{ page_width_img + spine }}in;
+    background: black;
+    margin-left: -{{spine}}in;
+    padding-left: {{spine}}in;
+ }
+
+ .information{
+    line-height:  0.25in;
+    height: 0.25in;
+    width: {{ page_height }}in;
+    transform-origin: 0.125in 0.125in;
+ }
+
+
+{% endif %}
+
+ </style>
+ <script>
+ </script>
+ </head>
+ <body>
+  <header>
+    <div class="progress">
+      <p id="task_id">{{task}}</p>
+      <div>Génération de la courverture. <span id="step"></span> images sur <span id="total"></span> chargée. Moyenne en cours par votre navigateur...</div>
+
+  </div>
+  </header>
+  <div class="cover">
+   <div class="cover4">
+    <img src="{{  url_for('static', filename='covers/'+cover_names[1]) }}"/>
+   </div>
+   <div class="spine">
+    <div class="information">
+     <span class="archive">
+      Gallica
+     </span>
+     |
+     <span class="mot">
+      photocopillage
+     </span>
+     |
+     <span class="tri">
+      date d’indexation
+     </span>
+     |
+     <span class="echelle">
+      1:1
+     </span>
+     |
+     <span class="interval">
+      {{ n_chunk_start }}–{{ n_chunk_end }}
+     </span>
+    </div>
+   </div>
+   <div class="cover1">
+    <img src="{{ url_for('static', filename='covers/'+cover_names[0]) }}"/>
+   </div>
+  </div>
+ </body>
+ <script src="{{ url_for('static',filename='js/cover-client.js') }}"></script>
+ <script type="text/javascript">
+ if({{task}}){
+   generateCoverImages({{book|tojson}},{{documents|tojson}},{{page_width_img}},{{page_height}}, "{{ url_for('static',filename='images/')}}")
+ }
+</script>
+</html>
