@@ -15,6 +15,7 @@ logging.basicConfig(level=logging.DEBUG)
 match_threshold = 10000000
 
 app = Flask(__name__)
+
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
 app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379/0'
@@ -383,3 +384,6 @@ def utility_functions():
         print(str(message))
 
     return dict(debug=print_in_console)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
