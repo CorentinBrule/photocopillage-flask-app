@@ -1,15 +1,15 @@
 from flask import Flask, render_template, send_from_directory, request, url_for, flash, redirect, jsonify
-from flask_weasyprint import HTML, render_pdf
+#from flask_weasyprint import HTML, render_pdf
 import json
 from datetime import datetime
 from cover import overlay_image
 import os
-from celery import Celery
-import numpy
-import cv2
-import logging
+#from celery import Celery
+#import numpy
+#import cv2
+#import logging
 import sys
-logging.basicConfig(level=logging.DEBUG)
+#logging.basicConfig(level=logging.DEBUG)
 
 
 match_threshold = 10000000
@@ -17,11 +17,11 @@ match_threshold = 10000000
 app = Flask(__name__)
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
-app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
-app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379/0'
+#app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
+#app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379/0'
 
-celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
-celery.conf.update(app.config)
+#celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
+#celery.conf.update(app.config)
 
 with open("photocopillage.data.json", "r") as f:
     DATA = json.load(f)
@@ -58,91 +58,91 @@ def split_data(data, chunk_size, chunk_part=0):
 def mm2in(value):
     return value / 25.4
 
-@celery.task(bind=True)
-def create_cover_images_background(self, images_folder, enable_data, page_width, page_height, scale, chunk_size, chunk_part, output_folder, cover_names):
-    start_vol = chunk_part*chunk_size
-    end_vol = min(start_vol + chunk_size,len(DATA))
-    N = end_vol - start_vol
-
-    message = ""
-    print(scale, file=sys.stdout)
-    app.logger.info("coucou")
-    app.logger.info(scale)
-    # Create a numpy array of integers to store the average
-    # arrRight = numpy.zeros((h, w), numpy.uint8) # gray scale
-    # arrLeft = numpy.zeros((h, w), numpy.uint8)
-    cover1 = numpy.zeros((int(page_height), int(page_width), 3), numpy.float)  # color
-    cover4 = numpy.zeros((int(page_height), int(page_width), 3), numpy.float)
-
-    for i, document in enumerate(enable_data):
-        for logo_page in document["pages"]:
-            if logo_page.get("available", True):
-                #print(document["id"])
-                targetX, targetY = logo_page["match"]["center"]
-                if not scale == 1.0:
-                    print("rescale")
-                    print(targetX)
-                    print(targetY)
-                    targetX = int(targetX * scale)
-                    targetY = int(targetY * scale)
-                    print(targetX)
-                    print(targetY)
-                offsetX = int(page_width/2 - targetX)
-                offsetY = int(page_height/2 - targetY)
-
-                # cover 1 --> logos
-                logo_path = images_folder + "/" + document["id"] + "-f" + logo_page["pagination"] + ".jpg"
-                logo_img = cv2.imread(logo_path)
-                if not scale == 1.0:
-                    print((logo_img.shape[1], logo_img.shape[0]))
-                    dsize = (int(logo_img.shape[1] * scale), int(logo_img.shape[0] * scale))
-                    print(dsize)
-                    logo_img = cv2.resize(logo_img, dsize)
-
-                tmp_cover1 = numpy.zeros((page_height, page_width, 3), numpy.float)
-                overlay_image(tmp_cover1, logo_img, offsetX, offsetY)
-
-                # cover 4 --> covers
-                cover_path = images_folder + "/" + document["id"]+".jpg"
-                cover_img = cv2.imread(cover_path)
-                print(scale)
-                if not scale == 1.0:
-                    dsize = (int(cover_img.shape[1] * scale), int(cover_img.shape[0] * scale))
-                    cover_img = cv2.resize(cover_img, dsize)
-
-                tmp_cover4 = numpy.zeros((page_height, page_width, 3), numpy.float)
-                overlay_image(tmp_cover4, cover_img, offsetX, offsetY)
-
-                # opacity for average
-                cover1 = cover1 + tmp_cover1 / N
-                cover4 = cover4 + tmp_cover4 / N
-                message = "{} images sur {}".format(i, N)
-                self.update_state(state='PROGRESS',
-                          meta={'current': i, 'total': N,
-                                'status': message})
-                #
-                # if i % 100 == 0:
-                #     cover1_name = "photocopillage-by"+str(chunk_size)+"-"+str(chunk_part)+"-cover1.png"
-                #     cover4_name = "photocopillage-by"+str(chunk_size)+"-"+str(chunk_part)+"-cover4.png"
-                #     cv2.imwrite(output_folder + cover1_name, cover1)
-                #     cv2.imwrite(output_folder + cover4_name, cover4)
-
-    cover1_name = cover_names[0]
-    cover4_name = cover_names[1]
-    cv2.imwrite(output_folder + cover1_name, cover1)
-    cv2.imwrite(output_folder + cover4_name, cover4)
-
-    images_name = (cover1_name, cover4_name)
-
-    return {'current': N, 'total': N, 'status': 'Task completed!',
-            'result': images_name}
-
-
-@app.route('/longtask', methods=['POST'])
-def longtask():
-    task = create_cover_images_background.apply_async()
-    return jsonify({}), 202, {'Location': url_for('taskstatus',
-                                                  task_id=task.id)}
+# @celery.task(bind=True)
+# def create_cover_images_background(self, images_folder, enable_data, page_width, page_height, scale, chunk_size, chunk_part, output_folder, cover_names):
+#     start_vol = chunk_part*chunk_size
+#     end_vol = min(start_vol + chunk_size,len(DATA))
+#     N = end_vol - start_vol
+#
+#     message = ""
+#     print(scale, file=sys.stdout)
+#     app.logger.info("coucou")
+#     app.logger.info(scale)
+#     # Create a numpy array of integers to store the average
+#     # arrRight = numpy.zeros((h, w), numpy.uint8) # gray scale
+#     # arrLeft = numpy.zeros((h, w), numpy.uint8)
+#     cover1 = numpy.zeros((int(page_height), int(page_width), 3), numpy.float)  # color
+#     cover4 = numpy.zeros((int(page_height), int(page_width), 3), numpy.float)
+#
+#     for i, document in enumerate(enable_data):
+#         for logo_page in document["pages"]:
+#             if logo_page.get("available", True):
+#                 #print(document["id"])
+#                 targetX, targetY = logo_page["match"]["center"]
+#                 if not scale == 1.0:
+#                     print("rescale")
+#                     print(targetX)
+#                     print(targetY)
+#                     targetX = int(targetX * scale)
+#                     targetY = int(targetY * scale)
+#                     print(targetX)
+#                     print(targetY)
+#                 offsetX = int(page_width/2 - targetX)
+#                 offsetY = int(page_height/2 - targetY)
+#
+#                 # cover 1 --> logos
+#                 logo_path = images_folder + "/" + document["id"] + "-f" + logo_page["pagination"] + ".jpg"
+#                 logo_img = cv2.imread(logo_path)
+#                 if not scale == 1.0:
+#                     print((logo_img.shape[1], logo_img.shape[0]))
+#                     dsize = (int(logo_img.shape[1] * scale), int(logo_img.shape[0] * scale))
+#                     print(dsize)
+#                     logo_img = cv2.resize(logo_img, dsize)
+#
+#                 tmp_cover1 = numpy.zeros((page_height, page_width, 3), numpy.float)
+#                 overlay_image(tmp_cover1, logo_img, offsetX, offsetY)
+#
+#                 # cover 4 --> covers
+#                 cover_path = images_folder + "/" + document["id"]+".jpg"
+#                 cover_img = cv2.imread(cover_path)
+#                 print(scale)
+#                 if not scale == 1.0:
+#                     dsize = (int(cover_img.shape[1] * scale), int(cover_img.shape[0] * scale))
+#                     cover_img = cv2.resize(cover_img, dsize)
+#
+#                 tmp_cover4 = numpy.zeros((page_height, page_width, 3), numpy.float)
+#                 overlay_image(tmp_cover4, cover_img, offsetX, offsetY)
+#
+#                 # opacity for average
+#                 cover1 = cover1 + tmp_cover1 / N
+#                 cover4 = cover4 + tmp_cover4 / N
+#                 message = "{} images sur {}".format(i, N)
+#                 self.update_state(state='PROGRESS',
+#                           meta={'current': i, 'total': N,
+#                                 'status': message})
+#                 #
+#                 # if i % 100 == 0:
+#                 #     cover1_name = "photocopillage-by"+str(chunk_size)+"-"+str(chunk_part)+"-cover1.png"
+#                 #     cover4_name = "photocopillage-by"+str(chunk_size)+"-"+str(chunk_part)+"-cover4.png"
+#                 #     cv2.imwrite(output_folder + cover1_name, cover1)
+#                 #     cv2.imwrite(output_folder + cover4_name, cover4)
+#
+#     cover1_name = cover_names[0]
+#     cover4_name = cover_names[1]
+#     cv2.imwrite(output_folder + cover1_name, cover1)
+#     cv2.imwrite(output_folder + cover4_name, cover4)
+#
+#     images_name = (cover1_name, cover4_name)
+#
+#     return {'current': N, 'total': N, 'status': 'Task completed!',
+#             'result': images_name}
+#
+#
+# @app.route('/longtask', methods=['POST'])
+# def longtask():
+#     task = create_cover_images_background.apply_async()
+#     return jsonify({}), 202, {'Location': url_for('taskstatus',
+#                                                   task_id=task.id)}
 
 
 W = 7
@@ -212,19 +212,19 @@ def chunk_route(chunk_size, chunk_part, noscript=0):
     book["noscript"] = bool(noscript)
     return render_template('book.html', documents=enable_data, book=book)
 
-
-@app.route('/chunk/<int:chunk_size>/<int:chunk_part>.pdf')
-def chunk_pdf(chunk_size, chunk_part):
-    enable_data = filter_data(DATA, match_threshold)
-    enable_data = sort_data(enable_data, "byIndexationDate")
-    enable_data = split_data(enable_data, chunk_size, chunk_part)
-    book["chunk_size"] = chunk_size
-    book["chunk_part"] = chunk_part
-    book["noscript"] = True
-    print(book)
-    html = render_template('book.html', documents=enable_data, book=book)
-    # print(html)
-    return render_pdf(HTML(string=html))
+#
+# @app.route('/chunk/<int:chunk_size>/<int:chunk_part>.pdf')
+# def chunk_pdf(chunk_size, chunk_part):
+#     enable_data = filter_data(DATA, match_threshold)
+#     enable_data = sort_data(enable_data, "byIndexationDate")
+#     enable_data = split_data(enable_data, chunk_size, chunk_part)
+#     book["chunk_size"] = chunk_size
+#     book["chunk_part"] = chunk_part
+#     book["noscript"] = True
+#     print(book)
+#     html = render_template('book.html', documents=enable_data, book=book)
+#     # print(html)
+#     return render_pdf(HTML(string=html))
 
 
 # @app.route('/chunk/<int:chunk_size>/<int:chunk_part>/cover', methods=('GET', 'POST'))
