@@ -2,7 +2,7 @@ from flask import Flask, render_template, send_from_directory, request, url_for,
 #from flask_weasyprint import HTML, render_pdf
 import json
 from datetime import datetime
-from cover import overlay_image
+# from cover import overlay_image
 import os
 #from celery import Celery
 #import numpy
