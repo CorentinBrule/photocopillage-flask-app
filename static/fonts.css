@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Archivo Narrow";
+  src: url('fonts/ArchivoNarrow-Medium.ttf'), format('truetype');
+}
+@font-face {
+  font-family: "Averia";
+  font-style: normal;
+  src: url('fonts/Averia-Regular.ttf'), format('truetype');
+}
+@font-face {
+  font-family: "Averia";
+  font-style: italic;
+  src: url('fonts/Averia-Italic.ttf'), format('truetype');
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url('fonts/IBMPlexMono-Medium.otf'), format('opentype') ;
+}
+@font-face {
+  font-family: "Brill";
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Brill-Roman.otf'), format('opentype') ;
+}
+@font-face {
+  font-family: "Brill";
+  font-style: italic;
+  font-weight: normal;
+  src: url('fonts/Brill-Italic.otf'), format('opentype') ;
+}
+@font-face {
+  font-family: "Brill";
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/Brill-Bold.otf'), format('opentype') ;
+}
+@font-face {
+  font-family: "Brill";
+  font-style: italic;
+  font-weight: bold;
+  src: url('fonts/Brill-BoldItalic.otf'), format('opentype') ;
+}
