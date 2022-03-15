@@ -31,20 +31,23 @@ def filter_data(data, match_threshold):
     enable_data = []
     for document in data:
         page_counter = 0
+        document["first_indexation_date_iso"] = datetime.strptime(document['first_indexation_date'], '%d/%m/%Y')
+        available_page = False
         for page in document.get("pages", []):
             available = page.get("available", True)
             if available:
                 match = page.get("match")
                 if match.get("value") > match_threshold:
-                    page_counter += 1
-        if page_counter == 1:  # seulement si il y a qu'une page dispo et qui match
+                    available_page = page
+        if available_page:  # seulement si il y a qu'une page dispo et qui match
+            document["pages"] = [available_page]
             enable_data.append(document)
     return enable_data
 
 
 def sort_data(data, way_of_sorting):
     if way_of_sorting == "byIndexationDate":
-        return sorted(data, key=lambda k: datetime.strptime(k['first_indexation_date'], '%d/%m/%Y'))
+        return sorted(data, key=lambda k: k['first_indexation_date_iso'])
     if way_of_sorting == "byPublishingDate":
         pass
 
@@ -211,6 +214,12 @@ def chunk_route(chunk_size, chunk_part, noscript=0):
     book["chunk_part"] = chunk_part
     book["noscript"] = bool(noscript)
     return render_template('book.html', documents=enable_data, book=book)
+
+@app.route('/index_generator', methods=('GET', 'POST'))
+def index_generator():
+    enable_data = filter_data(DATA, match_threshold)
+    enable_data = sort_data(enable_data, "byIndexationDate")
+    return render_template('index.html', documents=enable_data, book=book)
 
 #
 # @app.route('/chunk/<int:chunk_size>/<int:chunk_part>.pdf')

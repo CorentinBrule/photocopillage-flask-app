@@ -49,7 +49,7 @@ img {
 
 .biblio a{
     text-decoration:none;
-    color:black;
+    color:inherit;
 }
 
 .intro p{

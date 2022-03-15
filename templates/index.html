@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Photocopillage</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='photocopillage-by500-chunk0-cover.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='photocopillage-all.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='book.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='photocopillage-site.css') }}" />
+
+  <script src="{{ url_for('static',filename='js/lib/lazyload.min.js') }}"></script>
+  {%- set PAGEWIDTH = book['width'] + book['bleed'] * 2 -%}
+  {%- set PAGEHEIGHT = book['height'] + book['bleed'] * 2 -%}
+  {%- set n_chunk_start = "%03d" % ((book['chunk_part']*book['chunk_size'])+1) -%}
+  {%- set n_chunk_end = "%03d" % ((book['chunk_part'] * book['chunk_size']) + documents|length) -%}
+  <style>
+    /* @page {
+        size: {{ PAGEWIDTH }}in {{ PAGEHEIGHT }}in;
+      }
+      .page{
+        width: {{ PAGEWIDTH }}in;
+        height: {{ PAGEHEIGHT }}in;
+      }
+
+      {% set intro_x = PAGEWIDTH - 0.45 %}
+      .intro{
+        left: {{ intro_x }}in;
+        width: {{ PAGEHEIGHT }}in;
+      }
+
+      img{
+        transform: scale({{ book['scale'] }});
+      } */
+  </style>
+</head>
+
+<body>
+  <div class="page seuil">
+    <div class="cover">
+      <div class="cover4">
+        <img src="/static/covers/photocopillage-all-15inch-cover1.png" />
+      </div>
+      <div class="spine">
+        <div class="information">
+          <span class="archive">
+            Gallica
+          </span>
+          |
+          <span class="mot">
+            photocopillage
+          </span>
+          |
+          <span class="tri">
+            date d’indexation
+          </span>
+          |
+          <span class="echelle">
+            1:1
+          </span>
+          |
+          <span class="interval">
+            001–420
+          </span>
+        </div>
+      </div>
+      <div class="cover1">
+        <img src="/static/covers/photocopillage-all-15inch-cover4.png" />
+      </div>
+    </div>
+    <div class="page seuil">
+      {% include 'snippets/apropos.html' %}
+      <div class="intro">
+        <p>
+          Cette collection est générée à partir de l’archive en ligne
+          <em>Gallica</em>
+        </p>
+        <p>
+          Elle agrège les documents qui comportent l’expression
+          <em>photocopillage</em>
+        </p>
+        {% include 'snippets/form.html' %}
+      </div>
+      <ol class="biblio">
+        {% for document in documents %}
+          <li class="doc" data-indexation-date="{{ document['first_indexation_date_iso'] }}" data-title="{{ document['title'] }}">
+            <a href="#{{ document['id'] }}">
+              <p class="id">{{ document['id'] }}</p>
+              <p class="title">{{ document['title'] }}</p>
+            </a>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+  <div class="documents">
+    {% for document in documents %}
+      {%- set page=document['pages'][0] -%}
+        <div class="book" data-indexation-date="{{ document['first_indexation_date_iso'] }}" data-title="{{ document['title'] }}">
+          <div id="{{ document['id'] }}" class="page page-cover">
+            {%- set img_url="images/"+document['id']+".jpg" -%}
+            {%- set height = page['size']['height']/book['dpi'] -%}
+            {%- set targetX = page['match']['center'][0]/book['dpi'] -%}
+            {%- set  targetY = page['match']['center'][1]/book['dpi'] -%}
+            {%- set left = (PAGEWIDTH/2) - targetX -%}
+            {%- set top = (PAGEHEIGHT/2) - targetY -%}
+            {% if book['noscript'] %}
+              <img src="{{ url_for('static', filename=img_url) }}" style="height:{{ height }}in; transform-origin: {{ targetX }}in {{targetY}}in; left:{{left}}in; top:{{top}}in">
+            {% else %}
+              <img class="lazy" data-src="{{ url_for('static', filename=img_url) }}" style="height:{{ height }}in; transform-origin: {{ targetX }}in {{targetY}}in; left:{{left}}in; top:{{top}}in">
+            {% endif %}
+          </div>
+          <div class="page page-logo">
+            {%- set img_url="images/" + document['id'] + "-f" + page['pagination'] + ".jpg" -%}
+            {% if book['noscript'] %}
+              <img src="{{ url_for('static', filename=img_url) }}" style="height:{{ height }}in; transform-origin: {{ targetX }}in {{targetY}}in; left:{{left}}in; top:{{top}}in">
+            {% else %}
+              <img class="lazy" data-src="{{ url_for('static', filename=img_url) }}" style="height:{{ height }}in; transform-origin: {{ targetX }}in {{targetY}}in; left:{{left}}in; top:{{top}}in">
+            {% endif %}
+          </div>
+        </div>
+    {% endfor %}
+  </div>
+  <script src="{{ url_for('static',filename='js/book.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/site.js') }}"></script>
+</body>
+
+</html>

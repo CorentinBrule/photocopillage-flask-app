@@ -12,9 +12,17 @@ pip install -r requirements.txt
 
 ```
 source venv/bin/active
-flask run
+python app.py
 ```
 
 ### celery
-only for longtask : server side generation cover images 
-```celery -A app.celery  worker --loglevel=INFO```
+Only for longtask : server side generation cover images
+```
+celery -A app.celery  worker --loglevel=INFO
+```
+
+
+## build:
+Use flask app as html generator : `curl {url}  > {output_file}.html`
+
+For exemple, to rebuild new static index ("photocopillage-all.html") : `curl localhost:5000/index_generator > static/photocopillage-all.html`
