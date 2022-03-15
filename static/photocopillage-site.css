@@ -28,6 +28,10 @@
  src: url("fonts/Brill-BoldItalic.ttf") format("truetype");
 }
 
+.book_hide{
+  display: none;
+}
+
 @media screen {
   html {
     background-color: black;
@@ -144,7 +148,7 @@
     height: 100%;
     left: 0;
     font-size: 15pt;
-    line-height: 13pt;
+    line-height: 15pt;
     margin-top: 1rem;
     margin-bottom: 1rem;
     background: black;
@@ -155,15 +159,26 @@
   }
 
   .not-editing #last-element-viewed::after {
-    content: "v";
+    content: "v plus de paramètres v";
     display: block;
     line-height: 1rem;
+    cursor: help;
+    font-size: 12pt;
+    text-decoration: underline;
+    padding-bottom: 1em;
   }
 
   #last-element-hidden {
     display: flex;
     justify-content: space-evenly;
   }
+
+  /* .book{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  } */
 
   .page {
     height: 100vh;
@@ -186,6 +201,10 @@
 
   .cover {
     width: 100%;
+  }
+
+  select, input, .interactif{
+    cursor: pointer;
   }
 
   select, input {
@@ -227,9 +246,10 @@
   #input-width::-webkit-inner-spin-button,
   #input-height::-webkit-outer-spin-button,
   #input-height::-webkit-inner-spin-button
- {
+  {
     display: none;
-}
+  }
+
   .above-page {
     z-index: 9;
     background: rgba(0, 0, 0, 0);
