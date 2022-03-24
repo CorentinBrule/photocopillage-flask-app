@@ -1,4 +1,4 @@
-<form id="form-book">
+<form id="form-book" target="_blank">
   <p id="last-element-viewed"><span>Le résultat est trié par</span>
     <em>
       <select id="select-sort" name="sort">
@@ -15,11 +15,11 @@
         <option value="0.666">2:3</option>
         <option value="0.5">1:2</option>
       </select></p>
-    <div id="form-chunk">    
+    <div id="form-chunk">
       <p>Ce fragment rassemble <input id="input-chunk-size" type="number" value="420" min="1" max="420" name="chunk-size"> documents</p>
       <p>et en est le n<sup>o</sup> <input id="input-chunk-part" type="number" value="1" min="1" max="1" name="chunk-part"> (<span id="pages-result">840</span> pages)</p>
     </div>
-    <p>le format du livre est <input id="input-width" type="number" step="0.01" type="number" value="177.8" min="0" name="width">×<input id="input-height" value="254" name="height" min="0" type="number" step="0.01"> millimètres
+    <p>au format <input id="input-width" type="number" step="0.01" type="number" value="177.8" min="0" name="width">×<input id="input-height" value="254" name="height" min="0" type="number" step="0.01"> millimètres
       (<select id="select-format">
         <option value="A5">A5</option>
         <option value="roman">roman</option>
@@ -29,8 +29,12 @@
         <option value="custom">custom</option>
       </select>)
     </p>
-    <input type="submit" value="Web2print" formaction="/chunk" formmethod="GET">
-    <input type="submit" value="Couverture" formaction="/cover-client" formmethod="GET">
+    <div class="">
+      <span id="petit-texte-form">version imprimable :</span>
+      <input type="submit" value="Intérieur" formaction="/chunk" formmethod="GET">
+      <input type="submit" value="Couverture" formaction="/cover-client" formmethod="GET">
+    </div>
+
     <!-- <input type="submit" value="Commander chez lulu.com" formaction="/buy" formmethod="GET"> -->
     <!-- <input type="submit" value="Commander chez lulu.com" formaction="/response" formmethod="GET"> -->
     <p id="last-element-hidden"><span>^</span><span>^</span></p>

@@ -168,6 +168,10 @@
     padding-bottom: 1em;
   }
 
+  #petit-texte-form{
+    font-size: 12pt;
+  }
+
   #last-element-hidden {
     display: flex;
     justify-content: space-evenly;

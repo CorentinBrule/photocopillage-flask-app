@@ -14,6 +14,14 @@ window.addEventListener("beforeprint", function(event) {
 });
 
 function formular(){
+
+    document.getElementById("menu-form").onkeypress = function(e) {
+      var key = e.charCode || e.keyCode || 0;
+      if (key == 13 && e.target.type !== "submit") {
+        e.preventDefault();
+      }
+    }
+
     menu = document.getElementById("menu-form");
     intro = document.querySelector(".intro")
     intro.classList.add("not-editing");
@@ -59,7 +67,7 @@ function formular(){
     })
 
     document.getElementById("form-book").addEventListener("change", function(){
-        // selection format
+        // selection format !!! pas le bon id
         if (input_width.value == 148 && input_height.value == 210){
             select_format.value = "A5";
         } else if (input_width.value == 152.4 && input_height.value == 228.6){
