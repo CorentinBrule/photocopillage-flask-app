@@ -73,7 +73,7 @@ function formular(){
         } else{
             select_format.value = "custom";
         }
-
+        change_book_size(input_width.value,input_height.value);
     });
     document.getElementById("select-format").addEventListener("change", function(){
         if (select_format.value == "A5"){
@@ -93,6 +93,9 @@ function formular(){
             input_height.value = 279.4;
         }
     })
+  document.getElementById("select-scale").addEventListener("change",function(ev){
+    document.documentElement.style.setProperty('--SCALE', ev.target.value);
+  });
 }
 
 if(document.getElementsByTagName("form").length > 0){
@@ -151,8 +154,31 @@ function filter_books(chunk_size, chunk_part){
       docs_page[i].classList.remove("book_hide");
     }
   }
+}
 
+function change_book_size(width, height){
+  document.documentElement.style.setProperty('--PAGEWIDTH', width+"mm");
+  document.documentElement.style.setProperty('--PAGEHEIGHT', height+"mm");
+}
 
+function calculate_mult(){
+  let vh_pixel = window.innerHeight;
+  // let dpi = findFirstPositive(x => matchMedia(`(max-resolution: ${x}dpi)`).matches)
+  let dpi = 100;
+  let max_inch = 12;
+  let max_pixel = max_inch * dpi;
+  let mult = Math.min(vh_pixel/max_pixel,1);
+  document.documentElement.style.setProperty('--MULT', mult);
+  return mult;
+}
+
+calculate_mult();
+window.onresize = function(){
+  calculate_mult();
+}
+
+function findFirstPositive (f,b=1,d=(e,g,c)=>g<e?-1:0<f(c=e+g>>>1)?c==e||0>=f(c-1)?c:d(e,c-1):d(c+1,g)) {
+  for (;0>=f(b);b<<=1);return d(b>>>1,b)|0
 }
 
 // element.offsetWidth > 0 && element.offsetHeight > 0; // visible

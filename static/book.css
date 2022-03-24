@@ -6,6 +6,11 @@
     overflow: hidden
     }
     */
+
+@media print{
+  page-break-after: always;
+}
+
 * {
     margin: 0;
     padding: 0
@@ -27,7 +32,6 @@ body{
 
 .page {
     overflow: hidden;
-    page-break-after: always;
     position: relative;
     /*width: 7.25in;
     height: 10.25in;*/

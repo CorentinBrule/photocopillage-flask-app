@@ -180,9 +180,23 @@
     flex-wrap: wrap;
   } */
 
-  .page {
-    height: 100vh;
-    width: 70vh;
+  .documents{
+    margin-top: 12pt;
+  }
+
+  .book{
+    position: relative;
+    /* min-height: 100vh; */
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    box-shadow: 0 0 0 0 black;
+  }
+
+  .documents .page {
+    height: calc(var(--PAGEHEIGHT) * var(--MULT));
+    width: calc(var(--PAGEWIDTH) * var(--MULT));
     overflow: visible;
     background-color: unset;
     border: solid grey 1px;
@@ -191,12 +205,58 @@
     z-index: 10;
   }
 
-  .page:nth-child(odd) {
-    float: left;
+  .page-cover img, .page-logo img{
+    transform: scale(var(--SCALE));
   }
 
-  .page:nth-child(even) {
-    float: right;
+  /* .page-cover::after, .page-logo::after{
+    content: "";
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='red' stroke-width='1'/><path d='M0 0 L100 100 ' stroke='red' stroke-width='1'/></svg>");
+    background-repeat:no-repeat;
+   background-position:center center;
+   background-size: 100% 100%, auto;
+   border: solid red 2px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    pointer-events: none;
+  } */
+
+  .page-cover{
+    margin-right: auto;
+    margin-left: 10vw;
+  }
+  .page-logo{
+    margin-left: auto ;
+    margin-right: 10vw;
+    margin-bottom: 5vh;
+  }
+
+  .book:first-child .page-cover::before {
+    content:"couverture des ouvrages";
+    position: absolute;
+    width: auto;
+    text-align: center;
+    color: black;
+    bottom: 100%;
+    font-size: 12pt;
+    line-height: normal;
+    z-index: 12;
+    background-color: white;
+  }
+
+  .book:first-child .page-logo::before {
+    content:"page avec le logo";
+    position: absolute;
+    width: auto;
+    text-align: center;
+    color: black;
+    bottom: 100%;
+    font-size: 12pt;
+    line-height: normal;
+    z-index: 12;
+    background-color: white;
   }
 
   .cover {
@@ -251,8 +311,19 @@
   }
 
   .above-page {
-    z-index: 9;
+    z-index: 10;
     background: rgba(0, 0, 0, 0);
+  }
+
+  .book:hover{
+    z-index: 11;
+    background: rgba(0, 0, 0, 1);
+    transition: all 0.5s;
+    box-shadow: 0vh 0vh 10vh 10vh black;
+  }
+
+  .page:hover{
+    z-index: 12;
   }
 }
 
@@ -298,5 +369,14 @@
   }
   .biblio{
     display: none;
+  }
+
+  .page-cover{
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .page-logo{
+    margin-left: auto ;
+    margin-right: 0;
   }
 }

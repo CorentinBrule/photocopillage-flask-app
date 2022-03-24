@@ -7,7 +7,6 @@
   <title>Photocopillage</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='fonts.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='photocopillage-by500-chunk0-cover.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='photocopillage-all.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='book.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='photocopillage-site.css') }}" />
 
@@ -34,6 +33,16 @@
       img{
         transform: scale({{ book['scale'] }});
       } */
+
+      :root{
+        --PAGEWIDTH: {{ PAGEWIDTH }}in;
+        --PAGEHEIGHT: {{ PAGEHEIGHT }}in;
+        --RATIO: {{ PAGEHEIGHT / PAGEWIDTH }};
+        --SCALE: {{ book['scale'] }};
+        --MULT: 1;
+      }
+
+
   </style>
 </head>
 
@@ -104,26 +113,23 @@
             {%- set height = page['size']['height']/book['dpi'] -%}
             {%- set targetX = page['match']['center'][0]/book['dpi'] -%}
             {%- set  targetY = page['match']['center'][1]/book['dpi'] -%}
-            {%- set left = (PAGEWIDTH/2) - targetX -%}
-            {%- set top = (PAGEHEIGHT/2) - targetY -%}
             {% if book['noscript'] %}
-              <img src="{{ url_for('static', filename=img_url) }}" style="height:{{ height }}in; transform-origin: {{ targetX }}in {{targetY}}in; left:{{left}}in; top:{{top}}in">
+              <img src="{{ url_for('static', filename=img_url) }}" style="height:calc({{ height }}in * var(--MULT)); transform-origin: calc({{ targetX }}in * var(--MULT))  calc({{ targetY }}in * var(--MULT)); left:calc(var(--PAGEWIDTH) * var(--MULT) / 2 - calc({{ targetX }}in * var(--MULT))); top:calc(var(--PAGEHEIGHT) * var(--MULT) / 2 - calc({{ targetY }}in * var(--MULT)))">
             {% else %}
-              <img class="lazy" data-src="{{ url_for('static', filename=img_url) }}" style="height:{{ height }}in; transform-origin: {{ targetX }}in {{targetY}}in; left:{{left}}in; top:{{top}}in">
+              <img class="lazy" data-src="{{ url_for('static', filename=img_url) }}" style="height:calc({{ height }}in * var(--MULT)); transform-origin: calc({{ targetX }}in * var(--MULT))  calc({{ targetY }}in * var(--MULT)); left:calc(var(--PAGEWIDTH) * var(--MULT) / 2 - calc({{ targetX }}in * var(--MULT))); top:calc(var(--PAGEHEIGHT) * var(--MULT) / 2 - calc({{ targetY }}in * var(--MULT)))">
             {% endif %}
           </div>
           <div class="page page-logo">
             {%- set img_url="images/" + document['id'] + "-f" + page['pagination'] + ".jpg" -%}
             {% if book['noscript'] %}
-              <img src="{{ url_for('static', filename=img_url) }}" style="height:{{ height }}in; transform-origin: {{ targetX }}in {{targetY}}in; left:{{left}}in; top:{{top}}in">
+              <img src="{{ url_for('static', filename=img_url) }}" style="height:calc({{ height }}in * var(--MULT)); transform-origin: calc({{ targetX }}in * var(--MULT))  calc({{ targetY }}in * var(--MULT)); left:calc(var(--PAGEWIDTH) * var(--MULT) / 2 - calc({{ targetX }}in * var(--MULT))); top:calc(var(--PAGEHEIGHT) * var(--MULT) / 2 - calc({{ targetY }}in * var(--MULT)))">
             {% else %}
-              <img class="lazy" data-src="{{ url_for('static', filename=img_url) }}" style="height:{{ height }}in; transform-origin: {{ targetX }}in {{targetY}}in; left:{{left}}in; top:{{top}}in">
+              <img class="lazy" data-src="{{ url_for('static', filename=img_url) }}" style="height:calc({{ height }}in * var(--MULT)); transform-origin: calc({{ targetX }}in * var(--MULT))  calc({{ targetY }}in * var(--MULT)); left:calc(var(--PAGEWIDTH) * var(--MULT) / 2 - calc({{ targetX }}in * var(--MULT))); top:calc(var(--PAGEHEIGHT) * var(--MULT) / 2 - calc({{ targetY }}in * var(--MULT)))">
             {% endif %}
           </div>
         </div>
     {% endfor %}
   </div>
-  <script src="{{ url_for('static',filename='js/book.js') }}"></script>
   <script src="{{ url_for('static',filename='js/site.js') }}"></script>
 </body>
 
