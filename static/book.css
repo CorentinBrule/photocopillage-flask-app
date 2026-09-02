@@ -37,7 +37,7 @@ body{
     height: 10.25in;*/
 }
 
-img {
+.page img {
     position: absolute;
     /*transform: scale(1);*/
 }
