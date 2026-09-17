@@ -1,0 +1,10 @@
+static/images
+static/covers
+venv/
+*log
+*.pdf
+/*.png
+__pycache__
+deploy-pi.txt
+chromedriver
+.vscode/
