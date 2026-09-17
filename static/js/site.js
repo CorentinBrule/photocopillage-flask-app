@@ -39,11 +39,16 @@ function formular(){
     input_width = document.getElementById("input-width");
     input_height = document.getElementById("input-height");
 
+    let label_sort = document.querySelector(".tri");
+
     document.getElementById("select-sort").addEventListener("change", function(e){
+      
       let value = e.target.value
       if(value === "byIndexationDate"){
+        label_sort.textContent = "date d’indexation";
         sort_books_by_data("data-indexation-date");
       }else if(value === "byAlphabeticalTitle"){
+        label_sort.textContent = "titre des livres";
         sort_books_by_data("data-title");
       }
     })
@@ -62,8 +67,12 @@ function formular(){
 
       input_chunk_part.setAttribute("max",max_part);
       document.getElementById("pages-result").textContent = n_pages;
+      
+      var n_start = ""+ (chunk_size*chunk_part-chunk_size+1)
+      var n_end = "" + Math.min(chunk_size*chunk_part, NDOC)
+      document.querySelector(".interval").textContent =  "000".substring(0, 3 - n_start.length) + n_start + "–" + "000".substring(0,3 - n_end.length) + n_end; 
 
-      filter_books(chunk_size,chunk_part);
+      filter_books(chunk_size, chunk_part);
     })
 
     document.getElementById("form-book").addEventListener("change", function(){
@@ -102,6 +111,7 @@ function formular(){
         }
     })
   document.getElementById("select-scale").addEventListener("change",function(ev){
+    document.querySelector(".echelle").textContent = ev.target.options[ev.target.selectedIndex].textContent;
     document.documentElement.style.setProperty('--SCALE', ev.target.value);
   });
 }
@@ -134,7 +144,7 @@ function sort_books_by_data(attribute) {
     var docs_page_array = Array.from(docs_page);
     console.log(docs_page_array);
     let sorted_page = docs_page_array.sort(function(a, b) {
-      console.log(a.getAttribute(attribute));
+        // console.log(a.getAttribute(attribute));
         return (a.getAttribute(attribute) < b.getAttribute(attribute)) ? -1 : ((a.getAttribute(attribute) > b.getAttribute(attribute)) ? 1 : 0);
     });
     console.log(sorted_page);

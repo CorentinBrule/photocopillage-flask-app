@@ -47,7 +47,6 @@
 </head>
 
 <body>
-  <div class="page seuil">
     <div class="cover">
       <div class="cover4">
         <img src={{ url_for('static', filename='photocopillage-all-cover-index.jpg') }} />
@@ -79,7 +78,7 @@
       <img src={{ url_for('static', filename='photocopillage-all-logo-index.jpg') }} />
       </div>
     </div>
-    <div class="page seuil">
+
       {% include 'snippets/apropos.html' %}
       <div class="intro">
         <p>
@@ -103,11 +102,11 @@
         {% endfor %}
       </ol>
     </div>
-  </div>
   <div class="documents">
     {% for document in documents %}
       {%- set page=document['pages'][0] -%}
         <div class="book" data-indexation-date="{{ document['first_indexation_date_iso'] }}" data-title="{{ document['title'] }}">
+          <a class="link" href="https://gallica.bnf.fr/ark:/12148/{{ document['id'] }}">https://gallica.bnf.fr/ark:/12148/{{ document['id'] }}</a>
           <div id="{{ document['id'] }}" class="page page-cover">
             {%- set img_url="images/"+document['id']+".jpg" -%}
             {%- set height = page['size']['height']/book['dpi'] -%}
