@@ -9,13 +9,17 @@
     </ul>
     <p>
       La majorité des livres inventoriés ici ne sont plus édités et font parti du dispositif ReLIRE. C’est dans ce cadre qu’ils sont répertoriés par la BnF et qu’un aperçu de 15% des pages est disponible sur Gallica, monnayant l’accès complet ou le <em>fac-similé</em>.
-      </p>
-      La formule « le photocopillage tue le livre » semble donc avoir été prémonitoire, voire performative. Mais la plupart de ces livres sont des manuels ou des ouvrages sur des sujets spécifiques, c’est-à-dire les textes les plus susceptibles de subir les effets du temps, de ne plus être d’actualité ou d’être remplacés par un autre
-      livre, plus récent ou plus complet. 
-      <!-- Le logo contre le photocopillage, numérisé et diffusé publiquement sur internet semble donc maintenant anachronique. -->
     </p>
-    <p>Ce projet est la première itération d’un processus d’édition à partir d’archives en ligne mettant en avant l’automatisation de l’extraction des données jusqu’à l’impression d’un livre et l’explicitation des choix formels et éditoriaux.
+    <p>
+      La formule « le photocopillage tue le livre » semble donc avoir été prémonitoire, voire performative. Mais la plupart de ces livres sont des manuels ou des ouvrages sur des sujets spécifiques, c’est-à-dire les textes les plus susceptibles de subir les effets du temps, de ne plus être d’actualité ou d’être remplacés par un autre
+      livre, plus récent ou plus complet.
+    </p>
+    <p>
+      Ce projet est la première itération d’un processus d’édition à partir d’archives en ligne mettant en avant l’automatisation de l’extraction des données jusqu’à l’impression d’un livre et l’explicitation des choix formels et éditoriaux.
       Cette page est donc un livre, qui peut être fragmenté et réorganisé pour être imprimé ou commandé en impression à la demande.
     </p>
+    <p><a href="https://gallica.bnf.fr/services/engine/search/sru?operation=searchRetrieve&version=1.2&query=(dc.rights%20any%20%22Projet%20de%20num%C3%A9risation%20des%20indisponibles%22)">Recherche</a> des <em>Indisponibles</em> sur Gallica : 91 651 documents</p>
+        <!-- <li><a href="https://gallica.bnf.fr/services/engine/search/sru?operation=searchRetrieve&version=1.2&query=(dc.rights%20any%20%22Projet%20de%20num%C3%A9risation%20des%20indisponibles%22)">Recherche</a> de <em>photocopillage</em> sur Gallica : 587 documents</li> -->
+    <p class="data"><a href="https://gallica.bnf.fr/SRU?version=1.2&operation=searchRetrieve&query=gallica%20all%20%22photocopillage%22&startRecord=1&maximumRecords=1&collapsing=false">Requête API Search</a> de <em>photocopillage</em> sur Gallica : {{ all_data[2]|length }} occurrences dans {{ all_data[1]|length }} documents, {{ all_data[1]|length - all_data[3]|length }} pages sont accessibles gratuitement dans lesquels {{ all_data[0]|length }} pictogrammes <img style="height: 1rem;vertical-align: center;" src="{{ url_for('static', filename='photocopillage.png') }}" alt="logo photocopillage"> ont été trouvé. <a href="nologo">Lire les {{ all_data[4]|length }} résultats à l’intérieur du contenu des livres.</a></p>
   </div>
 </div>

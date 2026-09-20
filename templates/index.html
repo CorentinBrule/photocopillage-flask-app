@@ -15,6 +15,7 @@
   {%- set PAGEHEIGHT = book['height'] + book['bleed'] * 2 -%}
   {%- set n_chunk_start = "%03d" % ((book['chunk_part']*book['chunk_size'])+1) -%}
   {%- set n_chunk_end = "%03d" % ((book['chunk_part'] * book['chunk_size']) + documents|length) -%}
+  {%- set documents = all_data[0] -%}
   <style>
     /* @page {
         size: {{ PAGEWIDTH }}in {{ PAGEHEIGHT }}in;
@@ -89,6 +90,10 @@
           Elle agrège les documents qui comportent l’expression
           <em>photocopillage</em>
         </p>
+        <p id="last-element-viewed">
+          Filtré et centré par le pictogramme 
+          <img style="height: 1.2rem;vertical-align: center;" src="{{ url_for('static', filename='photocopillage.png') }}" alt="logo photocopillage">
+        </p>
         {% include 'snippets/form.html' %}
       </div>
       <ol class="biblio">
@@ -112,19 +117,11 @@
             {%- set height = page['size']['height']/book['dpi'] -%}
             {%- set targetX = page['match']['center'][0]/book['dpi'] -%}
             {%- set  targetY = page['match']['center'][1]/book['dpi'] -%}
-            {% if book['noscript'] %}
-              <img src="{{ url_for('static', filename=img_url) }}" style="height:calc({{ height }}in * var(--MULT)); transform-origin: calc({{ targetX }}in * var(--MULT))  calc({{ targetY }}in * var(--MULT)); left:calc(var(--PAGEWIDTH) * var(--MULT) / 2 - calc({{ targetX }}in * var(--MULT))); top:calc(var(--PAGEHEIGHT) * var(--MULT) / 2 - calc({{ targetY }}in * var(--MULT)))">
-            {% else %}
-              <img class="lazy" data-src="{{ url_for('static', filename=img_url) }}" style="height:calc({{ height }}in * var(--MULT)); transform-origin: calc({{ targetX }}in * var(--MULT))  calc({{ targetY }}in * var(--MULT)); left:calc(var(--PAGEWIDTH) * var(--MULT) / 2 - calc({{ targetX }}in * var(--MULT))); top:calc(var(--PAGEHEIGHT) * var(--MULT) / 2 - calc({{ targetY }}in * var(--MULT)))">
-            {% endif %}
+            <img loading="lazy" src="{{ url_for('static', filename=img_url) }}" style="height:calc({{ height }}in * var(--MULT)); transform-origin: calc({{ targetX }}in * var(--MULT))  calc({{ targetY }}in * var(--MULT)); left:calc(var(--PAGEWIDTH) * var(--MULT) / 2 - calc({{ targetX }}in * var(--MULT))); top:calc(var(--PAGEHEIGHT) * var(--MULT) / 2 - calc({{ targetY }}in * var(--MULT)))">         
           </div>
           <div class="page page-logo">
             {%- set img_url="images/" + document['id'] + "-f" + page['pagination'] + ".jpg" -%}
-            {% if book['noscript'] %}
-              <img src="{{ url_for('static', filename=img_url) }}" style="height:calc({{ height }}in * var(--MULT)); transform-origin: calc({{ targetX }}in * var(--MULT))  calc({{ targetY }}in * var(--MULT)); left:calc(var(--PAGEWIDTH) * var(--MULT) / 2 - calc({{ targetX }}in * var(--MULT))); top:calc(var(--PAGEHEIGHT) * var(--MULT) / 2 - calc({{ targetY }}in * var(--MULT)))">
-            {% else %}
-              <img class="lazy" data-src="{{ url_for('static', filename=img_url) }}" style="height:calc({{ height }}in * var(--MULT)); transform-origin: calc({{ targetX }}in * var(--MULT))  calc({{ targetY }}in * var(--MULT)); left:calc(var(--PAGEWIDTH) * var(--MULT) / 2 - calc({{ targetX }}in * var(--MULT))); top:calc(var(--PAGEHEIGHT) * var(--MULT) / 2 - calc({{ targetY }}in * var(--MULT)))">
-            {% endif %}
+            <img loading="lazy" src="{{ url_for('static', filename=img_url) }}" style="height:calc({{ height }}in * var(--MULT)); transform-origin: calc({{ targetX }}in * var(--MULT))  calc({{ targetY }}in * var(--MULT)); left:calc(var(--PAGEWIDTH) * var(--MULT) / 2 - calc({{ targetX }}in * var(--MULT))); top:calc(var(--PAGEHEIGHT) * var(--MULT) / 2 - calc({{ targetY }}in * var(--MULT)))">
           </div>
         </div>
     {% endfor %}

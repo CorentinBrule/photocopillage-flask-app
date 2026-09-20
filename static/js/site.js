@@ -9,14 +9,14 @@ var NDOC = 420;
 
 function formular(){
 
-    document.getElementById("menu-form").onkeypress = function(e) {
+    document.getElementById("form-book").onkeypress = function(e) {
       var key = e.charCode || e.keyCode || 0;
       if (key == 13 && e.target.type !== "submit") {
         e.preventDefault();
       }
     }
 
-    menu = document.getElementById("menu-form");
+    menu = document.getElementById("form-book");
     intro = document.querySelector(".intro")
     intro.classList.add("not-editing");
     intro.addEventListener("click", function(ev){
@@ -85,6 +85,7 @@ function formular(){
             select_format.value = "custom";
         }
         change_book_size(input_width.value,input_height.value);
+        draw_bookbox(input_width.value,input_height.value, document.getElementById("input-chunk-size").value)
     });
     document.getElementById("select-format").addEventListener("change", function(){
         if (select_format.value == "A5"){
@@ -172,6 +173,7 @@ function change_book_size(width, height){
   document.documentElement.style.setProperty('--PAGEHEIGHT', height+"mm");
 }
 
+/* qu'est-ce que c'est ? */
 function calculate_mult(){
   let vh_pixel = window.innerHeight;
   // let dpi = findFirstPositive(x => matchMedia(`(max-resolution: ${x}dpi)`).matches)
@@ -191,5 +193,16 @@ window.onresize = function(){
 function findFirstPositive (f,b=1,d=(e,g,c)=>g<e?-1:0<f(c=e+g>>>1)?c==e||0>=f(c-1)?c:d(e,c-1):d(c+1,g)) {
   for (;0>=f(b);b<<=1);return d(b>>>1,b)|0
 }
+
+
+function draw_bookbox(width,height,npages){
+  const bookbox = document.querySelector(".bookbox");
+  bookbox.style.setProperty('--width', width+"px");
+  bookbox.style.setProperty('--height', height+"px");
+  bookbox.style.setProperty('--depth', npages/10+"px");
+  bookbox.style.setProperty('--npage', npages);
+}
+
+draw_bookbox(document.querySelector("#input-width").value,document.querySelector("#input-height").value, document.querySelector("#input-chunk-size").value)
 
 // element.offsetWidth > 0 && element.offsetHeight > 0; // visible

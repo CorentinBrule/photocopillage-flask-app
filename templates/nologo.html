@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photocopillage</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='photocopillage.png') }}" type="image/x-icon">
+
+  <script src="{{ url_for('static',filename='js/lib/lazyload.min.js') }}"></script>
+  {%- set PAGEWIDTH = book['width'] + book['bleed'] * 2 -%}
+  {%- set PAGEHEIGHT = book['height'] + book['bleed'] * 2 -%}
+  {%- set n_chunk_start = "%03d" % ((book['chunk_part']*book['chunk_size'])+1) -%}
+  {%- set n_chunk_end = "%03d" % ((book['chunk_part'] * book['chunk_size']) + documents|length) -%}
+  <style>
+
+      .book:first-child .page-logo::before {
+        content: "page(s) avec « photocopillage »";
+      }
+      .documents{
+        margin-top:15vh;
+      }
+      :root{
+        --PAGEWIDTH: {{ PAGEWIDTH }}in;
+        --PAGEHEIGHT: {{ PAGEHEIGHT }}in;
+        --RATIO: {{ PAGEHEIGHT / PAGEWIDTH }};
+        --SCALE: {{ book['scale'] }};
+        --MULT: 1;
+      }
+
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a style="font-size: 1rem;vertical-align: center;position: fixed;top: 0;left: 0;line-height: 4rem;z-index: 16;" href="/">
+      <img style="height: 4rem;vertical-align: center;filter:invert(1)" src="{{ url_for('static', filename='photocopillage.png') }}" alt="logo photocopillage">
+      retour à lʼindex
+    </a>
+  </nav>
+  <div class="intro">
+    <p>Les {{ documents|length }} documents accessibles sur <em>Gallica</em> qui comprennent le terme <em>photocopillage</em></p>
+    <p>à l'intérieur de leur contenu, sans que ce soit un ajout de l'éditeur</p>
+  </div>
+  <div class="documents">
+    {% for document in documents %}
+      {%- set page=document['pages'][0] -%}
+        <div class="book" data-indexation-date="{{ document['first_indexation_date_iso'] }}" data-title="{{ document['title'] }}">
+          <a class="link" href="https://gallica.bnf.fr/ark:/12148/{{ document['id'] }}">https://gallica.bnf.fr/ark:/12148/{{ document['id'] }}</a>
+          <div id="{{ document['id'] }}" class="page page-cover">
+
+            {%- set img_url="images/"+document['id']+".jpg" -%}
+            <img loading="lazy" src="{{ url_for('static', filename=img_url) }}"  onload="this.width/=4;">
+          </div>
+          {% for page in document['pages'] %}
+          {% if page['pagination']|int > document["cover_pagination"]|int + 4 %}
+
+          <div class="page page-logo">
+            {%- set img_url="images/" + document['id'] + "-f" + page['pagination'] + ".jpg" -%}
+              <img loading="lazy" src="{{ url_for('static', filename=img_url) }}" onload="this.width/=4;">
+            
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+    {% endfor %}
+  </div>
+</body>
+
+</html>

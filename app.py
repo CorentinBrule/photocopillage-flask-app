@@ -29,21 +29,42 @@ with open("photocopillage.data.json", "r") as f:
 
 def filter_data(data, match_threshold):
     enable_data = []
+    all_documents = data
+    all_ocrmatch = []
+    no_right = []
+    no_logomatch = get_pages_without_logo(data, match_threshold)
     for document in data:
         page_counter = 0
         document["first_indexation_date_iso"] = datetime.strptime(document['first_indexation_date'], '%d/%m/%Y')
         available_page = False
         for page in document.get("pages", []):
+            all_ocrmatch.append(page)
             available = page.get("available", True)
             if available:
                 match = page.get("match")
                 if match.get("value") > match_threshold:
                     available_page = page
+            else:
+                no_right.append(page)
         if available_page:  # seulement si il y a qu'une page dispo et qui match
             document["pages"] = [available_page]
             enable_data.append(document)
-    return enable_data
+    return [enable_data,all_documents,all_ocrmatch,no_right,no_logomatch]
 
+def get_pages_without_logo(data, match_threshold):
+    enable_data = []
+    for document in data:
+        page_counter = 0
+        available_page = False
+        document["first_indexation_date_iso"] = datetime.strptime(document['first_indexation_date'], '%d/%m/%Y')
+        for page in document.get("pages", []):
+            match = page.get("match",False)
+            if match: 
+                if match.get("value") < match_threshold and int(page["pagination"]) > int(document["cover_pagination"]) + 10:
+                    available_page = True
+        if available_page:
+            enable_data.append(document)
+    return enable_data
 
 def sort_data(data, way_of_sorting):
     if way_of_sorting == "byIndexationDate":
@@ -170,9 +191,7 @@ book = {
 
 @app.route('/')
 def index():
-    enable_data = filter_data(DATA, match_threshold)
-    enable_data = sort_data(enable_data, "byIndexationDate")
-    return send_from_directory('static','photocopillage-all.html')
+    return send_from_directory('static','html/photocopillage-all.html')
 
 
 @app.route('/chunk')
@@ -183,7 +202,7 @@ def chunk():
     book['chunk_size'] = int(request.args.get("chunk-size"))
     book['chunk_part'] = int(request.args.get("chunk-part"))-1
     book['sort'] = request.args.get("sort", type=str)
-    enable_data = filter_data(DATA, match_threshold)
+    enable_data = filter_data(DATA, match_threshold)[0]
     enable_data = sort_data(enable_data, book['sort'])
     enable_data = split_data(enable_data,  book['chunk_size'], book['chunk_part'])
 
@@ -207,7 +226,7 @@ def chunk():
 @app.route('/chunk/<int:chunk_size>/<int:chunk_part>/noscript=<int:noscript>', methods=('GET', 'POST'))
 @app.route('/chunk/<int:chunk_size>/<int:chunk_part>', methods=('GET', 'POST'))
 def chunk_route(chunk_size, chunk_part, noscript=0):
-    enable_data = filter_data(DATA, match_threshold)
+    enable_data = filter_data(DATA, match_threshold)[0]
     enable_data = sort_data(enable_data, "byIndexationDate")
     enable_data = split_data(enable_data, chunk_size, chunk_part)
     book["chunk_size"] = chunk_size
@@ -217,9 +236,15 @@ def chunk_route(chunk_size, chunk_part, noscript=0):
 
 @app.route('/index_generator', methods=('GET', 'POST'))
 def index_generator():
-    enable_data = filter_data(DATA, match_threshold)
-    enable_data = sort_data(enable_data, "byIndexationDate")
-    return render_template('index.html', documents=enable_data, book=book)
+    all_data = filter_data(DATA, match_threshold)
+    all_data[0] = sort_data(all_data[0], "byIndexationDate")
+    return render_template('index.html', all_data=all_data, book=book)
+
+@app.route('/nologo', methods=('GET', 'POST'))
+def nologo():
+    without_logo = get_pages_without_logo(DATA, match_threshold)
+    app.logger.info(len(without_logo))
+    return render_template('nologo.html', documents=without_logo, book=book)
 
 #
 # @app.route('/chunk/<int:chunk_size>/<int:chunk_part>.pdf')
