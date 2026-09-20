@@ -25,10 +25,13 @@
 <body>
 <div class="page seuil">
    <div class="intro">
-        <p>Cette collection est générée à partir de l’archive en ligne&nbsp; <em>Gallica</em></p>
-        <p>Elle agrège les documents qui comportent l’expression&nbsp; <em>photocopillage</em></p>
-        <p>Le résultat est trié par <em>date d’indexation</em> et présenté à l’échelle <em>1:1</em></p>
-        <p>Ce fragment rassemble les occurences de <em>{{ n_chunk_start }}</em> à <em>{{ n_chunk_end }}</em></p>
+        <p>Ce livre est généré à partir de l’archive en&nbsp;ligne&nbsp;<em>Gallica</em></p>
+        <p>Il agrège les&nbsp;documents qui&nbsp;comportent l’expression&nbsp;<em>photocopillage</em></p>
+        <p>Filtré et centré par le&nbsp;pictogramme <span><img src="{{ url_for('static', filename='photocopillage.png') }}" alt="logo photocopillage"></span></p>
+        <p>Trié par <em>date&nbsp;d’indexation</em> des documents</p>
+        <p>Présenté à l’échelle <em>1:1</em></p>
+        <p>Ce fragment rassemble les&nbsp;occurences <em>{{ n_chunk_start }}</em> à <em>{{ n_chunk_end }}</em></p>
+        <p><a href="https://photocopillage.brulé.net">photocopillage.brulé.net</a></p>
     </div>
    <ol class="biblio">
         {% for document in documents %}

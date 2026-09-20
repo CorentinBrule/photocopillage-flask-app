@@ -20,9 +20,6 @@ function check_biblio(biblio){
         /*console.log(doc.offsetLeft)*/
         if( doc.offsetLeft >= biblio_limit ){
             next_biblio.appendChild(doc);
-            /*console.log(doc)*/
-        }else{
-            /*console.log(doc)*/
         }
     }
     if(next_biblio.children.length > 0){
@@ -47,6 +44,7 @@ function seuil(){
     }
 }
 
-
-biblio();
-seuil();
+window.onload=()=>{
+    biblio();
+    seuil();
+}
