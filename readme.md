@@ -25,4 +25,4 @@ celery -A app.celery  worker --loglevel=INFO
 ## build:
 Use flask app as html generator : `curl {url}  > {output_file}.html`
 
-For exemple, to rebuild new static index ("photocopillage-all.html") : `curl localhost:5000/index_generator > static/photocopillage-all.html`
+For exemple, to rebuild new static index ("photocopillage-all.html") : `curl localhost:5000/index_generator > static/html/photocopillage-all.html`

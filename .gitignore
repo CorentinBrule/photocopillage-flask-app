@@ -1,5 +1,6 @@
 static/images
 static/covers
+static/html
 venv/
 *log
 *.pdf
