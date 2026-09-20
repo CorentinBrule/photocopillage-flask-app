@@ -294,44 +294,44 @@ def nologo():
 #     return render_template('cover.html', documents=enable_data, book=book, cover_names=cover_names,task=task)
 
 
-@app.route('/cover', methods=('GET','POST'))
-def chunk_cover2():
-    book['width'] = mm2in(float(request.args.get("width", book['width'])))
-    book['height'] = mm2in(float(request.args.get("height", book['height'])))
-    book['scale'] = float(request.args.get("scale", 1.0))
-    book['chunk_size'] = int(request.args.get("chunk-size"))
-    book['chunk_part'] = int(request.args.get("chunk-part"))-1
-    book['sort'] = request.args.get("sort", book['sort'], type=str)
-    print(book['scale'])
+# @app.route('/cover', methods=('GET','POST'))
+# def chunk_cover2():
+#     book['width'] = mm2in(float(request.args.get("width", book['width'])))
+#     book['height'] = mm2in(float(request.args.get("height", book['height'])))
+#     book['scale'] = float(request.args.get("scale", 1.0))
+#     book['chunk_size'] = int(request.args.get("chunk-size"))
+#     book['chunk_part'] = int(request.args.get("chunk-part"))-1
+#     book['sort'] = request.args.get("sort", book['sort'], type=str)
+#     print(book['scale'])
 
-    enable_data = filter_data(DATA, match_threshold)
-    enable_data = sort_data(enable_data, book['sort'])
-    enable_data = split_data(enable_data,  book['chunk_size'], book['chunk_part'])
+#     enable_data = filter_data(DATA, match_threshold)[0]
+#     enable_data = sort_data(enable_data, book['sort'])
+#     enable_data = split_data(enable_data,  book['chunk_size'], book['chunk_part'])
 
-    page_width_pixel = int(book["width"] + book["bleed"] * 2) * book["dpi"]
-    page_height_pixel = int(book["height"] + book["bleed"] * 2) * book["dpi"]
+#     page_width_pixel = int(book["width"] + book["bleed"] * 2) * book["dpi"]
+#     page_height_pixel = int(book["height"] + book["bleed"] * 2) * book["dpi"]
 
-    task = False
-    cover1_name = "photocopillage-" + str(book['width']).replace(".","_") + "-" + str(book['height']).replace(".","_") + "-" + str(book['scale']).replace(".","_") + "-" + str( book['chunk_size']) + "-" + str(book['chunk_part']) + "-cover1.png"
-    cover4_name = "photocopillage-" + str(book['width']).replace(".","_") + "-" + str(book['height']).replace(".","_") + "-" + str(book['scale']).replace(".","_") + "-" + str( book['chunk_size']) + "-" + str(book['chunk_part']) + "-cover4.png"
-    cover_names = (cover1_name, cover4_name)
+#     task = False
+#     cover1_name = "photocopillage-" + str(book['width']).replace(".","_") + "-" + str(book['height']).replace(".","_") + "-" + str(book['scale']).replace(".","_") + "-" + str( book['chunk_size']) + "-" + str(book['chunk_part']) + "-cover1.png"
+#     cover4_name = "photocopillage-" + str(book['width']).replace(".","_") + "-" + str(book['height']).replace(".","_") + "-" + str(book['scale']).replace(".","_") + "-" + str( book['chunk_size']) + "-" + str(book['chunk_part']) + "-cover4.png"
+#     cover_names = (cover1_name, cover4_name)
 
-    covers_path = os.path.join(APP_ROOT, "static/covers/")
-    #print(enable_data)
-    if os.path.isfile(covers_path + cover1_name) and os.path.isfile(covers_path + cover4_name):
-        task = 0
-    else:
-        task = create_cover_images_background.apply_async(args=[os.path.join(APP_ROOT, "static/images/"),
-                                                         enable_data,
-                                                         page_width_pixel,
-                                                         page_height_pixel,
-                                                         book['scale'],
-                                                         book['chunk_size'],
-                                                         book['chunk_part'],
-                                                         covers_path,
-                                                         cover_names])
+#     covers_path = os.path.join(APP_ROOT, "static/covers/")
+#     #print(enable_data)
+#     if os.path.isfile(covers_path + cover1_name) and os.path.isfile(covers_path + cover4_name):
+#         task = 0
+#     else:
+#         task = create_cover_images_background.apply_async(args=[os.path.join(APP_ROOT, "static/images/"),
+#                                                          enable_data,
+#                                                          page_width_pixel,
+#                                                          page_height_pixel,
+#                                                          book['scale'],
+#                                                          book['chunk_size'],
+#                                                          book['chunk_part'],
+#                                                          covers_path,
+#                                                          cover_names])
 
-    return render_template('cover-server.html', documents=enable_data, book=book, cover_names=cover_names,task=task)
+#     return render_template('cover-server.html', documents=enable_data, book=book, cover_names=cover_names,task=task)
 
 @app.route('/cover-client', methods=('GET','POST'))
 def chunk_cover3():
@@ -343,7 +343,7 @@ def chunk_cover3():
     book['sort'] = request.args.get("sort", book['sort'], type=str)
     print(book['scale'])
 
-    enable_data = filter_data(DATA, match_threshold)
+    enable_data = filter_data(DATA, match_threshold)[0]
     enable_data = sort_data(enable_data, book['sort'])
     enable_data = split_data(enable_data,  book['chunk_size'], book['chunk_part'])
 
@@ -365,49 +365,49 @@ def chunk_cover3():
     return render_template('cover-client.html', documents=enable_data, book=book, cover_names=cover_names,task=task)
 
 
-@app.route('/status/<task_id>')
-def taskstatus(task_id):
-    task = create_cover_images_background.AsyncResult(task_id)
-    if task.state == 'PENDING':
-        # job did not start yet
-        response = {
-            'state': task.state,
-            'current': 0,
-            'total': 1,
-            'status': 'Pending...'
-        }
-    elif task.state != 'FAILURE':
-        response = {
-            'state': task.state,
-            'current': task.info.get('current', 0),
-            'total': task.info.get('total', 1),
-            'status': task.info.get('status', '')
-        }
-        if 'result' in task.info:
-            response['result'] = task.info['result']
-    else:
-        # something went wrong in the background job
-        response = {
-            'state': task.state,
-            'current': 1,
-            'total': 1,
-            'status': str(task.info),  # this is the exception raised
-        }
-    return jsonify(response)
+# @app.route('/status/<task_id>')
+# def taskstatus(task_id):
+#     task = create_cover_images_background.AsyncResult(task_id)
+#     if task.state == 'PENDING':
+#         # job did not start yet
+#         response = {
+#             'state': task.state,
+#             'current': 0,
+#             'total': 1,
+#             'status': 'Pending...'
+#         }
+#     elif task.state != 'FAILURE':
+#         response = {
+#             'state': task.state,
+#             'current': task.info.get('current', 0),
+#             'total': task.info.get('total', 1),
+#             'status': task.info.get('status', '')
+#         }
+#         if 'result' in task.info:
+#             response['result'] = task.info['result']
+#     else:
+#         # something went wrong in the background job
+#         response = {
+#             'state': task.state,
+#             'current': 1,
+#             'total': 1,
+#             'status': str(task.info),  # this is the exception raised
+#         }
+#     return jsonify(response)
 
-@app.route("/response", methods=('GET', 'POST'))
-def response():
-    book['width'] = mm2in(float(request.args.get("width")))
-    book['height'] = mm2in(float(request.args.get("height")))
-    book['scale'] = float(request.args.get("scale", 1))
-    book['chunk_size'] = int(request.args.get("chunk-size"))
-    book['chunk_part'] = int(request.args.get("chunk-part"))-1
-    book['sort'] = request.args.get("sort", type=str)
-    enable_data = filter_data(DATA, match_threshold)
-    enable_data = sort_data(enable_data, book['sort'])
-    enable_data = split_data(enable_data,  book['chunk_size'], book['chunk_part'])
+# @app.route("/response", methods=('GET', 'POST'))
+# def response():
+#     book['width'] = mm2in(float(request.args.get("width")))
+#     book['height'] = mm2in(float(request.args.get("height")))
+#     book['scale'] = float(request.args.get("scale", 1))
+#     book['chunk_size'] = int(request.args.get("chunk-size"))
+#     book['chunk_part'] = int(request.args.get("chunk-part"))-1
+#     book['sort'] = request.args.get("sort", type=str)
+#     enable_data = filter_data(DATA, match_threshold)
+#     enable_data = sort_data(enable_data, book['sort'])
+#     enable_data = split_data(enable_data,  book['chunk_size'], book['chunk_part'])
 
-    return render_template('response.html', documents=enable_data, book=book)
+#     return render_template('response.html', documents=enable_data, book=book)
 
 
 

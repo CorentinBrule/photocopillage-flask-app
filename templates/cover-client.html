@@ -72,8 +72,8 @@
  <body>
   <header>
     <div class="progress">
-      <p id="task_id">{{task}}</p>
-      <div>Génération de la courverture. <span id="step"></span> images sur <span id="total"></span> chargée. Moyenne en cours par votre navigateur...</div>
+      <p>Génération de la couverture. Moyenne en cours par votre navigateur...</p>
+      <p><span style="text-decoration:underline;" id="part">1ère de couverture</span> : <span id="step"></span> images sur <span id="total"></span> chargées.</p>
 
   </div>
   </header>
@@ -112,7 +112,7 @@
  <script src="{{ url_for('static',filename='js/cover-client.js') }}"></script>
  <script type="text/javascript">
  if({{task}}){
-   generateCoverImages({{book|tojson}},{{documents|tojson}},{{page_width_img}},{{page_height}}, "{{ url_for('static',filename='images/')}}")
+   generateCoverImages({{book|tojson}},{{documents|tojson}},{{page_width_img}},{{page_height}}, {{scale}}, "{{ url_for('static',filename='images/')}}")
  }
 </script>
 </html>
