@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photocopillage</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='fonts.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='photocopillage-by500-chunk0-cover.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='book.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='photocopillage-site.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='cover.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='photocopillage.png') }}" type="image/x-icon">
 
   <script src="{{ url_for('static',filename='js/lib/lazyload.min.js') }}"></script>
   {%- set PAGEWIDTH = book['width'] + book['bleed'] * 2 -%}

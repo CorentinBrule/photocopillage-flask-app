@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Archivo Narrow";
+  src: url('fonts/ArchivoNarrow-Medium.ttf'), format('truetype');
+}
+
+@font-face {
+  font-family: "Averia";
+  font-style: normal;
+  src: url('fonts/Averia-Regular.ttf'), format('truetype');
+}
+
+@font-face {
+  font-family: "Averia";
+  font-style: italic;
+  src: url('fonts/Averia-Italic.ttf'), format('truetype');
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url('fonts/IBMPlexMono-Medium.otf'), format('opentype');
+}
+
+@font-face {
+  font-family: "Brill";
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Brill-Roman.ttf'), format('truetype');
+}
+
+@font-face {
+  font-family: "Brill";
+  font-style: italic;
+  font-weight: normal;
+  src: url('fonts/Brill-Italic.ttf'), format('truetype');
+}
+
+@font-face {
+  font-family: "Brill";
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/Brill-Bold.ttf'), format('truetype');
+}
+
+@font-face {
+  font-family: "Brill";
+  font-style: italic;
+  font-weight: bold;
+  src: url('fonts/Brill-BoldItalic.ttf'), format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+
+body {
+  font-family: "Archivo Narrow";
+}
+
+.biblio{
+  list-style: none;
+  .doc{
+    break-inside: avoid;
+    margin-bottom: 4pt;
+  }
+  a{
+    text-decoration: none;
+    color: inherit
+  }
+  a:visited{
+    color: inherit
+  }
+
+  .id {
+    margin: 0;
+    font-family: "IBM Plex Mono";
+  }
+
+  .title {
+    margin-top: 0;
+  }
+}
+
+.intro {
+  font-family: "Averia";
+}
+
+.apropos {
+  font-family: "Brill";
+  font-weight: bold;
+}

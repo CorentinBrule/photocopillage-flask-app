@@ -1,6 +1,4 @@
-var aLazyLoad = new LazyLoad({
-  elements_selector: ".lazy"
-});
+
 //callback_enter: entered
 function entered(element){
     console.log(element)
@@ -8,10 +6,6 @@ function entered(element){
 }
 
 var NDOC = 420;
-
-window.addEventListener("beforeprint", function(event) {
-    aLazyLoad.loadAll();
-});
 
 function formular(){
 
@@ -120,13 +114,12 @@ if(document.getElementsByTagName("form").length > 0){
     formular();
 }
 
-pages = document.querySelectorAll(".page")
 window.addEventListener("scroll", function(){
-  for (var i = 0; i < pages.length; i++) {
-    if (document.body.scrollTop + (window.innerHeight/2) < pages[i].getBoundingClientRect().top){
-      pages[i].classList.add("above-page");
+  for (page of document.querySelectorAll(".page")) {
+    if (document.body.scrollTop + (window.innerHeight/2) < page.getBoundingClientRect().top){
+      page.classList.add("above-page");
     }else{
-      pages[i].classList.remove("above-page");
+      page.classList.remove("above-page");
     }
   }
 });

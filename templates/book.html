@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Photocopillage</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='fonts.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='book.css') }}"/>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
     {% set PAGEWIDTH = book['width'] + book['bleed'] * 2 %}
@@ -11,41 +11,14 @@
     {% set n_chunk_start = "%03d" % ((book['chunk_part']*book['chunk_size'])+1) %}
     {% set n_chunk_end = "%03d" % ((book['chunk_part'] * book['chunk_size']) + documents|length) %}
     <style>
-      @font-face {
-        font-family: "Archivo Narrow";
-        src: "url({{ url_for('static', filename='fonts/ArchivoNarrow-Medium.ttf') }}, format('truetype') )";
+      :root{
+        --WIDTH: {{ PAGEWIDTH }}in;
+        --HEIGHT: {{ PAGEHEIGHT }}in;
+        --BLEED: {{ book['bleed'] }}in;
+        --SCALE: {{ book['scale'] }};
       }
-      @font-face {
-        font-family: "Averia";
-        font-style: normal;
-        src: "url({{ url_for('static', filename='fonts/Averia-Regular.ttf') }}, format('truetype') )";
-      }
-      @font-face {
-        font-family: "Averia";
-        font-style: italic;
-        src: "url({{ url_for('static', filename='fonts/Averia-Italic.ttf') }}, format('truetype') )";
-      }
-      @font-face {
-        font-family: "IBM Plex Mono";
-        src: "url({{ url_for('static', filename='fonts/IBMPlexMono-Medium.otf')}}, format('opentype') )";
-      }
-
       @page {
         size: {{ PAGEWIDTH }}in {{ PAGEHEIGHT }}in;
-      }
-      .page{
-        width: {{ PAGEWIDTH }}in;
-        height: {{ PAGEHEIGHT }}in;
-      }
-
-      {% set intro_x = PAGEWIDTH - 0.45 %}
-      .intro{
-        left: {{ intro_x }}in;
-        width: {{ PAGEHEIGHT }}in;
-      }
-
-      img{
-        transform: scale({{ book['scale'] }});
       }
     </style>
 </head>
@@ -98,7 +71,7 @@
     {% endif %}
 {% endfor %}
 </div>
+
 <script src="{{ url_for('static',filename='js/book.js') }}"></script>
-<script src="{{ url_for('static',filename='js/site.js') }}"></script>
 </body>
 </html>

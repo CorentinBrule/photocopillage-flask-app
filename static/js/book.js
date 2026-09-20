@@ -1,4 +1,10 @@
+var aLazyLoad = new LazyLoad({
+  elements_selector: ".lazy"
+});
 
+window.addEventListener("beforeprint", function(event) {
+    aLazyLoad.loadAll();
+});
 
 function biblio(){
     var biblio = document.querySelector(".biblio");
