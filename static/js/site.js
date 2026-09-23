@@ -115,7 +115,15 @@ if(document.getElementsByTagName("form").length > 0){
     formular();
 }
 
+apropos = document.getElementById("apropos")
+
 window.addEventListener("scroll", function(){
+  if(!apropos.classList.contains("scrolling")){
+    if (document.body.scrollTop  > apropos.getBoundingClientRect().bottom){
+      apropos.classList.add("apropos-hide");
+    }
+  }
+  
   for (page of document.querySelectorAll(".page")) {
     if (document.body.scrollTop + (window.innerHeight/2) < page.getBoundingClientRect().top){
       page.classList.add("above-page");
@@ -204,5 +212,21 @@ function draw_bookbox(width,height,npages){
 }
 
 draw_bookbox(document.querySelector("#input-width").value,document.querySelector("#input-height").value, document.querySelector("#input-chunk-size").value)
+
+document.querySelector("#apropos-toggle").onclick = ()=>{
+  if(apropos.classList.contains("apropos-hide")){
+    apropos.classList.add("scrolling")
+    setTimeout(()=>{
+      apropos.scrollIntoView({ behavior: "smooth"});
+    },200)
+    setTimeout(()=>{
+      apropos.classList.remove("scrolling")
+    },1000)
+    
+  }else{
+    // location.hash = "";
+  }
+  document.querySelector(".apropos").classList.toggle("apropos-hide")
+}
 
 // element.offsetWidth > 0 && element.offsetHeight > 0; // visible

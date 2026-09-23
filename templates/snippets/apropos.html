@@ -1,25 +1,31 @@
-<div class="apropos">
+<div id="apropos" class="apropos">
   <div>
-    <p>Ce projet est une manière d’explorer le corpus de l’archive en ligne <em>Gallica</em>, au travers des enjeux de la reproduction technique, de sa mise en forme et son inscription dans la matérialité des livres.</p>
-    <p>Cette exploration ironique et anachronique met en parallèle deux « controverses » nées de l’évolution des techniques et des pratiques face au droit d’auteur :</p>
+    <p>Ce projet est une manière d’explorer le corpus de l’archive en&nbsp;ligne <em>Gallica</em>, au travers des enjeux de la reproduction technique, de&nbsp;sa&nbsp;mise en forme et son inscription dans la&nbsp;matérialité des&nbsp;livres.</p>
+    
+    <p class="data"><a href="https://gallica.bnf.fr/SRU?version=1.2&operation=searchRetrieve&query=gallica%20all%20%22photocopillage%22&startRecord=1&maximumRecords=1&collapsing=false">Requête</a> de <em>photocopillage</em> sur Gallica : {{ all_data[2]|length }}&nbsp;occurrences à lʼintérieur de {{ all_data[1]|length }}&nbsp;documents, dont {{ all_data[1]|length - all_data[3]|length }}&nbsp;pages sont accessibles gratuitement dans lesquels&nbsp;{{ all_data[0]|length }} pictogrammes <img style="height: 1rem;vertical-align: center;" src="{{ url_for('static', filename='photocopillage.png') }}" alt="logo photocopillage"> ont été trouvé.</br>
+      <a href="nologo">Seulement {{ all_data[4]|length }} résultats à l’intérieur du contenu des livres.</a>
+    </p>
+    
+    <p>Cette exploration ironique et anachronique met en parallèle deux « controverses » nées de l’évolution des&nbsp;techniques et des&nbsp;pratiques face au droit&nbsp;d’auteur :</p>
     <ul>
-      <li>1980 : la lutte des éditeurs contre la photocopie de leurs ouvrages en dehors des exceptions du droit d’auteur (copie privée) et de la redevance compensatoire. La campagne de lobbying cherche à diffuser l’idée que chaque duplication est un manque à gagner qui tuerait virtuellement un livre.</li>
+      <li>1980 : la lutte des éditeurs contre la photocopie de leurs ouvrages en dehors des exceptions du droit d’auteur (copie privée) et de la redevance compensatoire. La&nbsp;campagne de lobbying cherche à diffuser l’idée que chaque duplication est un manque à gagner qui tuerait virtuellement un livre.</li>
       <li>2012 : la loi d’exploitation numérique des livres indisponibles du XX<sup>e</sup> siècle et la création du dispositif ReLIRE : un registre d’<em>œuvres</em> qui ne sont plus exploitées et qui seront numérisées et recommercialisées, passant
         alors en gestion collective de leur droits si aucun refus n’est formulé par les ayants-droit.</li>
     </ul>
     <p>
-      La majorité des livres inventoriés ici ne sont plus édités et font parti du dispositif ReLIRE. C’est dans ce cadre qu’ils sont répertoriés par la BnF et qu’un aperçu de 15% des pages est disponible sur Gallica, monnayant l’accès complet ou le <em>fac-similé</em>.
+      La majorité des livres inventoriés ici ne sont plus édités et font parti du&nbsp;dispositif ReLIRE. C’est dans ce cadre qu’ils sont répertoriés par la&nbsp;BnF et qu’un aperçu de 15% des pages est disponible sur Gallica, monnayant l’accès complet ou le <em>fac-similé</em>.
     </p>
     <p>
-      La formule « le photocopillage tue le livre » semble donc avoir été prémonitoire, voire performative. Mais la plupart de ces livres sont des manuels ou des ouvrages sur des sujets spécifiques, c’est-à-dire les textes les plus susceptibles de subir les effets du temps, de ne plus être d’actualité ou d’être remplacés par un autre
-      livre, plus récent ou plus complet.
+      La formule « le photocopillage tue le livre » semble donc avoir été prémonitoire, voire performative. Mais la plupart de ces livres sont des&nbsp;manuels ou des&nbsp;ouvrages sur des sujets spécifiques, c’est-à-dire les&nbsp;textes les plus susceptibles de subir les effets du temps, de ne plus être d’actualité ou d’être remplacés par un autre livre, plus récent ou&nbsp;plus&nbsp;complet.
     </p>
     <p>
       Ce projet est la première itération d’un processus d’édition à partir d’archives en ligne mettant en avant l’automatisation de l’extraction des données jusqu’à l’impression d’un livre et l’explicitation des choix formels et éditoriaux.
-      Cette page est donc un livre, qui peut être fragmenté et réorganisé pour être imprimé ou commandé en impression à la demande.
+      Cette page est donc un livre, qui peut être fragmenté et réorganisé pour être imprimé<!-- ou commandé en&nbsp;impression à la demande-->.
     </p>
     <p><a href="https://gallica.bnf.fr/services/engine/search/sru?operation=searchRetrieve&version=1.2&query=(dc.rights%20any%20%22Projet%20de%20num%C3%A9risation%20des%20indisponibles%22)">Recherche</a> des <em>Indisponibles</em> sur Gallica : 91 651 documents</p>
         <!-- <li><a href="https://gallica.bnf.fr/services/engine/search/sru?operation=searchRetrieve&version=1.2&query=(dc.rights%20any%20%22Projet%20de%20num%C3%A9risation%20des%20indisponibles%22)">Recherche</a> de <em>photocopillage</em> sur Gallica : 587 documents</li> -->
-    <p class="data"><a href="https://gallica.bnf.fr/SRU?version=1.2&operation=searchRetrieve&query=gallica%20all%20%22photocopillage%22&startRecord=1&maximumRecords=1&collapsing=false">Requête API Search</a> de <em>photocopillage</em> sur Gallica : {{ all_data[2]|length }} occurrences dans {{ all_data[1]|length }} documents, {{ all_data[1]|length - all_data[3]|length }} pages sont accessibles gratuitement dans lesquels {{ all_data[0]|length }} pictogrammes <img style="height: 1rem;vertical-align: center;" src="{{ url_for('static', filename='photocopillage.png') }}" alt="logo photocopillage"> ont été trouvé. <a href="nologo">Lire les {{ all_data[4]|length }} résultats à l’intérieur du contenu des livres.</a></p>
+   
+      <div id="apropos-toggle">
+      </div>
   </div>
 </div>
