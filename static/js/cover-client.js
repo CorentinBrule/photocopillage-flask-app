@@ -1,98 +1,115 @@
-function generateCoverImages(book,documents,page_width,page_height, scale, static_url) {
-    console.log(book);
-    console.log(documents);
-    document.querySelector("header").style.display = "block";
-    document.querySelector("#total").innerText = documents.length;
-    
-    // setup canvas
-    const canvas_cover = document.createElement("canvas");
-    const canvas_logo = document.createElement("canvas");
-    image_width_px = parseInt(page_width * book.dpi);
-    image_height_px = parseInt(page_height * book.dpi);
-    
-    console.log(image_width_px);
-    console.log(image_height_px);
-    
-    canvas_logo.width = image_width_px;
-    canvas_logo.height = image_height_px;
-    canvas_cover.width = image_width_px;
-    canvas_cover.height = image_height_px;
+// créer une worker, récupérer le status régulièrement, recevoir la moyenne en blob, supprimer le worker 
+async function generateAverage(group, width, height) {
 
-    let step = 0;
-    let el_logo = document.querySelector(".cover1 img");
-    let el_cover = document.querySelector(".cover4 img");
+  return new Promise((resolve, reject) => {
 
-    let ctx_logo =  canvas_logo.getContext("2d");
-    let ctx_cover = canvas_cover.getContext("2d");
+    const worker = new Worker(
+      "static/js/lib/average-worker.js",
+      {type: "module"}
+    );
 
-    for (var i = 0; i < documents.length; i++) {
-      let alpha = 1/(i+1) * 1;
+    worker.onmessage = event => {
+      const message = event.data;
+      switch (message.type) {
+        case "progress":
+          document.getElementById("progress").value = message.value;
+          document.getElementById("status").textContent = `${message.current} / ${message.total}`;
+          break;
 
-      let img_width = documents[i].pages[0].size.width;
-      let img_height = documents[i].pages[0].size.height;
-      let x = documents[i].pages[0].match.center[0];
-      let y = documents[i].pages[0].match.center[1];
-      
-      const tmp_img_logo = new Image();
-      tmp_img_logo._id = documents[i].id;
-      tmp_img_logo._w = img_width*scale;
-      tmp_img_logo._h = img_height*scale;
-      tmp_img_logo._x = (image_width_px/scale/2 - x)*scale;
-      tmp_img_logo._y = (image_height_px/scale/2 - y)*scale;
-      tmp_img_logo._a = alpha;
-      
-      // prepare onload event
-      tmp_img_logo.onload = function(){
-        ctx_logo.globalAlpha = this._a;
-        ctx_logo.drawImage(this,this._x,this._y,this._w,this._h);
-        step++;
-        document.querySelector("#step").innerText = step;
-       
-        // when average is finish
-        if(step == documents.length-1){
-          el_logo.src = canvas_logo.toDataURL();
-          step = 0;
-          document.getElementById("part").textContent = "4e de couverture"
-          generateSecondCover()
-        }
+        // quand le worker a fini de travaillé
+        case "done":
+          const blob = new Blob([message.buffer],{type: "image/png"});
+          // On détruit le Worker immédiatement, pour faire disparaître toutes les références restantes dans son scop.
+          worker.terminate();
+          resolve(blob);
+          break;
+
+        case "error":
+          worker.terminate();
+          reject(new Error(message.message));
+          break;
       }
-      // to trigger image loading
-      tmp_img_logo.src = static_url + documents[i].id + "-f" + documents[i].pages[0].pagination + ".jpg";
-    }   
-    // document.querySelector(".cover1").appendChild(canvas_logo);
-    // document.querySelector(".cover4").appendChild(canvas_cover);
-    function generateSecondCover(){
-      for (var i = 0; i < documents.length; i++) {
-          let alpha = 1/(i+1) * 1;
+    };
 
-          let img_width = documents[i].pages[0].size.width;
-          let img_height = documents[i].pages[0].size.height;
-          let x = documents[i].pages[0].match.center[0];
-          let y = documents[i].pages[0].match.center[1];
+    worker.onerror = error => {
+      worker.terminate();
+      reject(error);
+    };
+    
+    // let's go !
+    worker.postMessage({group, width, height,mode:"additive"});
+  });
+}
 
-          let tmp_img_cover = new Image();
-          tmp_img_cover._w = img_width*scale;
-          tmp_img_cover._h = img_height*scale;
-          tmp_img_cover._x = (image_width_px/scale/2 - x)*scale;
-          tmp_img_cover._y = (image_height_px/scale/2 - y)*scale;
-          tmp_img_cover._a = alpha;
-          tmp_img_cover.onload = function(){
-            // console.log(this._w);
-            // console.log(this._h);
-            // console.log(this._a);
-            ctx_cover.globalAlpha = this._a;
-            ctx_cover.drawImage(this,this._x,this._y,this._w,this._h);
-            step++;
-            document.querySelector("#step").innerText = step;
-            if(step == documents.length-1){
-              el_cover.src = canvas_cover.toDataURL();
+// la fonction principale qui est appelée seulement si les images de la couv n'existe pas
+// c-a-d pas générées à l'avance et mises en fichier static sur le serveur 
+async function generateCoverImages(book, documents, page_width, page_height, scale, static_url){
+    document.querySelector("header").style.display = "block";
+  
+    const width = parseInt(page_width * book.dpi);
+    const height = parseInt(page_height * book.dpi);
 
-              document.querySelector("header").style.display = "none";
-            }
-          }
-          // to trigger image loading
-          tmp_img_cover.src = static_url + documents[i].id + ".jpg";
-          // img_cover = (url)
-
-        }
+    const groupA = [];
+    for (const doc of documents) {
+      const obj = {
+        url: static_url + doc.id + "-f" + doc.pages[0].pagination + ".jpg",
+        x: parseFloat(doc.pages[0].match.center[0]),
+        y: parseFloat(doc.pages[0].match.center[1]),
+        scale: parseFloat(scale)
+      }
+      groupA.push(obj)
     }
+    
+    const groupB = [];
+    for (const doc of documents) {
+       const obj = {
+        url: static_url + doc.id + ".jpg",
+        x: parseFloat(doc.pages[0].match.center[0]),
+        y: parseFloat(doc.pages[0].match.center[1]),
+        scale: parseFloat(scale)
+       }
+       groupB.push(obj)
+    }
+
+    try {
+      /*
+       ******************************************************************
+       * Première de couverture : les logos
+       ******************************************************************
+       */
+      document.getElementById("step").innerHTML = "Génération de la 1<sup>re</sup> de couverture";
+      document.getElementById("progress").value = 0;
+
+      const blobA = await generateAverage(groupA, width, height);
+
+      // display result on page
+      const urlA = URL.createObjectURL(blobA);
+      document.getElementById("resultA").src = urlA;
+
+      /*
+       ******************************************************************
+       * 4e de couverture : les couvertures
+       ******************************************************************
+       */
+      
+      document.getElementById("step").innerHTML = "Génération de la 4<sup>e</sup> de couverture";
+      document.getElementById("progress").value = 0;
+
+      const blobB = await generateAverage(groupB, width, height);
+
+      // display result on page
+      const urlB = URL.createObjectURL(blobB);
+      document.getElementById("resultB").src = urlB;
+
+      // quand c'est fini on cache le header
+      document.getElementById("step").textContent = "Terminé.";
+      setTimeout(()=>{
+        document.querySelector("header").style.display = "none";
+      }, 1000);
+      
+    } catch (error) {
+      console.error(error);
+      document.getElementById("status").textContent =
+        "Erreur : " + error.message;
+    }
+}

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
- <head>
+<head>
   <meta charset="utf-8"/>
   <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet"/>
-  <link href="{{ url_for('static', filename='book.css') }}" rel="stylesheet"/>
   <link href="{{ url_for('static', filename='cover.css') }}" rel="stylesheet"/>
   {% set n_chunk_start = "%03d" % ((book['chunk_part']*book['chunk_size'])+1) %}
   {% set n_chunk_end = "%03d" % ((book['chunk_part'] * book['chunk_size']) + documents|length) %}
@@ -16,103 +15,117 @@
   {% set page_width_img = book['width'] + bleed %}
   {% set half_spine = spine/2 %}
   <style>
+    @page{
+        size: {{ cover_width }}in {{ cover_height }}in;
+    }
+    .cover{
+        width: {{ cover_width }}in;
+        height: {{ page_height }}in;
+    }
 
-  @page{
-     size: {{ cover_width }}in {{ cover_height }}in;
-  }
- .cover{
-     width: {{ cover_width }}in;
-     height: {{ page_height }}in;
- }
+    .cover1, .cover4, .cover1 img, .cover4 img {
+        width: {{ page_width }}in;
+        height: {{ page_height }}in
+    }
 
- .cover1, .cover4, .cover1 img, .cover4 img {
-    width: {{ page_width }}in;
-    height: {{ page_height }}in
- }
+    {% if spine > 0.25 %}
+    .spine{
+        width: {{ spine }}in;
+        height: {{ page_height }}in;
+        left: {{ page_width_img }}in;
+    }
 
- {% if spine > 0.25 %}
-   .spine{
-      width: {{ spine }}in;
-      height: {{ page_height }}in;
-      left: {{ page_width_img }}in;
-   }
+    .information{
+        line-height: {{ spine }}in;
+        height: {{ spine }}in;
+        width: {{ page_height }}in;
+        transform-origin: {{ half_spine }}in {{ half_spine }}in;
+    }
 
-   .information{
-      line-height: {{ spine }}in;
-      height: {{ spine }}in;
-      width: {{ page_height }}in;
-      transform-origin: {{ half_spine }}in {{ half_spine }}in;
-   }
+    {% else %}
 
- {% else %}
+    .spine{
+        width: 0.25in;
+        height: {{ page_height }}in;
+        left: {{ page_width_img + spine }}in;
+        background: black;
+        margin-left: -{{spine}}in;
+        padding-left: {{spine}}in;
+    }
 
- .spine{
-    width: 0.25in;
-    height: {{ page_height }}in;
-    left: {{ page_width_img + spine }}in;
-    background: black;
-    margin-left: -{{spine}}in;
-    padding-left: {{spine}}in;
- }
+    .information{
+        line-height: 0.25in;
+        height: 0.25in;
+        width: {{ page_height }}in;
+        transform-origin: 0.125in 0.125in;
+    }
+    {% endif %}
+  </style>
 
- .information{
-    line-height:  0.25in;
-    height: 0.25in;
-    width: {{ page_height }}in;
-    transform-origin: 0.125in 0.125in;
- }
-
-
-{% endif %}
-
- </style>
- <script>
- </script>
- </head>
- <body>
-  <header>
-    <div class="progress">
-      <p>Génération de la couverture. Moyenne en cours par votre navigateur...</p>
-      <p><span style="text-decoration:underline;" id="part">1ère de couverture</span> : <span id="step"></span> images sur <span id="total"></span> chargées.</p>
-
-  </div>
-  </header>
-  <div class="cover">
-   <div class="cover4">
-    <img src="{{  url_for('static', filename='covers/'+cover_names[1]) }}"/>
-   </div>
-   <div class="spine">
-    <div class="information">
-     <span class="archive">
-      Gallica
-     </span>
-     |
-     <span class="mot">
-      photocopillage
-     </span>
-     |
-     <span class="tri">
-      date d’indexation
-     </span>
-     |
-     <span class="echelle">
-      1:1
-     </span>
-     |
-     <span class="interval">
-      {{ n_chunk_start }}–{{ n_chunk_end }}
-     </span>
+</head>
+<body>
+    <noscript>
+        <p>Javascript est nécessaire pour générer la couverture.</p> 
+    </noscript>
+    <header>
+        <div class="intro progress">
+            <p>Génération de la couverture. Moyenne en cours par votre navigateur...</p>
+            <p><span style="text-decoration:underline;" id="step">1ère de couverture</span> : <span id="status"></span></span></p>
+            <progress id="progress" value="0" max="1"></progress>
+        </div>
+    </header>
+    <div class="cover">
+    <div class="cover4">
+        <img id="resultB" src="{{  url_for('static', filename='covers/'+cover_names[1]) }}"/>
     </div>
-   </div>
-   <div class="cover1">
-    <img src="{{ url_for('static', filename='covers/'+cover_names[0]) }}"/>
-   </div>
-  </div>
- </body>
- <script src="{{ url_for('static',filename='js/cover-client.js') }}"></script>
- <script type="text/javascript">
- if({{task}}){
-   generateCoverImages({{book|tojson}},{{documents|tojson}},{{page_width_img}},{{page_height}}, {{scale}}, "{{ url_for('static',filename='images/')}}")
- }
+    <div class="spine">
+        <div class="information">
+            <span class="archive">
+            Gallica
+            </span>
+            |
+            <span class="mot">
+            photocopillage
+            </span>
+            |
+            <span class="tri">
+            {% if book['sort'] == "byIndexationDate" %}
+            date d’indexation
+            {% else %}
+            titre
+            {% endif %}
+            </span>
+            |
+            <span class="echelle">
+            {% if book['scale']|float == 1 %}
+                1:1
+            {% elif book['scale']|float == 0.5 %}
+                1:2
+            {% elif book['scale']|float == 0.666 %}
+                2:3
+            {% elif book['scale']|float == 0.8 %}
+                4:5
+            {% elif book['scale']|float == 0.75 %}
+                3:4
+            {% else %}
+                {{ book['scale']|float }}
+            {% endif %}
+            </span>
+            |
+            <span class="interval">
+            {{ n_chunk_start }}–{{ n_chunk_end }}
+            </span>
+        </div>
+    </div>
+        <div class="cover1">
+            <img id="resultA" src="{{ url_for('static', filename='covers/'+cover_names[0]) }}"/>
+        </div>
+    </div>
+</body>
+<script src="{{ url_for('static',filename='js/cover-client.js') }}"></script>
+<script type="text/javascript">
+    if({{task}}){
+        generateCoverImages({{book|tojson}},{{documents|tojson}},{{page_width_img}},{{page_height}}, {{scale}}, "{{ url_for('static',filename='images/')}}")
+    }
 </script>
 </html>
