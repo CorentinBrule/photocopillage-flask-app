@@ -251,7 +251,7 @@
 
   .small-text{
     font-size: 0.7rem;
-    line-height: 0.8rem;
+    line-height: 0.7rem;
   }
 
   #last-element-hidden {
@@ -280,12 +280,16 @@
       width: 100%;
     }
     input{
+      font-size: 0.9rem;
+      margin: 0;
+      margin-bottom: -0.25rem;
       margin-left: 0.5rem;
       margin-right: 0.5rem;
     }
   }
 
   .bookbox{
+    line-height: 100%;
     border: solid white 1px;
     width: var(--width);
     height: var(--height);

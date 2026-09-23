@@ -53,6 +53,7 @@ function formular(){
       let input_chunk_part = document.getElementById("input-chunk-part");
       let chunk_part = input_chunk_part.value;
       let max_part = Math.ceil(NDOC/chunk_size);
+      let n_pages;
       if (chunk_part == max_part && chunk_size != NDOC){
           n_pages = (NDOC % chunk_size) *2;
       }else{
@@ -67,6 +68,8 @@ function formular(){
       document.querySelector(".interval").textContent =  "000".substring(0, 3 - n_start.length) + n_start + "–" + "000".substring(0,3 - n_end.length) + n_end; 
 
       filter_books(chunk_size, chunk_part);
+      draw_bookbox(input_width.value, input_height.value, n_pages)
+
     })
 
     document.getElementById("form-book").addEventListener("change", function(){
@@ -85,7 +88,7 @@ function formular(){
             select_format.value = "custom";
         }
         change_book_size(input_width.value,input_height.value);
-        draw_bookbox(input_width.value,input_height.value, document.getElementById("input-chunk-size").value)
+        draw_bookbox(input_width.value,input_height.value, document.getElementById("pages-result").textContent)
     });
     document.getElementById("select-format").addEventListener("change", function(){
         if (select_format.value == "A5"){
@@ -207,11 +210,11 @@ function draw_bookbox(width,height,npages){
   const bookbox = document.querySelector(".bookbox");
   bookbox.style.setProperty('--width', width+"px");
   bookbox.style.setProperty('--height', height+"px");
-  bookbox.style.setProperty('--depth', npages/10+"px");
+  bookbox.style.setProperty('--depth', npages/15+"px");
   bookbox.style.setProperty('--npage', npages);
 }
 
-draw_bookbox(document.querySelector("#input-width").value,document.querySelector("#input-height").value, document.querySelector("#input-chunk-size").value)
+draw_bookbox(document.querySelector("#input-width").value,document.querySelector("#input-height").value, document.querySelector("#pages-result").textContent)
 
 document.querySelector("#apropos-toggle").onclick = ()=>{
   if(apropos.classList.contains("apropos-hide")){
